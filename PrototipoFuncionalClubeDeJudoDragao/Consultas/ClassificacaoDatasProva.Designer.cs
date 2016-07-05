@@ -97,7 +97,7 @@
             // 
             // bt_ok
             // 
-            this.bt_ok.Location = new System.Drawing.Point(197, 27);
+            this.bt_ok.Location = new System.Drawing.Point(197, 12);
             this.bt_ok.Name = "bt_ok";
             this.bt_ok.Size = new System.Drawing.Size(75, 23);
             this.bt_ok.TabIndex = 30;
