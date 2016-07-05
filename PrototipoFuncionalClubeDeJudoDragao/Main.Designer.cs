@@ -432,12 +432,14 @@
             this.ts_informações.Name = "ts_informações";
             this.ts_informações.Size = new System.Drawing.Size(85, 20);
             this.ts_informações.Text = "Informações";
+            this.ts_informações.Click += new System.EventHandler(this.ts_informações_Click);
             // 
             // ts_sair
             // 
             this.ts_sair.Name = "ts_sair";
             this.ts_sair.Size = new System.Drawing.Size(38, 20);
             this.ts_sair.Text = "Sair";
+            this.ts_sair.Click += new System.EventHandler(this.ts_sair_Click);
             // 
             // injecao
             // 

@@ -132,6 +132,12 @@
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.Designer.cs">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Informacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacoes.Designer.cs">
+      <DependentUpon>Informacoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listagens\AtletasNaoRevalidados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.resx">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacoes.resx">
+      <DependentUpon>Informacoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listagens\AtletasNaoRevalidados.resx">
       <DependentUpon>AtletasNaoRevalidados.cs</DependentUpon>

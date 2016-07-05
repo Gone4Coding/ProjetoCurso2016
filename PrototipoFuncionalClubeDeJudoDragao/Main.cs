@@ -249,5 +249,17 @@ namespace PrototipoFuncionalClubeDeJudoDragao
             alteracaoCodigoSituacao.Show();
             this.Hide();
         }
+
+        private void ts_informações_Click(object sender, EventArgs e)
+        {
+            Informacoes informacoes = new Informacoes();
+            informacoes.Show();
+            this.Hide();
+        }
+
+        private void ts_sair_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
