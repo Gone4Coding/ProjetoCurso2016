@@ -120,6 +120,66 @@
     <Compile Include="Consultas\TotaisPorGraduacao.Designer.cs">
       <DependentUpon>TotaisPorGraduacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listagens\AtletasNaoRevalidados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\AtletasNaoRevalidados.Designer.cs">
+      <DependentUpon>AtletasNaoRevalidados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\AtletasPorSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\AtletasPorSeguro.Designer.cs">
+      <DependentUpon>AtletasPorSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\DatasGraduacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\DatasGraduacao.Designer.cs">
+      <DependentUpon>DatasGraduacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\GeralAtletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\GeralAtletas.Designer.cs">
+      <DependentUpon>GeralAtletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\ParticipacoesPorLicenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\ParticipacoesPorLicenca.Designer.cs">
+      <DependentUpon>ParticipacoesPorLicenca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\RecebimentoEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\RecebimentoEntidades.Designer.cs">
+      <DependentUpon>RecebimentoEntidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Recebimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Recebimentos.Designer.cs">
+      <DependentUpon>Recebimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\RelacoesAniversario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\RelacoesAniversario.Designer.cs">
+      <DependentUpon>RelacoesAniversario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\RelacoesPorData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\RelacoesPorData.Designer.cs">
+      <DependentUpon>RelacoesPorData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\TotaisPontos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\TotaisPontos.Designer.cs">
+      <DependentUpon>TotaisPontos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +239,36 @@
     <EmbeddedResource Include="Consultas\TotaisPorGraduacao.resx">
       <DependentUpon>TotaisPorGraduacao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\AtletasNaoRevalidados.resx">
+      <DependentUpon>AtletasNaoRevalidados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\AtletasPorSeguro.resx">
+      <DependentUpon>AtletasPorSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\DatasGraduacao.resx">
+      <DependentUpon>DatasGraduacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\GeralAtletas.resx">
+      <DependentUpon>GeralAtletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\ParticipacoesPorLicenca.resx">
+      <DependentUpon>ParticipacoesPorLicenca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\RecebimentoEntidades.resx">
+      <DependentUpon>RecebimentoEntidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Recebimentos.resx">
+      <DependentUpon>Recebimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\RelacoesAniversario.resx">
+      <DependentUpon>RelacoesAniversario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\RelacoesPorData.resx">
+      <DependentUpon>RelacoesPorData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\TotaisPontos.resx">
+      <DependentUpon>TotaisPontos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,7 +306,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controlo.txt" />
     <Content Include="ModelDiagramaBD.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelDiagramaBD.Context.cs</LastGenOutput>

@@ -1,6 +1,6 @@
-﻿namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
+﻿namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
 {
-    partial class TotaisGraduacaoPorClube
+    partial class AtletasNaoRevalidados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gb_Clube = new System.Windows.Forms.GroupBox();
-            this.tb_codigoClube = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bt_cancelar = new System.Windows.Forms.Button();
-            this.bt_ok = new System.Windows.Forms.Button();
             this.gb_Datas = new System.Windows.Forms.GroupBox();
             this.dataInicio = new System.Windows.Forms.Label();
             this.dataFim = new System.Windows.Forms.Label();
             this.dtp_Inicio = new System.Windows.Forms.DateTimePicker();
             this.dtp_InicioFim = new System.Windows.Forms.DateTimePicker();
-            this.gb_Clube.SuspendLayout();
+            this.bt_cancelar = new System.Windows.Forms.Button();
+            this.bt_ok = new System.Windows.Forms.Button();
             this.gb_Datas.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // gb_Clube
-            // 
-            this.gb_Clube.Controls.Add(this.tb_codigoClube);
-            this.gb_Clube.Controls.Add(this.label1);
-            this.gb_Clube.Location = new System.Drawing.Point(12, 12);
-            this.gb_Clube.Name = "gb_Clube";
-            this.gb_Clube.Size = new System.Drawing.Size(113, 54);
-            this.gb_Clube.TabIndex = 25;
-            this.gb_Clube.TabStop = false;
-            this.gb_Clube.Text = "Clube";
-            // 
-            // tb_codigoClube
-            // 
-            this.tb_codigoClube.Location = new System.Drawing.Point(53, 19);
-            this.tb_codigoClube.Name = "tb_codigoClube";
-            this.tb_codigoClube.Size = new System.Drawing.Size(43, 20);
-            this.tb_codigoClube.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código";
-            // 
-            // bt_cancelar
-            // 
-            this.bt_cancelar.Location = new System.Drawing.Point(33, 110);
-            this.bt_cancelar.Name = "bt_cancelar";
-            this.bt_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.bt_cancelar.TabIndex = 24;
-            this.bt_cancelar.Text = "Cancelar";
-            this.bt_cancelar.UseVisualStyleBackColor = true;
-            // 
-            // bt_ok
-            // 
-            this.bt_ok.Location = new System.Drawing.Point(33, 81);
-            this.bt_ok.Name = "bt_ok";
-            this.bt_ok.Size = new System.Drawing.Size(75, 23);
-            this.bt_ok.TabIndex = 23;
-            this.bt_ok.Text = "OK";
-            this.bt_ok.UseVisualStyleBackColor = true;
             // 
             // gb_Datas
             // 
@@ -93,10 +44,10 @@
             this.gb_Datas.Controls.Add(this.dataFim);
             this.gb_Datas.Controls.Add(this.dtp_Inicio);
             this.gb_Datas.Controls.Add(this.dtp_InicioFim);
-            this.gb_Datas.Location = new System.Drawing.Point(142, 12);
+            this.gb_Datas.Location = new System.Drawing.Point(12, 12);
             this.gb_Datas.Name = "gb_Datas";
             this.gb_Datas.Size = new System.Drawing.Size(160, 81);
-            this.gb_Datas.TabIndex = 22;
+            this.gb_Datas.TabIndex = 18;
             this.gb_Datas.TabStop = false;
             this.gb_Datas.Text = "Datas";
             // 
@@ -134,19 +85,34 @@
             this.dtp_InicioFim.Size = new System.Drawing.Size(98, 20);
             this.dtp_InicioFim.TabIndex = 7;
             // 
-            // TotaisGraduacaoPorClube
+            // bt_cancelar
+            // 
+            this.bt_cancelar.Location = new System.Drawing.Point(187, 67);
+            this.bt_cancelar.Name = "bt_cancelar";
+            this.bt_cancelar.Size = new System.Drawing.Size(75, 23);
+            this.bt_cancelar.TabIndex = 20;
+            this.bt_cancelar.Text = "Cancelar";
+            this.bt_cancelar.UseVisualStyleBackColor = true;
+            // 
+            // bt_ok
+            // 
+            this.bt_ok.Location = new System.Drawing.Point(187, 21);
+            this.bt_ok.Name = "bt_ok";
+            this.bt_ok.Size = new System.Drawing.Size(75, 23);
+            this.bt_ok.TabIndex = 19;
+            this.bt_ok.Text = "OK";
+            this.bt_ok.UseVisualStyleBackColor = true;
+            // 
+            // AtletasNaoRevalidados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 147);
-            this.Controls.Add(this.gb_Clube);
+            this.ClientSize = new System.Drawing.Size(273, 107);
             this.Controls.Add(this.bt_cancelar);
             this.Controls.Add(this.bt_ok);
             this.Controls.Add(this.gb_Datas);
-            this.Name = "TotaisGraduacaoPorClube";
-            this.Text = "Opções de Totais Por Graduação Por Clube";
-            this.gb_Clube.ResumeLayout(false);
-            this.gb_Clube.PerformLayout();
+            this.Name = "AtletasNaoRevalidados";
+            this.Text = "Opções de Atletas Não Revalidados";
             this.gb_Datas.ResumeLayout(false);
             this.gb_Datas.PerformLayout();
             this.ResumeLayout(false);
@@ -155,15 +121,12 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gb_Clube;
-        private System.Windows.Forms.TextBox tb_codigoClube;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bt_cancelar;
-        private System.Windows.Forms.Button bt_ok;
         private System.Windows.Forms.GroupBox gb_Datas;
         private System.Windows.Forms.Label dataInicio;
         private System.Windows.Forms.Label dataFim;
         private System.Windows.Forms.DateTimePicker dtp_Inicio;
         private System.Windows.Forms.DateTimePicker dtp_InicioFim;
+        private System.Windows.Forms.Button bt_cancelar;
+        private System.Windows.Forms.Button bt_ok;
     }
 }

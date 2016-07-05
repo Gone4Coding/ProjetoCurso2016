@@ -57,7 +57,7 @@
             this.gb_Data.Controls.Add(this.label3);
             this.gb_Data.Location = new System.Drawing.Point(12, 12);
             this.gb_Data.Name = "gb_Data";
-            this.gb_Data.Size = new System.Drawing.Size(200, 81);
+            this.gb_Data.Size = new System.Drawing.Size(200, 67);
             this.gb_Data.TabIndex = 26;
             this.gb_Data.TabStop = false;
             this.gb_Data.Text = "Data";
@@ -120,7 +120,7 @@
             this.gb_Tipo.Controls.Add(this.rb_Inscritos);
             this.gb_Tipo.Controls.Add(this.rb_Todos);
             this.gb_Tipo.Controls.Add(this.rb_Revalidados);
-            this.gb_Tipo.Location = new System.Drawing.Point(12, 99);
+            this.gb_Tipo.Location = new System.Drawing.Point(12, 84);
             this.gb_Tipo.Name = "gb_Tipo";
             this.gb_Tipo.Size = new System.Drawing.Size(117, 100);
             this.gb_Tipo.TabIndex = 29;
@@ -166,7 +166,7 @@
             this.gb_Datas.Controls.Add(this.dataFim);
             this.gb_Datas.Controls.Add(this.dtp_Inicio);
             this.gb_Datas.Controls.Add(this.dtp_Fim);
-            this.gb_Datas.Location = new System.Drawing.Point(144, 100);
+            this.gb_Datas.Location = new System.Drawing.Point(144, 85);
             this.gb_Datas.Name = "gb_Datas";
             this.gb_Datas.Size = new System.Drawing.Size(160, 99);
             this.gb_Datas.TabIndex = 17;
@@ -211,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 212);
+            this.ClientSize = new System.Drawing.Size(324, 199);
             this.Controls.Add(this.gb_Datas);
             this.Controls.Add(this.gb_Tipo);
             this.Controls.Add(this.rb_cancelar);
