@@ -425,6 +425,7 @@
             this.ts_utilitarios_alteraçãoACódigosDeSituação.Name = "ts_utilitarios_alteraçãoACódigosDeSituação";
             this.ts_utilitarios_alteraçãoACódigosDeSituação.Size = new System.Drawing.Size(244, 22);
             this.ts_utilitarios_alteraçãoACódigosDeSituação.Text = "Alteração a Códigos de Situação";
+            this.ts_utilitarios_alteraçãoACódigosDeSituação.Click += new System.EventHandler(this.ts_utilitarios_alteraçãoACódigosDeSituação_Click);
             // 
             // ts_informações
             // 

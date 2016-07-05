@@ -2,6 +2,7 @@
 using PrototipoFuncionalClubeDeJudoDragao.Consultas;
 using PrototipoFuncionalClubeDeJudoDragao.Listagens;
 using PrototipoFuncionalClubeDeJudoDragao.Estatisticas;
+using PrototipoFuncionalClubeDeJudoDragao.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -239,6 +240,13 @@ namespace PrototipoFuncionalClubeDeJudoDragao
         {
             EstatisticasInscritosRevalidadosClube estatisticasInscritosRevalidadosClube = new EstatisticasInscritosRevalidadosClube();
             estatisticasInscritosRevalidadosClube.Show();
+            this.Hide();
+        }
+
+        private void ts_utilitarios_alteraçãoACódigosDeSituação_Click(object sender, EventArgs e)
+        {
+            AlteracaoCodigoSituacao alteracaoCodigoSituacao = new AlteracaoCodigoSituacao();
+            alteracaoCodigoSituacao.Show();
             this.Hide();
         }
     }
