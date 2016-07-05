@@ -26,8 +26,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
         {
             int escalaoInicio = Convert.ToInt32(this.tb_Inicio.Text);
             int escalaoFim = Convert.ToInt32(this.tb_Fim.Text);
-
-            System.Console.WriteLine("");
         }
     }
 }
