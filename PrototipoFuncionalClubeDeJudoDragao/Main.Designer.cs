@@ -375,42 +375,49 @@
             this.ts_tabelas_códigosDeÁrbitros.Name = "ts_tabelas_códigosDeÁrbitros";
             this.ts_tabelas_códigosDeÁrbitros.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeÁrbitros.Text = "Códigos de Árbitros";
+            this.ts_tabelas_códigosDeÁrbitros.Click += new System.EventHandler(this.ts_tabelas_códigosDeÁrbitros_Click);
             // 
             // ts_tabelas_códigosDeEntidades
             // 
             this.ts_tabelas_códigosDeEntidades.Name = "ts_tabelas_códigosDeEntidades";
             this.ts_tabelas_códigosDeEntidades.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeEntidades.Text = "Códigos de Entidades";
+            this.ts_tabelas_códigosDeEntidades.Click += new System.EventHandler(this.ts_tabelas_códigosDeEntidades_Click);
             // 
             // ts_tabelas_códigosDeEscalões
             // 
             this.ts_tabelas_códigosDeEscalões.Name = "ts_tabelas_códigosDeEscalões";
             this.ts_tabelas_códigosDeEscalões.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeEscalões.Text = "Códigos de Escalões";
+            this.ts_tabelas_códigosDeEscalões.Click += new System.EventHandler(this.ts_tabelas_códigosDeEscalões_Click);
             // 
             // ts_tabelas_códigosDeGraduações
             // 
             this.ts_tabelas_códigosDeGraduações.Name = "ts_tabelas_códigosDeGraduações";
             this.ts_tabelas_códigosDeGraduações.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeGraduações.Text = "Códigos de Graduações";
+            this.ts_tabelas_códigosDeGraduações.Click += new System.EventHandler(this.ts_tabelas_códigosDeGraduações_Click);
             // 
             // ts_tabelas_códigosDeSeguros
             // 
             this.ts_tabelas_códigosDeSeguros.Name = "ts_tabelas_códigosDeSeguros";
             this.ts_tabelas_códigosDeSeguros.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeSeguros.Text = "Códigos de Seguros";
+            this.ts_tabelas_códigosDeSeguros.Click += new System.EventHandler(this.ts_tabelas_códigosDeSeguros_Click);
             // 
             // ts_tabelas_códigosDeSituações
             // 
             this.ts_tabelas_códigosDeSituações.Name = "ts_tabelas_códigosDeSituações";
             this.ts_tabelas_códigosDeSituações.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeSituações.Text = "Códigos de Situações";
+            this.ts_tabelas_códigosDeSituações.Click += new System.EventHandler(this.ts_tabelas_códigosDeSituações_Click);
             // 
             // ts_tabelas_códigosDeTreinadores
             // 
             this.ts_tabelas_códigosDeTreinadores.Name = "ts_tabelas_códigosDeTreinadores";
             this.ts_tabelas_códigosDeTreinadores.Size = new System.Drawing.Size(199, 22);
             this.ts_tabelas_códigosDeTreinadores.Text = "Códigos de Treinadores";
+            this.ts_tabelas_códigosDeTreinadores.Click += new System.EventHandler(this.ts_tabelas_códigosDeTreinadores_Click);
             // 
             // ts_utilitarios
             // 

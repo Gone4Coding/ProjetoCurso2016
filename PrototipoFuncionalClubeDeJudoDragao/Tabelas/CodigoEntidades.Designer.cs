@@ -36,14 +36,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
+            this.tb_morada = new System.Windows.Forms.TextBox();
+            this.tb_localidade = new System.Windows.Forms.TextBox();
+            this.tb_codigoPostal = new System.Windows.Forms.TextBox();
+            this.tb_telefoneFax = new System.Windows.Forms.TextBox();
+            this.tb_treinadorContato = new System.Windows.Forms.TextBox();
+            this.tb_tipo = new System.Windows.Forms.TextBox();
+            this.tb_codigoEntidade = new System.Windows.Forms.TextBox();
             this.bt_sair = new System.Windows.Forms.Button();
             this.bt_imprimir = new System.Windows.Forms.Button();
             this.bt_pesquisa = new System.Windows.Forms.Button();
@@ -131,61 +131,61 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Tipo";
             // 
-            // textBox1
+            // tb_descricao
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(315, 20);
-            this.textBox1.TabIndex = 20;
+            this.tb_descricao.Location = new System.Drawing.Point(118, 70);
+            this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.Size = new System.Drawing.Size(315, 20);
+            this.tb_descricao.TabIndex = 20;
             // 
-            // textBox2
+            // tb_morada
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(315, 20);
-            this.textBox2.TabIndex = 20;
+            this.tb_morada.Location = new System.Drawing.Point(118, 96);
+            this.tb_morada.Name = "tb_morada";
+            this.tb_morada.Size = new System.Drawing.Size(315, 20);
+            this.tb_morada.TabIndex = 20;
             // 
-            // textBox3
+            // tb_localidade
             // 
-            this.textBox3.Location = new System.Drawing.Point(118, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(315, 20);
-            this.textBox3.TabIndex = 20;
+            this.tb_localidade.Location = new System.Drawing.Point(118, 122);
+            this.tb_localidade.Name = "tb_localidade";
+            this.tb_localidade.Size = new System.Drawing.Size(315, 20);
+            this.tb_localidade.TabIndex = 20;
             // 
-            // textBox4
+            // tb_codigoPostal
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 148);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(315, 20);
-            this.textBox4.TabIndex = 20;
+            this.tb_codigoPostal.Location = new System.Drawing.Point(118, 148);
+            this.tb_codigoPostal.Name = "tb_codigoPostal";
+            this.tb_codigoPostal.Size = new System.Drawing.Size(315, 20);
+            this.tb_codigoPostal.TabIndex = 20;
             // 
-            // textBox5
+            // tb_telefoneFax
             // 
-            this.textBox5.Location = new System.Drawing.Point(118, 174);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(315, 20);
-            this.textBox5.TabIndex = 20;
+            this.tb_telefoneFax.Location = new System.Drawing.Point(118, 174);
+            this.tb_telefoneFax.Name = "tb_telefoneFax";
+            this.tb_telefoneFax.Size = new System.Drawing.Size(315, 20);
+            this.tb_telefoneFax.TabIndex = 20;
             // 
-            // textBox6
+            // tb_treinadorContato
             // 
-            this.textBox6.Location = new System.Drawing.Point(118, 200);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(315, 20);
-            this.textBox6.TabIndex = 20;
+            this.tb_treinadorContato.Location = new System.Drawing.Point(118, 200);
+            this.tb_treinadorContato.Name = "tb_treinadorContato";
+            this.tb_treinadorContato.Size = new System.Drawing.Size(315, 20);
+            this.tb_treinadorContato.TabIndex = 20;
             // 
-            // textBox7
+            // tb_tipo
             // 
-            this.textBox7.Location = new System.Drawing.Point(118, 226);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(315, 20);
-            this.textBox7.TabIndex = 20;
+            this.tb_tipo.Location = new System.Drawing.Point(118, 226);
+            this.tb_tipo.Name = "tb_tipo";
+            this.tb_tipo.Size = new System.Drawing.Size(315, 20);
+            this.tb_tipo.TabIndex = 20;
             // 
-            // textBox8
+            // tb_codigoEntidade
             // 
-            this.textBox8.Location = new System.Drawing.Point(118, 22);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(54, 20);
-            this.textBox8.TabIndex = 20;
+            this.tb_codigoEntidade.Location = new System.Drawing.Point(118, 22);
+            this.tb_codigoEntidade.Name = "tb_codigoEntidade";
+            this.tb_codigoEntidade.Size = new System.Drawing.Size(54, 20);
+            this.tb_codigoEntidade.TabIndex = 20;
             // 
             // bt_sair
             // 
@@ -320,14 +320,14 @@
             this.Controls.Add(this.bt_eliminar);
             this.Controls.Add(this.bt_alterar);
             this.Controls.Add(this.bt_novo);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_tipo);
+            this.Controls.Add(this.tb_treinadorContato);
+            this.Controls.Add(this.tb_telefoneFax);
+            this.Controls.Add(this.tb_codigoPostal);
+            this.Controls.Add(this.tb_localidade);
+            this.Controls.Add(this.tb_morada);
+            this.Controls.Add(this.tb_codigoEntidade);
+            this.Controls.Add(this.tb_descricao);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -353,14 +353,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tb_descricao;
+        private System.Windows.Forms.TextBox tb_morada;
+        private System.Windows.Forms.TextBox tb_localidade;
+        private System.Windows.Forms.TextBox tb_codigoPostal;
+        private System.Windows.Forms.TextBox tb_telefoneFax;
+        private System.Windows.Forms.TextBox tb_treinadorContato;
+        private System.Windows.Forms.TextBox tb_tipo;
+        private System.Windows.Forms.TextBox tb_codigoEntidade;
         private System.Windows.Forms.Button bt_sair;
         private System.Windows.Forms.Button bt_imprimir;
         private System.Windows.Forms.Button bt_pesquisa;

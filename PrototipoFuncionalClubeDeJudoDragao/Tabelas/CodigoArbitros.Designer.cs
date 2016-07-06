@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_codigoArbitro = new System.Windows.Forms.TextBox();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
             this.bt_last = new System.Windows.Forms.Button();
             this.bt_previous = new System.Windows.Forms.Button();
             this.bt_next = new System.Windows.Forms.Button();
@@ -65,19 +65,19 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Descrição";
             // 
-            // textBox1
+            // tb_codigoArbitro
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(40, 20);
-            this.textBox1.TabIndex = 1;
+            this.tb_codigoArbitro.Location = new System.Drawing.Point(117, 19);
+            this.tb_codigoArbitro.Name = "tb_codigoArbitro";
+            this.tb_codigoArbitro.Size = new System.Drawing.Size(40, 20);
+            this.tb_codigoArbitro.TabIndex = 1;
             // 
-            // textBox2
+            // tb_descricao
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(61, 20);
-            this.textBox2.TabIndex = 1;
+            this.tb_descricao.Location = new System.Drawing.Point(96, 55);
+            this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.Size = new System.Drawing.Size(61, 20);
+            this.tb_descricao.TabIndex = 1;
             // 
             // bt_last
             // 
@@ -212,8 +212,8 @@
             this.Controls.Add(this.bt_next);
             this.Controls.Add(this.bt_previous);
             this.Controls.Add(this.bt_last);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_descricao);
+            this.Controls.Add(this.tb_codigoArbitro);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CodigoArbitros";
@@ -227,8 +227,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_codigoArbitro;
+        private System.Windows.Forms.TextBox tb_descricao;
         private System.Windows.Forms.Button bt_last;
         private System.Windows.Forms.Button bt_previous;
         private System.Windows.Forms.Button bt_next;
