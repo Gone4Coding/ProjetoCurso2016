@@ -259,6 +259,8 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 
         private void ts_sair_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Deseja Sair?", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == DialogResult.OK)
+                Application.Exit();
             
         }
     }
