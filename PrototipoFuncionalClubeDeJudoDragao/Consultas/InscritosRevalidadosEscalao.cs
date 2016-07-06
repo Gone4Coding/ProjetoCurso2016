@@ -19,13 +19,49 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
 
         private void cancelEscaloes_Click(object sender, EventArgs e)
         {
-            //SAIR
+            Main main = new Main();
+            main.Show();
+            this.Hide();
         }
 
         private void okEscaloes_Click(object sender, EventArgs e)
         {
-            int escalaoInicio = Convert.ToInt32(this.tb_Inicio.Text);
-            int escalaoFim = Convert.ToInt32(this.tb_Fim.Text);
+            try
+            {
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.DataInicio = dtp_Inicio.Text;
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.DataInicio = dtp_Fim.Text;
+
+                if (tb_escalaoInicio.Text == "" || tb_escalaoFim.Text == "")
+                {
+                    throw new Exception("Escolha uma gama de escalões");
+                }
+
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.EscalaoInicio = Convert.ToInt32(tb_escalaoInicio.Text);
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.EscalaoFim = Convert.ToInt32(tb_escalaoFim.Text);
+
+                var radioButtons = gb_Tipo.Controls.OfType<RadioButton>();
+
+                foreach (RadioButton rb in radioButtons)
+                {
+                    if (rb.Checked)
+                    {
+                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioSelecionado = rb.Text;
+                    }
+                    else
+                    {
+                        throw new Exception("Escolha um tipo primeiro");
+                    }
+                }
+
+                InscritosRevalidadosEscalaoLista inscritosRevalidadosEscalaoLista = new InscritosRevalidadosEscalaoLista();
+                inscritosRevalidadosEscalaoLista.Show();
+                this.Hide();
+
+            }
+            catch (Exception msg)
+            {
+                MessageBox.Show(msg.ToString());
+            }
         }
     }
 }

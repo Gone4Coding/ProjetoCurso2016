@@ -34,8 +34,8 @@
             this.dataFim = new System.Windows.Forms.Label();
             this.dtp_Inicio = new System.Windows.Forms.DateTimePicker();
             this.dtp_Fim = new System.Windows.Forms.DateTimePicker();
-            this.tb_Fim = new System.Windows.Forms.TextBox();
-            this.tb_Inicio = new System.Windows.Forms.TextBox();
+            this.tb_escalaoFim = new System.Windows.Forms.TextBox();
+            this.tb_escalaoInicio = new System.Windows.Forms.TextBox();
             this.tipoInscritos = new System.Windows.Forms.RadioButton();
             this.tipoTodos = new System.Windows.Forms.RadioButton();
             this.tipoRevalidados = new System.Windows.Forms.RadioButton();
@@ -101,19 +101,19 @@
             this.dtp_Fim.Size = new System.Drawing.Size(98, 20);
             this.dtp_Fim.TabIndex = 7;
             // 
-            // tb_Fim
+            // tb_escalaoFim
             // 
-            this.tb_Fim.Location = new System.Drawing.Point(46, 50);
-            this.tb_Fim.Name = "tb_Fim";
-            this.tb_Fim.Size = new System.Drawing.Size(48, 20);
-            this.tb_Fim.TabIndex = 8;
+            this.tb_escalaoFim.Location = new System.Drawing.Point(46, 50);
+            this.tb_escalaoFim.Name = "tb_escalaoFim";
+            this.tb_escalaoFim.Size = new System.Drawing.Size(48, 20);
+            this.tb_escalaoFim.TabIndex = 8;
             // 
-            // tb_Inicio
+            // tb_escalaoInicio
             // 
-            this.tb_Inicio.Location = new System.Drawing.Point(46, 19);
-            this.tb_Inicio.Name = "tb_Inicio";
-            this.tb_Inicio.Size = new System.Drawing.Size(48, 20);
-            this.tb_Inicio.TabIndex = 9;
+            this.tb_escalaoInicio.Location = new System.Drawing.Point(46, 19);
+            this.tb_escalaoInicio.Name = "tb_escalaoInicio";
+            this.tb_escalaoInicio.Size = new System.Drawing.Size(48, 20);
+            this.tb_escalaoInicio.TabIndex = 9;
             // 
             // tipoInscritos
             // 
@@ -172,8 +172,8 @@
             // 
             this.gb_Escaloes.Controls.Add(this.escInicio);
             this.gb_Escaloes.Controls.Add(this.label1);
-            this.gb_Escaloes.Controls.Add(this.tb_Fim);
-            this.gb_Escaloes.Controls.Add(this.tb_Inicio);
+            this.gb_Escaloes.Controls.Add(this.tb_escalaoFim);
+            this.gb_Escaloes.Controls.Add(this.tb_escalaoInicio);
             this.gb_Escaloes.Location = new System.Drawing.Point(12, 9);
             this.gb_Escaloes.Name = "gb_Escaloes";
             this.gb_Escaloes.Size = new System.Drawing.Size(117, 81);
@@ -235,8 +235,8 @@
         private System.Windows.Forms.Label dataFim;
         private System.Windows.Forms.DateTimePicker dtp_Inicio;
         private System.Windows.Forms.DateTimePicker dtp_Fim;
-        private System.Windows.Forms.TextBox tb_Fim;
-        private System.Windows.Forms.TextBox tb_Inicio;
+        private System.Windows.Forms.TextBox tb_escalaoFim;
+        private System.Windows.Forms.TextBox tb_escalaoInicio;
         private System.Windows.Forms.RadioButton tipoInscritos;
         private System.Windows.Forms.RadioButton tipoTodos;
         private System.Windows.Forms.RadioButton tipoRevalidados;

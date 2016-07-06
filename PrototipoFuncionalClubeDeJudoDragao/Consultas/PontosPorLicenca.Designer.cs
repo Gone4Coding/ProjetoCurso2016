@@ -227,6 +227,7 @@
             this.bt_cancelar.TabIndex = 17;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -236,6 +237,7 @@
             this.bt_ok.TabIndex = 16;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // PontosPorLicenca
             // 
