@@ -57,16 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actualizações\ListagemAtletas.cs">
+    <Compile Include="Actualizacoes\ListagemAtletas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Actualizações\ListagemAtletas.Designer.cs">
+    <Compile Include="Actualizacoes\ListagemAtletas.Designer.cs">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Actualizações\ProcurarAtleta.cs">
+    <Compile Include="Actualizacoes\ProcurarAtleta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Actualizações\ProcurarAtleta.Designer.cs">
+    <Compile Include="Actualizacoes\ProcurarAtleta.Designer.cs">
       <DependentUpon>ProcurarAtleta.cs</DependentUpon>
     </Compile>
     <Compile Include="Atleta.cs">
@@ -323,10 +323,10 @@
     <Compile Include="Utilitarios\AlteracaoCodigoSituacao.Designer.cs">
       <DependentUpon>AlteracaoCodigoSituacao.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Actualizações\ListagemAtletas.resx">
+    <EmbeddedResource Include="Actualizacoes\ListagemAtletas.resx">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Actualizações\ProcurarAtleta.resx">
+    <EmbeddedResource Include="Actualizacoes\ProcurarAtleta.resx">
       <DependentUpon>ProcurarAtleta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ClassificacaoDatasProva.resx">

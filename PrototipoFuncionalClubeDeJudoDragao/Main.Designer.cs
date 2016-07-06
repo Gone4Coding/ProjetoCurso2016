@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ts_actualizações = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaDeAtletas = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaDeAtletas = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.ts_actualizações_fichaAtletas_listarTodos = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaAtletas_procurarAtleta = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaDePontos = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaDeGraduações = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaDeParticipações = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaDeClassificações = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichasDeRecebimentos = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_actualizações_fichaDeRecebimentosEnviados = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaAtletas_listarTodos = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaAtletas_procurarAtleta = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaDePontos = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaDeGraduacoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaDeParticipacoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaDeClassificacoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichasDeRecebimentos = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_actualizacoes_fichaDeRecebimentosEnviados = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_consultas = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_inscritosERevalidadosPorEscalão = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_inscritosERevalidadosPorGraduação = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_examesMédicosCaducados = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_classificaçõesPorDataDeProva = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_classificaçõesPorTipoDeProva = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_pontosPorLicença = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_totaisPorGraduação = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_consultas_totaisDeGraduaçõesPorClube = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_inscritosERevalidadosPorEscalao = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_inscritosERevalidadosPorGraduacao = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_examesMedicosCaducados = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_classificacoesPorDataDeProva = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_classificacoesPorTipoDeProva = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_pontosPorLicenca = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_totaisPorGraduacao = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_consultas_totaisDeGraduacoesPorClube = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_listagens = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_listagens_atletasNãoRevalidados = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_listagens_atletasNaoRevalidados = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_listagens_atletasPorSeguro = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_listagens_datasDeGraduação = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_listagens_datasDeGraduacao = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_listagens_geralDeAtletas = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_listagens_participaçõesPorLicença = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_listagens_participacoesPorLicenca = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_listagens_recebimentos = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_listagens_recebimentosDeEntidades = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_listagens_relaçõesPorData = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_listagens_relaçãoDeAniversários = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_listagens_relacoesPorData = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_listagens_relacaoDeAniversários = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_listagens_totaisDePontos = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_estatisticas = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_estatisticas_inscritosERevalidadosPorEscalão = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_estatisticas_inscritosERevalidadosPorEscalao = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_estatisticas_inscritosERevalidadosPorClubes = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_tabelas = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeÁrbitros = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeEntidades = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeEscalões = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeGraduações = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeSeguros = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeSituações = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_tabelas_códigosDeTreinadores = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeArbitros = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeEntidades = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeEscaloes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeGraduacoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeSeguros = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeSituacoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_tabelas_codigosDeTreinadores = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_utilitarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_utilitarios_alteraçãoACódigosDeSituação = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_informações = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_utilitarios_alteracaoACodigosDeSituacaoo = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_informacoes = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_sair = new System.Windows.Forms.ToolStripMenuItem();
             this.injecao = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -82,13 +82,13 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_actualizações,
+            this.ts_actualizacoes,
             this.ts_consultas,
             this.ts_listagens,
             this.ts_estatisticas,
             this.ts_tabelas,
             this.ts_utilitarios,
-            this.ts_informações,
+            this.ts_informacoes,
             this.ts_sair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -96,179 +96,179 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // ts_actualizações
+            // ts_actualizacoes
             // 
-            this.ts_actualizações.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_actualizações_fichaDeAtletas,
-            this.ts_actualizações_fichaDePontos,
-            this.ts_actualizações_fichaDeGraduações,
-            this.ts_actualizações_fichaDeParticipações,
-            this.ts_actualizações_fichaDeClassificações,
-            this.ts_actualizações_fichasDeRecebimentos,
-            this.ts_actualizações_fichaDeRecebimentosEnviados});
-            this.ts_actualizações.Name = "ts_actualizações";
-            this.ts_actualizações.Size = new System.Drawing.Size(91, 20);
-            this.ts_actualizações.Text = "Actualizações";
+            this.ts_actualizacoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ts_actualizacoes_fichaDeAtletas,
+            this.ts_actualizacoes_fichaDePontos,
+            this.ts_actualizacoes_fichaDeGraduacoes,
+            this.ts_actualizacoes_fichaDeParticipacoes,
+            this.ts_actualizacoes_fichaDeClassificacoes,
+            this.ts_actualizacoes_fichasDeRecebimentos,
+            this.ts_actualizacoes_fichaDeRecebimentosEnviados});
+            this.ts_actualizacoes.Name = "ts_actualizacoes";
+            this.ts_actualizacoes.Size = new System.Drawing.Size(91, 20);
+            this.ts_actualizacoes.Text = "Actualizações";
             // 
-            // ts_actualizações_fichaDeAtletas
+            // ts_actualizacoes_fichaDeAtletas
             // 
-            this.ts_actualizações_fichaDeAtletas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ts_actualizacoes_fichaDeAtletas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator1,
-            this.ts_actualizações_fichaAtletas_listarTodos,
-            this.ts_actualizações_fichaAtletas_procurarAtleta});
-            this.ts_actualizações_fichaDeAtletas.Name = "ts_actualizações_fichaDeAtletas";
-            this.ts_actualizações_fichaDeAtletas.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichaDeAtletas.Text = "Ficha de Atletas";
+            this.ts_actualizacoes_fichaAtletas_listarTodos,
+            this.ts_actualizacoes_fichaAtletas_procurarAtleta});
+            this.ts_actualizacoes_fichaDeAtletas.Name = "ts_actualizacoes_fichaDeAtletas";
+            this.ts_actualizacoes_fichaDeAtletas.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichaDeAtletas.Text = "Ficha de Atletas";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(150, 6);
             // 
-            // ts_actualizações_fichaAtletas_listarTodos
+            // ts_actualizacoes_fichaAtletas_listarTodos
             // 
-            this.ts_actualizações_fichaAtletas_listarTodos.Name = "ts_actualizações_fichaAtletas_listarTodos";
-            this.ts_actualizações_fichaAtletas_listarTodos.Size = new System.Drawing.Size(153, 22);
-            this.ts_actualizações_fichaAtletas_listarTodos.Text = "Listar Todos";
-            this.ts_actualizações_fichaAtletas_listarTodos.Click += new System.EventHandler(this.ts_actualizações_fichaAtletas_listarTodos_Click);
+            this.ts_actualizacoes_fichaAtletas_listarTodos.Name = "ts_actualizacoes_fichaAtletas_listarTodos";
+            this.ts_actualizacoes_fichaAtletas_listarTodos.Size = new System.Drawing.Size(153, 22);
+            this.ts_actualizacoes_fichaAtletas_listarTodos.Text = "Listar Todos";
+            this.ts_actualizacoes_fichaAtletas_listarTodos.Click += new System.EventHandler(this.ts_actualizacoes_fichaAtletas_listarTodos_Click);
             // 
-            // ts_actualizações_fichaAtletas_procurarAtleta
+            // ts_actualizacoes_fichaAtletas_procurarAtleta
             // 
-            this.ts_actualizações_fichaAtletas_procurarAtleta.Name = "ts_actualizações_fichaAtletas_procurarAtleta";
-            this.ts_actualizações_fichaAtletas_procurarAtleta.Size = new System.Drawing.Size(153, 22);
-            this.ts_actualizações_fichaAtletas_procurarAtleta.Text = "Procurar Atleta";
-            this.ts_actualizações_fichaAtletas_procurarAtleta.Click += new System.EventHandler(this.ts_actualizações_fichaAtletas_procurarAtleta_Click);
+            this.ts_actualizacoes_fichaAtletas_procurarAtleta.Name = "ts_actualizacoes_fichaAtletas_procurarAtleta";
+            this.ts_actualizacoes_fichaAtletas_procurarAtleta.Size = new System.Drawing.Size(153, 22);
+            this.ts_actualizacoes_fichaAtletas_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_actualizacoes_fichaAtletas_procurarAtleta.Click += new System.EventHandler(this.ts_actualizacoes_fichaAtletas_procurarAtleta_Click);
             // 
-            // ts_actualizações_fichaDePontos
+            // ts_actualizacoes_fichaDePontos
             // 
-            this.ts_actualizações_fichaDePontos.Name = "ts_actualizações_fichaDePontos";
-            this.ts_actualizações_fichaDePontos.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichaDePontos.Text = "Ficha de Pontos";
+            this.ts_actualizacoes_fichaDePontos.Name = "ts_actualizacoes_fichaDePontos";
+            this.ts_actualizacoes_fichaDePontos.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichaDePontos.Text = "Ficha de Pontos";
             // 
-            // ts_actualizações_fichaDeGraduações
+            // ts_actualizacoes_fichaDeGraduacoes
             // 
-            this.ts_actualizações_fichaDeGraduações.Name = "ts_actualizações_fichaDeGraduações";
-            this.ts_actualizações_fichaDeGraduações.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichaDeGraduações.Text = "Ficha de Graduações";
+            this.ts_actualizacoes_fichaDeGraduacoes.Name = "ts_actualizacoes_fichaDeGraduacoes";
+            this.ts_actualizacoes_fichaDeGraduacoes.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichaDeGraduacoes.Text = "Ficha de Graduações";
             // 
-            // ts_actualizações_fichaDeParticipações
+            // ts_actualizacoes_fichaDeParticipacoes
             // 
-            this.ts_actualizações_fichaDeParticipações.Name = "ts_actualizações_fichaDeParticipações";
-            this.ts_actualizações_fichaDeParticipações.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichaDeParticipações.Text = "Ficha de Participações";
+            this.ts_actualizacoes_fichaDeParticipacoes.Name = "ts_actualizacoes_fichaDeParticipacoes";
+            this.ts_actualizacoes_fichaDeParticipacoes.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichaDeParticipacoes.Text = "Ficha de Participações";
             // 
-            // ts_actualizações_fichaDeClassificações
+            // ts_actualizacoes_fichaDeClassificacoes
             // 
-            this.ts_actualizações_fichaDeClassificações.Name = "ts_actualizações_fichaDeClassificações";
-            this.ts_actualizações_fichaDeClassificações.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichaDeClassificações.Text = "Ficha de Classificações";
+            this.ts_actualizacoes_fichaDeClassificacoes.Name = "ts_actualizacoes_fichaDeClassificacoes";
+            this.ts_actualizacoes_fichaDeClassificacoes.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichaDeClassificacoes.Text = "Ficha de Classificações";
             // 
-            // ts_actualizações_fichasDeRecebimentos
+            // ts_actualizacoes_fichasDeRecebimentos
             // 
-            this.ts_actualizações_fichasDeRecebimentos.Name = "ts_actualizações_fichasDeRecebimentos";
-            this.ts_actualizações_fichasDeRecebimentos.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichasDeRecebimentos.Text = "Ficha de Recebimentos";
+            this.ts_actualizacoes_fichasDeRecebimentos.Name = "ts_actualizacoes_fichasDeRecebimentos";
+            this.ts_actualizacoes_fichasDeRecebimentos.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichasDeRecebimentos.Text = "Ficha de Recebimentos";
             // 
-            // ts_actualizações_fichaDeRecebimentosEnviados
+            // ts_actualizacoes_fichaDeRecebimentosEnviados
             // 
-            this.ts_actualizações_fichaDeRecebimentosEnviados.Name = "ts_actualizações_fichaDeRecebimentosEnviados";
-            this.ts_actualizações_fichaDeRecebimentosEnviados.Size = new System.Drawing.Size(246, 22);
-            this.ts_actualizações_fichaDeRecebimentosEnviados.Text = "Ficha de Recebimentos Enviados";
+            this.ts_actualizacoes_fichaDeRecebimentosEnviados.Name = "ts_actualizacoes_fichaDeRecebimentosEnviados";
+            this.ts_actualizacoes_fichaDeRecebimentosEnviados.Size = new System.Drawing.Size(246, 22);
+            this.ts_actualizacoes_fichaDeRecebimentosEnviados.Text = "Ficha de Recebimentos Enviados";
             // 
             // ts_consultas
             // 
             this.ts_consultas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_consultas_inscritosERevalidadosPorEscalão,
-            this.ts_consultas_inscritosERevalidadosPorGraduação,
-            this.ts_consultas_examesMédicosCaducados,
-            this.ts_consultas_classificaçõesPorDataDeProva,
-            this.ts_consultas_classificaçõesPorTipoDeProva,
-            this.ts_consultas_pontosPorLicença,
-            this.ts_consultas_totaisPorGraduação,
-            this.ts_consultas_totaisDeGraduaçõesPorClube});
+            this.ts_consultas_inscritosERevalidadosPorEscalao,
+            this.ts_consultas_inscritosERevalidadosPorGraduacao,
+            this.ts_consultas_examesMedicosCaducados,
+            this.ts_consultas_classificacoesPorDataDeProva,
+            this.ts_consultas_classificacoesPorTipoDeProva,
+            this.ts_consultas_pontosPorLicenca,
+            this.ts_consultas_totaisPorGraduacao,
+            this.ts_consultas_totaisDeGraduacoesPorClube});
             this.ts_consultas.Name = "ts_consultas";
             this.ts_consultas.Size = new System.Drawing.Size(71, 20);
             this.ts_consultas.Text = "Consultas";
             // 
-            // ts_consultas_inscritosERevalidadosPorEscalão
+            // ts_consultas_inscritosERevalidadosPorEscalao
             // 
-            this.ts_consultas_inscritosERevalidadosPorEscalão.Name = "ts_consultas_inscritosERevalidadosPorEscalão";
-            this.ts_consultas_inscritosERevalidadosPorEscalão.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_inscritosERevalidadosPorEscalão.Text = "Inscritos e Revalidados por Escalão";
-            this.ts_consultas_inscritosERevalidadosPorEscalão.Click += new System.EventHandler(this.ts_consultas_inscritosERevalidadosPorEscalão_Click);
+            this.ts_consultas_inscritosERevalidadosPorEscalao.Name = "ts_consultas_inscritosERevalidadosPorEscalao";
+            this.ts_consultas_inscritosERevalidadosPorEscalao.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_inscritosERevalidadosPorEscalao.Text = "Inscritos e Revalidados por Escalão";
+            this.ts_consultas_inscritosERevalidadosPorEscalao.Click += new System.EventHandler(this.ts_consultas_inscritosERevalidadosPorEscalao_Click);
             // 
-            // ts_consultas_inscritosERevalidadosPorGraduação
+            // ts_consultas_inscritosERevalidadosPorGraduacao
             // 
-            this.ts_consultas_inscritosERevalidadosPorGraduação.Name = "ts_consultas_inscritosERevalidadosPorGraduação";
-            this.ts_consultas_inscritosERevalidadosPorGraduação.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_inscritosERevalidadosPorGraduação.Text = "Inscritos e Revalidados por Graduação";
-            this.ts_consultas_inscritosERevalidadosPorGraduação.Click += new System.EventHandler(this.ts_consultas_inscritosERevalidadosPorGraduação_Click);
+            this.ts_consultas_inscritosERevalidadosPorGraduacao.Name = "ts_consultas_inscritosERevalidadosPorGraduacao";
+            this.ts_consultas_inscritosERevalidadosPorGraduacao.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_inscritosERevalidadosPorGraduacao.Text = "Inscritos e Revalidados por Graduação";
+            this.ts_consultas_inscritosERevalidadosPorGraduacao.Click += new System.EventHandler(this.ts_consultas_inscritosERevalidadosPorGraduacao_Click);
             // 
-            // ts_consultas_examesMédicosCaducados
+            // ts_consultas_examesMedicosCaducados
             // 
-            this.ts_consultas_examesMédicosCaducados.Name = "ts_consultas_examesMédicosCaducados";
-            this.ts_consultas_examesMédicosCaducados.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_examesMédicosCaducados.Text = "Exames Médicos Caducados";
-            this.ts_consultas_examesMédicosCaducados.Click += new System.EventHandler(this.ts_consultas_examesMédicosCaducados_Click);
+            this.ts_consultas_examesMedicosCaducados.Name = "ts_consultas_examesMedicosCaducados";
+            this.ts_consultas_examesMedicosCaducados.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_examesMedicosCaducados.Text = "Exames Médicos Caducados";
+            this.ts_consultas_examesMedicosCaducados.Click += new System.EventHandler(this.ts_consultas_examesMedicosCaducados_Click);
             // 
-            // ts_consultas_classificaçõesPorDataDeProva
+            // ts_consultas_classificacoesPorDataDeProva
             // 
-            this.ts_consultas_classificaçõesPorDataDeProva.Name = "ts_consultas_classificaçõesPorDataDeProva";
-            this.ts_consultas_classificaçõesPorDataDeProva.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_classificaçõesPorDataDeProva.Text = "Classificações por Data de Prova";
-            this.ts_consultas_classificaçõesPorDataDeProva.Click += new System.EventHandler(this.ts_consultas_classificaçõesPorDataDeProva_Click);
+            this.ts_consultas_classificacoesPorDataDeProva.Name = "ts_consultas_classificacoesPorDataDeProva";
+            this.ts_consultas_classificacoesPorDataDeProva.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_classificacoesPorDataDeProva.Text = "Classificações por Data de Prova";
+            this.ts_consultas_classificacoesPorDataDeProva.Click += new System.EventHandler(this.ts_consultas_classificacoesPorDataDeProva_Click);
             // 
-            // ts_consultas_classificaçõesPorTipoDeProva
+            // ts_consultas_classificacoesPorTipoDeProva
             // 
-            this.ts_consultas_classificaçõesPorTipoDeProva.Name = "ts_consultas_classificaçõesPorTipoDeProva";
-            this.ts_consultas_classificaçõesPorTipoDeProva.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_classificaçõesPorTipoDeProva.Text = "Classificações por Tipo de Prova";
-            this.ts_consultas_classificaçõesPorTipoDeProva.Click += new System.EventHandler(this.ts_consultas_classificaçõesPorTipoDeProva_Click);
+            this.ts_consultas_classificacoesPorTipoDeProva.Name = "ts_consultas_classificacoesPorTipoDeProva";
+            this.ts_consultas_classificacoesPorTipoDeProva.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_classificacoesPorTipoDeProva.Text = "Classificações por Tipo de Prova";
+            this.ts_consultas_classificacoesPorTipoDeProva.Click += new System.EventHandler(this.ts_consultas_classificacoesPorTipoDeProva_Click);
             // 
-            // ts_consultas_pontosPorLicença
+            // ts_consultas_pontosPorLicenca
             // 
-            this.ts_consultas_pontosPorLicença.Name = "ts_consultas_pontosPorLicença";
-            this.ts_consultas_pontosPorLicença.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_pontosPorLicença.Text = "Pontos por Licença";
-            this.ts_consultas_pontosPorLicença.Click += new System.EventHandler(this.ts_consultas_pontosPorLicença_Click);
+            this.ts_consultas_pontosPorLicenca.Name = "ts_consultas_pontosPorLicenca";
+            this.ts_consultas_pontosPorLicenca.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_pontosPorLicenca.Text = "Pontos por Licença";
+            this.ts_consultas_pontosPorLicenca.Click += new System.EventHandler(this.ts_consultas_pontosPorLicenca_Click);
             // 
-            // ts_consultas_totaisPorGraduação
+            // ts_consultas_totaisPorGraduacao
             // 
-            this.ts_consultas_totaisPorGraduação.Name = "ts_consultas_totaisPorGraduação";
-            this.ts_consultas_totaisPorGraduação.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_totaisPorGraduação.Text = "Totais por Graduação";
-            this.ts_consultas_totaisPorGraduação.Click += new System.EventHandler(this.ts_consultas_totaisPorGraduação_Click);
+            this.ts_consultas_totaisPorGraduacao.Name = "ts_consultas_totaisPorGraduacao";
+            this.ts_consultas_totaisPorGraduacao.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_totaisPorGraduacao.Text = "Totais por Graduação";
+            this.ts_consultas_totaisPorGraduacao.Click += new System.EventHandler(this.ts_consultas_totaisPorGraduacao_Click);
             // 
-            // ts_consultas_totaisDeGraduaçõesPorClube
+            // ts_consultas_totaisDeGraduacoesPorClube
             // 
-            this.ts_consultas_totaisDeGraduaçõesPorClube.Name = "ts_consultas_totaisDeGraduaçõesPorClube";
-            this.ts_consultas_totaisDeGraduaçõesPorClube.Size = new System.Drawing.Size(274, 22);
-            this.ts_consultas_totaisDeGraduaçõesPorClube.Text = "Totais de Graduações por Clube";
-            this.ts_consultas_totaisDeGraduaçõesPorClube.Click += new System.EventHandler(this.ts_consultas_totaisDeGraduaçõesPorClube_Click);
+            this.ts_consultas_totaisDeGraduacoesPorClube.Name = "ts_consultas_totaisDeGraduacoesPorClube";
+            this.ts_consultas_totaisDeGraduacoesPorClube.Size = new System.Drawing.Size(274, 22);
+            this.ts_consultas_totaisDeGraduacoesPorClube.Text = "Totais de Graduações por Clube";
+            this.ts_consultas_totaisDeGraduacoesPorClube.Click += new System.EventHandler(this.ts_consultas_totaisDeGraduacoesPorClube_Click);
             // 
             // ts_listagens
             // 
             this.ts_listagens.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_listagens_atletasNãoRevalidados,
+            this.ts_listagens_atletasNaoRevalidados,
             this.ts_listagens_atletasPorSeguro,
-            this.ts_listagens_datasDeGraduação,
+            this.ts_listagens_datasDeGraduacao,
             this.ts_listagens_geralDeAtletas,
-            this.ts_listagens_participaçõesPorLicença,
+            this.ts_listagens_participacoesPorLicenca,
             this.ts_listagens_recebimentos,
             this.ts_listagens_recebimentosDeEntidades,
-            this.ts_listagens_relaçõesPorData,
-            this.ts_listagens_relaçãoDeAniversários,
+            this.ts_listagens_relacoesPorData,
+            this.ts_listagens_relacaoDeAniversários,
             this.ts_listagens_totaisDePontos});
             this.ts_listagens.Name = "ts_listagens";
             this.ts_listagens.Size = new System.Drawing.Size(68, 20);
             this.ts_listagens.Text = "Listagens";
             // 
-            // ts_listagens_atletasNãoRevalidados
+            // ts_listagens_atletasNaoRevalidados
             // 
-            this.ts_listagens_atletasNãoRevalidados.Name = "ts_listagens_atletasNãoRevalidados";
-            this.ts_listagens_atletasNãoRevalidados.Size = new System.Drawing.Size(219, 22);
-            this.ts_listagens_atletasNãoRevalidados.Text = "Atletas Não Revalidados";
-            this.ts_listagens_atletasNãoRevalidados.Click += new System.EventHandler(this.ts_listagens_atletasNãoRevalidados_Click);
+            this.ts_listagens_atletasNaoRevalidados.Name = "ts_listagens_atletasNaoRevalidados";
+            this.ts_listagens_atletasNaoRevalidados.Size = new System.Drawing.Size(219, 22);
+            this.ts_listagens_atletasNaoRevalidados.Text = "Atletas Não Revalidados";
+            this.ts_listagens_atletasNaoRevalidados.Click += new System.EventHandler(this.ts_listagens_atletasNaoRevalidados_Click);
             // 
             // ts_listagens_atletasPorSeguro
             // 
@@ -277,12 +277,12 @@
             this.ts_listagens_atletasPorSeguro.Text = "Atletas Por Seguro";
             this.ts_listagens_atletasPorSeguro.Click += new System.EventHandler(this.ts_listagens_atletasPorSeguro_Click);
             // 
-            // ts_listagens_datasDeGraduação
+            // ts_listagens_datasDeGraduacao
             // 
-            this.ts_listagens_datasDeGraduação.Name = "ts_listagens_datasDeGraduação";
-            this.ts_listagens_datasDeGraduação.Size = new System.Drawing.Size(219, 22);
-            this.ts_listagens_datasDeGraduação.Text = "Datas de Graduação";
-            this.ts_listagens_datasDeGraduação.Click += new System.EventHandler(this.ts_listagens_datasDeGraduação_Click);
+            this.ts_listagens_datasDeGraduacao.Name = "ts_listagens_datasDeGraduacao";
+            this.ts_listagens_datasDeGraduacao.Size = new System.Drawing.Size(219, 22);
+            this.ts_listagens_datasDeGraduacao.Text = "Datas de Graduação";
+            this.ts_listagens_datasDeGraduacao.Click += new System.EventHandler(this.ts_listagens_datasDeGraduacao_Click);
             // 
             // ts_listagens_geralDeAtletas
             // 
@@ -291,12 +291,12 @@
             this.ts_listagens_geralDeAtletas.Text = "Geral de Atletas";
             this.ts_listagens_geralDeAtletas.Click += new System.EventHandler(this.ts_listagens_geralDeAtletas_Click);
             // 
-            // ts_listagens_participaçõesPorLicença
+            // ts_listagens_participacoesPorLicenca
             // 
-            this.ts_listagens_participaçõesPorLicença.Name = "ts_listagens_participaçõesPorLicença";
-            this.ts_listagens_participaçõesPorLicença.Size = new System.Drawing.Size(219, 22);
-            this.ts_listagens_participaçõesPorLicença.Text = "Participações por Licença";
-            this.ts_listagens_participaçõesPorLicença.Click += new System.EventHandler(this.ts_listagens_participaçõesPorLicença_Click);
+            this.ts_listagens_participacoesPorLicenca.Name = "ts_listagens_participacoesPorLicenca";
+            this.ts_listagens_participacoesPorLicenca.Size = new System.Drawing.Size(219, 22);
+            this.ts_listagens_participacoesPorLicenca.Text = "Participações por Licença";
+            this.ts_listagens_participacoesPorLicenca.Click += new System.EventHandler(this.ts_listagens_participacoesPorLicenca_Click);
             // 
             // ts_listagens_recebimentos
             // 
@@ -312,19 +312,19 @@
             this.ts_listagens_recebimentosDeEntidades.Text = "Recebimentos de Entidades";
             this.ts_listagens_recebimentosDeEntidades.Click += new System.EventHandler(this.ts_listagens_recebimentosDeEntidades_Click);
             // 
-            // ts_listagens_relaçõesPorData
+            // ts_listagens_relacoesPorData
             // 
-            this.ts_listagens_relaçõesPorData.Name = "ts_listagens_relaçõesPorData";
-            this.ts_listagens_relaçõesPorData.Size = new System.Drawing.Size(219, 22);
-            this.ts_listagens_relaçõesPorData.Text = "Relações por Data";
-            this.ts_listagens_relaçõesPorData.Click += new System.EventHandler(this.ts_listagens_relaçõesPorData_Click);
+            this.ts_listagens_relacoesPorData.Name = "ts_listagens_relacoesPorData";
+            this.ts_listagens_relacoesPorData.Size = new System.Drawing.Size(219, 22);
+            this.ts_listagens_relacoesPorData.Text = "Relações por Data";
+            this.ts_listagens_relacoesPorData.Click += new System.EventHandler(this.ts_listagens_relacoesPorData_Click);
             // 
-            // ts_listagens_relaçãoDeAniversários
+            // ts_listagens_relacaoDeAniversários
             // 
-            this.ts_listagens_relaçãoDeAniversários.Name = "ts_listagens_relaçãoDeAniversários";
-            this.ts_listagens_relaçãoDeAniversários.Size = new System.Drawing.Size(219, 22);
-            this.ts_listagens_relaçãoDeAniversários.Text = "Relação de Aniversários";
-            this.ts_listagens_relaçãoDeAniversários.Click += new System.EventHandler(this.ts_listagens_relaçãoDeAniversários_Click);
+            this.ts_listagens_relacaoDeAniversários.Name = "ts_listagens_relacaoDeAniversários";
+            this.ts_listagens_relacaoDeAniversários.Size = new System.Drawing.Size(219, 22);
+            this.ts_listagens_relacaoDeAniversários.Text = "Relação de Aniversários";
+            this.ts_listagens_relacaoDeAniversários.Click += new System.EventHandler(this.ts_listagens_relacaoDeAniversarios_Click);
             // 
             // ts_listagens_totaisDePontos
             // 
@@ -336,18 +336,18 @@
             // ts_estatisticas
             // 
             this.ts_estatisticas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_estatisticas_inscritosERevalidadosPorEscalão,
+            this.ts_estatisticas_inscritosERevalidadosPorEscalao,
             this.ts_estatisticas_inscritosERevalidadosPorClubes});
             this.ts_estatisticas.Name = "ts_estatisticas";
             this.ts_estatisticas.Size = new System.Drawing.Size(76, 20);
             this.ts_estatisticas.Text = "Estatisticas";
             // 
-            // ts_estatisticas_inscritosERevalidadosPorEscalão
+            // ts_estatisticas_inscritosERevalidadosPorEscalao
             // 
-            this.ts_estatisticas_inscritosERevalidadosPorEscalão.Name = "ts_estatisticas_inscritosERevalidadosPorEscalão";
-            this.ts_estatisticas_inscritosERevalidadosPorEscalão.Size = new System.Drawing.Size(256, 22);
-            this.ts_estatisticas_inscritosERevalidadosPorEscalão.Text = "Inscritos e Revalidados por Escalão";
-            this.ts_estatisticas_inscritosERevalidadosPorEscalão.Click += new System.EventHandler(this.ts_estatisticas_inscritosERevalidadosPorEscalão_Click);
+            this.ts_estatisticas_inscritosERevalidadosPorEscalao.Name = "ts_estatisticas_inscritosERevalidadosPorEscalao";
+            this.ts_estatisticas_inscritosERevalidadosPorEscalao.Size = new System.Drawing.Size(256, 22);
+            this.ts_estatisticas_inscritosERevalidadosPorEscalao.Text = "Inscritos e Revalidados por Escalão";
+            this.ts_estatisticas_inscritosERevalidadosPorEscalao.Click += new System.EventHandler(this.ts_estatisticas_inscritosERevalidadosPorEscalao_Click);
             // 
             // ts_estatisticas_inscritosERevalidadosPorClubes
             // 
@@ -359,87 +359,87 @@
             // ts_tabelas
             // 
             this.ts_tabelas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_tabelas_códigosDeÁrbitros,
-            this.ts_tabelas_códigosDeEntidades,
-            this.ts_tabelas_códigosDeEscalões,
-            this.ts_tabelas_códigosDeGraduações,
-            this.ts_tabelas_códigosDeSeguros,
-            this.ts_tabelas_códigosDeSituações,
-            this.ts_tabelas_códigosDeTreinadores});
+            this.ts_tabelas_codigosDeArbitros,
+            this.ts_tabelas_codigosDeEntidades,
+            this.ts_tabelas_codigosDeEscaloes,
+            this.ts_tabelas_codigosDeGraduacoes,
+            this.ts_tabelas_codigosDeSeguros,
+            this.ts_tabelas_codigosDeSituacoes,
+            this.ts_tabelas_codigosDeTreinadores});
             this.ts_tabelas.Name = "ts_tabelas";
             this.ts_tabelas.Size = new System.Drawing.Size(58, 20);
             this.ts_tabelas.Text = "Tabelas";
             // 
-            // ts_tabelas_códigosDeÁrbitros
+            // ts_tabelas_codigosDeArbitros
             // 
-            this.ts_tabelas_códigosDeÁrbitros.Name = "ts_tabelas_códigosDeÁrbitros";
-            this.ts_tabelas_códigosDeÁrbitros.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeÁrbitros.Text = "Códigos de Árbitros";
-            this.ts_tabelas_códigosDeÁrbitros.Click += new System.EventHandler(this.ts_tabelas_códigosDeÁrbitros_Click);
+            this.ts_tabelas_codigosDeArbitros.Name = "ts_tabelas_codigosDeArbitros";
+            this.ts_tabelas_codigosDeArbitros.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeArbitros.Text = "Códigos de Árbitros";
+            this.ts_tabelas_codigosDeArbitros.Click += new System.EventHandler(this.ts_tabelas_codigosDeArbitros_Click);
             // 
-            // ts_tabelas_códigosDeEntidades
+            // ts_tabelas_codigosDeEntidades
             // 
-            this.ts_tabelas_códigosDeEntidades.Name = "ts_tabelas_códigosDeEntidades";
-            this.ts_tabelas_códigosDeEntidades.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeEntidades.Text = "Códigos de Entidades";
-            this.ts_tabelas_códigosDeEntidades.Click += new System.EventHandler(this.ts_tabelas_códigosDeEntidades_Click);
+            this.ts_tabelas_codigosDeEntidades.Name = "ts_tabelas_codigosDeEntidades";
+            this.ts_tabelas_codigosDeEntidades.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeEntidades.Text = "Códigos de Entidades";
+            this.ts_tabelas_codigosDeEntidades.Click += new System.EventHandler(this.ts_tabelas_codigosDeEntidades_Click);
             // 
-            // ts_tabelas_códigosDeEscalões
+            // ts_tabelas_codigosDeEscaloes
             // 
-            this.ts_tabelas_códigosDeEscalões.Name = "ts_tabelas_códigosDeEscalões";
-            this.ts_tabelas_códigosDeEscalões.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeEscalões.Text = "Códigos de Escalões";
-            this.ts_tabelas_códigosDeEscalões.Click += new System.EventHandler(this.ts_tabelas_códigosDeEscalões_Click);
+            this.ts_tabelas_codigosDeEscaloes.Name = "ts_tabelas_codigosDeEscaloes";
+            this.ts_tabelas_codigosDeEscaloes.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeEscaloes.Text = "Códigos de Escalões";
+            this.ts_tabelas_codigosDeEscaloes.Click += new System.EventHandler(this.ts_tabelas_codigosDeEscaloes_Click);
             // 
-            // ts_tabelas_códigosDeGraduações
+            // ts_tabelas_codigosDeGraduacoes
             // 
-            this.ts_tabelas_códigosDeGraduações.Name = "ts_tabelas_códigosDeGraduações";
-            this.ts_tabelas_códigosDeGraduações.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeGraduações.Text = "Códigos de Graduações";
-            this.ts_tabelas_códigosDeGraduações.Click += new System.EventHandler(this.ts_tabelas_códigosDeGraduações_Click);
+            this.ts_tabelas_codigosDeGraduacoes.Name = "ts_tabelas_codigosDeGraduacoes";
+            this.ts_tabelas_codigosDeGraduacoes.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeGraduacoes.Text = "Códigos de Graduações";
+            this.ts_tabelas_codigosDeGraduacoes.Click += new System.EventHandler(this.ts_tabelas_codigosDeGraduacoes_Click);
             // 
-            // ts_tabelas_códigosDeSeguros
+            // ts_tabelas_codigosDeSeguros
             // 
-            this.ts_tabelas_códigosDeSeguros.Name = "ts_tabelas_códigosDeSeguros";
-            this.ts_tabelas_códigosDeSeguros.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeSeguros.Text = "Códigos de Seguros";
-            this.ts_tabelas_códigosDeSeguros.Click += new System.EventHandler(this.ts_tabelas_códigosDeSeguros_Click);
+            this.ts_tabelas_codigosDeSeguros.Name = "ts_tabelas_codigosDeSeguros";
+            this.ts_tabelas_codigosDeSeguros.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeSeguros.Text = "Códigos de Seguros";
+            this.ts_tabelas_codigosDeSeguros.Click += new System.EventHandler(this.ts_tabelas_codigosDeSeguros_Click);
             // 
-            // ts_tabelas_códigosDeSituações
+            // ts_tabelas_codigosDeSituacoes
             // 
-            this.ts_tabelas_códigosDeSituações.Name = "ts_tabelas_códigosDeSituações";
-            this.ts_tabelas_códigosDeSituações.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeSituações.Text = "Códigos de Situações";
-            this.ts_tabelas_códigosDeSituações.Click += new System.EventHandler(this.ts_tabelas_códigosDeSituações_Click);
+            this.ts_tabelas_codigosDeSituacoes.Name = "ts_tabelas_codigosDeSituacoes";
+            this.ts_tabelas_codigosDeSituacoes.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeSituacoes.Text = "Códigos de Situações";
+            this.ts_tabelas_codigosDeSituacoes.Click += new System.EventHandler(this.ts_tabelas_codigosDeSituacoes_Click);
             // 
-            // ts_tabelas_códigosDeTreinadores
+            // ts_tabelas_codigosDeTreinadores
             // 
-            this.ts_tabelas_códigosDeTreinadores.Name = "ts_tabelas_códigosDeTreinadores";
-            this.ts_tabelas_códigosDeTreinadores.Size = new System.Drawing.Size(199, 22);
-            this.ts_tabelas_códigosDeTreinadores.Text = "Códigos de Treinadores";
-            this.ts_tabelas_códigosDeTreinadores.Click += new System.EventHandler(this.ts_tabelas_códigosDeTreinadores_Click);
+            this.ts_tabelas_codigosDeTreinadores.Name = "ts_tabelas_codigosDeTreinadores";
+            this.ts_tabelas_codigosDeTreinadores.Size = new System.Drawing.Size(199, 22);
+            this.ts_tabelas_codigosDeTreinadores.Text = "Códigos de Treinadores";
+            this.ts_tabelas_codigosDeTreinadores.Click += new System.EventHandler(this.ts_tabelas_codigosDeTreinadores_Click);
             // 
             // ts_utilitarios
             // 
             this.ts_utilitarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_utilitarios_alteraçãoACódigosDeSituação});
+            this.ts_utilitarios_alteracaoACodigosDeSituacaoo});
             this.ts_utilitarios.Name = "ts_utilitarios";
             this.ts_utilitarios.Size = new System.Drawing.Size(69, 20);
             this.ts_utilitarios.Text = "Utilitarios";
             // 
-            // ts_utilitarios_alteraçãoACódigosDeSituação
+            // ts_utilitarios_alteracaoACodigosDeSituacaoo
             // 
-            this.ts_utilitarios_alteraçãoACódigosDeSituação.Name = "ts_utilitarios_alteraçãoACódigosDeSituação";
-            this.ts_utilitarios_alteraçãoACódigosDeSituação.Size = new System.Drawing.Size(244, 22);
-            this.ts_utilitarios_alteraçãoACódigosDeSituação.Text = "Alteração a Códigos de Situação";
-            this.ts_utilitarios_alteraçãoACódigosDeSituação.Click += new System.EventHandler(this.ts_utilitarios_alteraçãoACódigosDeSituação_Click);
+            this.ts_utilitarios_alteracaoACodigosDeSituacaoo.Name = "ts_utilitarios_alteracaoACodigosDeSituacaoo";
+            this.ts_utilitarios_alteracaoACodigosDeSituacaoo.Size = new System.Drawing.Size(244, 22);
+            this.ts_utilitarios_alteracaoACodigosDeSituacaoo.Text = "Alteração a Códigos de Situação";
+            this.ts_utilitarios_alteracaoACodigosDeSituacaoo.Click += new System.EventHandler(this.ts_utilitarios_alteracaoACodigosDeSituacao_Click);
             // 
-            // ts_informações
+            // ts_informacoes
             // 
-            this.ts_informações.Name = "ts_informações";
-            this.ts_informações.Size = new System.Drawing.Size(85, 20);
-            this.ts_informações.Text = "Informações";
-            this.ts_informações.Click += new System.EventHandler(this.ts_informações_Click);
+            this.ts_informacoes.Name = "ts_informacoes";
+            this.ts_informacoes.Size = new System.Drawing.Size(85, 20);
+            this.ts_informacoes.Text = "Informações";
+            this.ts_informacoes.Click += new System.EventHandler(this.ts_informacoes_Click);
             // 
             // ts_sair
             // 
@@ -478,52 +478,52 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaDeAtletas;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaDePontos;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaDeGraduações;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaDeParticipações;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaDeClassificações;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichasDeRecebimentos;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaDeRecebimentosEnviados;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaDeAtletas;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaDePontos;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaDeGraduacoes;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaDeParticipacoes;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaDeClassificacoes;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichasDeRecebimentos;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaDeRecebimentosEnviados;
         private System.Windows.Forms.ToolStripMenuItem ts_consultas;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_inscritosERevalidadosPorEscalão;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_inscritosERevalidadosPorGraduação;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_examesMédicosCaducados;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_classificaçõesPorDataDeProva;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_classificaçõesPorTipoDeProva;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_pontosPorLicença;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_totaisPorGraduação;
-        private System.Windows.Forms.ToolStripMenuItem ts_consultas_totaisDeGraduaçõesPorClube;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_inscritosERevalidadosPorEscalao;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_inscritosERevalidadosPorGraduacao;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_examesMedicosCaducados;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_classificacoesPorDataDeProva;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_classificacoesPorTipoDeProva;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_pontosPorLicenca;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_totaisPorGraduacao;
+        private System.Windows.Forms.ToolStripMenuItem ts_consultas_totaisDeGraduacoesPorClube;
         private System.Windows.Forms.ToolStripMenuItem ts_listagens;
-        private System.Windows.Forms.ToolStripMenuItem ts_listagens_atletasNãoRevalidados;
+        private System.Windows.Forms.ToolStripMenuItem ts_listagens_atletasNaoRevalidados;
         private System.Windows.Forms.ToolStripMenuItem ts_listagens_atletasPorSeguro;
-        private System.Windows.Forms.ToolStripMenuItem ts_listagens_datasDeGraduação;
+        private System.Windows.Forms.ToolStripMenuItem ts_listagens_datasDeGraduacao;
         private System.Windows.Forms.ToolStripMenuItem ts_listagens_geralDeAtletas;
-        private System.Windows.Forms.ToolStripMenuItem ts_listagens_participaçõesPorLicença;
+        private System.Windows.Forms.ToolStripMenuItem ts_listagens_participacoesPorLicenca;
         private System.Windows.Forms.ToolStripMenuItem ts_listagens_recebimentos;
         private System.Windows.Forms.ToolStripMenuItem ts_listagens_recebimentosDeEntidades;
-        private System.Windows.Forms.ToolStripMenuItem ts_listagens_relaçõesPorData;
-        private System.Windows.Forms.ToolStripMenuItem ts_listagens_relaçãoDeAniversários;
+        private System.Windows.Forms.ToolStripMenuItem ts_listagens_relacoesPorData;
+        private System.Windows.Forms.ToolStripMenuItem ts_listagens_relacaoDeAniversários;
         private System.Windows.Forms.ToolStripMenuItem ts_listagens_totaisDePontos;
         private System.Windows.Forms.ToolStripMenuItem ts_estatisticas;
-        private System.Windows.Forms.ToolStripMenuItem ts_estatisticas_inscritosERevalidadosPorEscalão;
+        private System.Windows.Forms.ToolStripMenuItem ts_estatisticas_inscritosERevalidadosPorEscalao;
         private System.Windows.Forms.ToolStripMenuItem ts_estatisticas_inscritosERevalidadosPorClubes;
         private System.Windows.Forms.ToolStripMenuItem ts_tabelas;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeÁrbitros;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeEntidades;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeEscalões;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeGraduações;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeSeguros;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeSituações;
-        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_códigosDeTreinadores;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeArbitros;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeEntidades;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeEscaloes;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeGraduacoes;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeSeguros;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeSituacoes;
+        private System.Windows.Forms.ToolStripMenuItem ts_tabelas_codigosDeTreinadores;
         private System.Windows.Forms.ToolStripMenuItem ts_utilitarios;
-        private System.Windows.Forms.ToolStripMenuItem ts_utilitarios_alteraçãoACódigosDeSituação;
-        private System.Windows.Forms.ToolStripMenuItem ts_informações;
+        private System.Windows.Forms.ToolStripMenuItem ts_utilitarios_alteracaoACodigosDeSituacaoo;
+        private System.Windows.Forms.ToolStripMenuItem ts_informacoes;
         private System.Windows.Forms.ToolStripMenuItem ts_sair;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaAtletas_listarTodos;
-        private System.Windows.Forms.ToolStripMenuItem ts_actualizações_fichaAtletas_procurarAtleta;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaAtletas_listarTodos;
+        private System.Windows.Forms.ToolStripMenuItem ts_actualizacoes_fichaAtletas_procurarAtleta;
         private System.Windows.Forms.Button injecao;
     }
 }
