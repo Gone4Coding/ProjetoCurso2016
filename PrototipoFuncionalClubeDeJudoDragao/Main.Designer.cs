@@ -195,48 +195,56 @@
             this.ts_consultas_inscritosERevalidadosPorEscalão.Name = "ts_consultas_inscritosERevalidadosPorEscalão";
             this.ts_consultas_inscritosERevalidadosPorEscalão.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_inscritosERevalidadosPorEscalão.Text = "Inscritos e Revalidados por Escalão";
+            this.ts_consultas_inscritosERevalidadosPorEscalão.Click += new System.EventHandler(this.ts_consultas_inscritosERevalidadosPorEscalão_Click);
             // 
             // ts_consultas_inscritosERevalidadosPorGraduação
             // 
             this.ts_consultas_inscritosERevalidadosPorGraduação.Name = "ts_consultas_inscritosERevalidadosPorGraduação";
             this.ts_consultas_inscritosERevalidadosPorGraduação.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_inscritosERevalidadosPorGraduação.Text = "Inscritos e Revalidados por Graduação";
+            this.ts_consultas_inscritosERevalidadosPorGraduação.Click += new System.EventHandler(this.ts_consultas_inscritosERevalidadosPorGraduação_Click);
             // 
             // ts_consultas_examesMédicosCaducados
             // 
             this.ts_consultas_examesMédicosCaducados.Name = "ts_consultas_examesMédicosCaducados";
             this.ts_consultas_examesMédicosCaducados.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_examesMédicosCaducados.Text = "Exames Médicos Caducados";
+            this.ts_consultas_examesMédicosCaducados.Click += new System.EventHandler(this.ts_consultas_examesMédicosCaducados_Click);
             // 
             // ts_consultas_classificaçõesPorDataDeProva
             // 
             this.ts_consultas_classificaçõesPorDataDeProva.Name = "ts_consultas_classificaçõesPorDataDeProva";
             this.ts_consultas_classificaçõesPorDataDeProva.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_classificaçõesPorDataDeProva.Text = "Classificações por Data de Prova";
+            this.ts_consultas_classificaçõesPorDataDeProva.Click += new System.EventHandler(this.ts_consultas_classificaçõesPorDataDeProva_Click);
             // 
             // ts_consultas_classificaçõesPorTipoDeProva
             // 
             this.ts_consultas_classificaçõesPorTipoDeProva.Name = "ts_consultas_classificaçõesPorTipoDeProva";
             this.ts_consultas_classificaçõesPorTipoDeProva.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_classificaçõesPorTipoDeProva.Text = "Classificações por Tipo de Prova";
+            this.ts_consultas_classificaçõesPorTipoDeProva.Click += new System.EventHandler(this.ts_consultas_classificaçõesPorTipoDeProva_Click);
             // 
             // ts_consultas_pontosPorLicença
             // 
             this.ts_consultas_pontosPorLicença.Name = "ts_consultas_pontosPorLicença";
             this.ts_consultas_pontosPorLicença.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_pontosPorLicença.Text = "Pontos por Licença";
+            this.ts_consultas_pontosPorLicença.Click += new System.EventHandler(this.ts_consultas_pontosPorLicença_Click);
             // 
             // ts_consultas_totaisPorGraduação
             // 
             this.ts_consultas_totaisPorGraduação.Name = "ts_consultas_totaisPorGraduação";
             this.ts_consultas_totaisPorGraduação.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_totaisPorGraduação.Text = "Totais por Graduação";
+            this.ts_consultas_totaisPorGraduação.Click += new System.EventHandler(this.ts_consultas_totaisPorGraduação_Click);
             // 
             // ts_consultas_totaisDeGraduaçõesPorClube
             // 
             this.ts_consultas_totaisDeGraduaçõesPorClube.Name = "ts_consultas_totaisDeGraduaçõesPorClube";
             this.ts_consultas_totaisDeGraduaçõesPorClube.Size = new System.Drawing.Size(274, 22);
             this.ts_consultas_totaisDeGraduaçõesPorClube.Text = "Totais de Graduações por Clube";
+            this.ts_consultas_totaisDeGraduaçõesPorClube.Click += new System.EventHandler(this.ts_consultas_totaisDeGraduaçõesPorClube_Click);
             // 
             // ts_listagens
             // 
@@ -260,60 +268,70 @@
             this.ts_listagens_atletasNãoRevalidados.Name = "ts_listagens_atletasNãoRevalidados";
             this.ts_listagens_atletasNãoRevalidados.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_atletasNãoRevalidados.Text = "Atletas Não Revalidados";
+            this.ts_listagens_atletasNãoRevalidados.Click += new System.EventHandler(this.ts_listagens_atletasNãoRevalidados_Click);
             // 
             // ts_listagens_atletasPorSeguro
             // 
             this.ts_listagens_atletasPorSeguro.Name = "ts_listagens_atletasPorSeguro";
             this.ts_listagens_atletasPorSeguro.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_atletasPorSeguro.Text = "Atletas Por Seguro";
+            this.ts_listagens_atletasPorSeguro.Click += new System.EventHandler(this.ts_listagens_atletasPorSeguro_Click);
             // 
             // ts_listagens_datasDeGraduação
             // 
             this.ts_listagens_datasDeGraduação.Name = "ts_listagens_datasDeGraduação";
             this.ts_listagens_datasDeGraduação.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_datasDeGraduação.Text = "Datas de Graduação";
+            this.ts_listagens_datasDeGraduação.Click += new System.EventHandler(this.ts_listagens_datasDeGraduação_Click);
             // 
             // ts_listagens_geralDeAtletas
             // 
             this.ts_listagens_geralDeAtletas.Name = "ts_listagens_geralDeAtletas";
             this.ts_listagens_geralDeAtletas.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_geralDeAtletas.Text = "Geral de Atletas";
+            this.ts_listagens_geralDeAtletas.Click += new System.EventHandler(this.ts_listagens_geralDeAtletas_Click);
             // 
             // ts_listagens_participaçõesPorLicença
             // 
             this.ts_listagens_participaçõesPorLicença.Name = "ts_listagens_participaçõesPorLicença";
             this.ts_listagens_participaçõesPorLicença.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_participaçõesPorLicença.Text = "Participações por Licença";
+            this.ts_listagens_participaçõesPorLicença.Click += new System.EventHandler(this.ts_listagens_participaçõesPorLicença_Click);
             // 
             // ts_listagens_recebimentos
             // 
             this.ts_listagens_recebimentos.Name = "ts_listagens_recebimentos";
             this.ts_listagens_recebimentos.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_recebimentos.Text = "Recebimentos";
+            this.ts_listagens_recebimentos.Click += new System.EventHandler(this.ts_listagens_recebimentos_Click);
             // 
             // ts_listagens_recebimentosDeEntidades
             // 
             this.ts_listagens_recebimentosDeEntidades.Name = "ts_listagens_recebimentosDeEntidades";
             this.ts_listagens_recebimentosDeEntidades.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_recebimentosDeEntidades.Text = "Recebimentos de Entidades";
+            this.ts_listagens_recebimentosDeEntidades.Click += new System.EventHandler(this.ts_listagens_recebimentosDeEntidades_Click);
             // 
             // ts_listagens_relaçõesPorData
             // 
             this.ts_listagens_relaçõesPorData.Name = "ts_listagens_relaçõesPorData";
             this.ts_listagens_relaçõesPorData.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_relaçõesPorData.Text = "Relações por Data";
+            this.ts_listagens_relaçõesPorData.Click += new System.EventHandler(this.ts_listagens_relaçõesPorData_Click);
             // 
             // ts_listagens_relaçãoDeAniversários
             // 
             this.ts_listagens_relaçãoDeAniversários.Name = "ts_listagens_relaçãoDeAniversários";
             this.ts_listagens_relaçãoDeAniversários.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_relaçãoDeAniversários.Text = "Relação de Aniversários";
+            this.ts_listagens_relaçãoDeAniversários.Click += new System.EventHandler(this.ts_listagens_relaçãoDeAniversários_Click);
             // 
             // ts_listagens_totaisDePontos
             // 
             this.ts_listagens_totaisDePontos.Name = "ts_listagens_totaisDePontos";
             this.ts_listagens_totaisDePontos.Size = new System.Drawing.Size(219, 22);
             this.ts_listagens_totaisDePontos.Text = "Totais de Pontos";
+            this.ts_listagens_totaisDePontos.Click += new System.EventHandler(this.ts_listagens_totaisDePontos_Click);
             // 
             // ts_estatisticas
             // 
@@ -329,12 +347,14 @@
             this.ts_estatisticas_inscritosERevalidadosPorEscalão.Name = "ts_estatisticas_inscritosERevalidadosPorEscalão";
             this.ts_estatisticas_inscritosERevalidadosPorEscalão.Size = new System.Drawing.Size(256, 22);
             this.ts_estatisticas_inscritosERevalidadosPorEscalão.Text = "Inscritos e Revalidados por Escalão";
+            this.ts_estatisticas_inscritosERevalidadosPorEscalão.Click += new System.EventHandler(this.ts_estatisticas_inscritosERevalidadosPorEscalão_Click);
             // 
             // ts_estatisticas_inscritosERevalidadosPorClubes
             // 
             this.ts_estatisticas_inscritosERevalidadosPorClubes.Name = "ts_estatisticas_inscritosERevalidadosPorClubes";
             this.ts_estatisticas_inscritosERevalidadosPorClubes.Size = new System.Drawing.Size(256, 22);
             this.ts_estatisticas_inscritosERevalidadosPorClubes.Text = "Inscritos e Revalidados por Clubes";
+            this.ts_estatisticas_inscritosERevalidadosPorClubes.Click += new System.EventHandler(this.ts_estatisticas_inscritosERevalidadosPorClubes_Click);
             // 
             // ts_tabelas
             // 
@@ -405,18 +425,21 @@
             this.ts_utilitarios_alteraçãoACódigosDeSituação.Name = "ts_utilitarios_alteraçãoACódigosDeSituação";
             this.ts_utilitarios_alteraçãoACódigosDeSituação.Size = new System.Drawing.Size(244, 22);
             this.ts_utilitarios_alteraçãoACódigosDeSituação.Text = "Alteração a Códigos de Situação";
+            this.ts_utilitarios_alteraçãoACódigosDeSituação.Click += new System.EventHandler(this.ts_utilitarios_alteraçãoACódigosDeSituação_Click);
             // 
             // ts_informações
             // 
             this.ts_informações.Name = "ts_informações";
             this.ts_informações.Size = new System.Drawing.Size(85, 20);
             this.ts_informações.Text = "Informações";
+            this.ts_informações.Click += new System.EventHandler(this.ts_informações_Click);
             // 
             // ts_sair
             // 
             this.ts_sair.Name = "ts_sair";
             this.ts_sair.Size = new System.Drawing.Size(38, 20);
             this.ts_sair.Text = "Sair";
+            this.ts_sair.Click += new System.EventHandler(this.ts_sair_Click);
             // 
             // injecao
             // 

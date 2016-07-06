@@ -1,4 +1,8 @@
 ﻿using PrototipoFuncionalClubeDeJudoDragao.Actualizações;
+using PrototipoFuncionalClubeDeJudoDragao.Consultas;
+using PrototipoFuncionalClubeDeJudoDragao.Listagens;
+using PrototipoFuncionalClubeDeJudoDragao.Estatisticas;
+using PrototipoFuncionalClubeDeJudoDragao.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -97,6 +101,167 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 
             context.SaveChanges();
             MessageBox.Show("Atletas criados com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void ts_consultas_inscritosERevalidadosPorEscalão_Click(object sender, EventArgs e)
+        {
+            InscritosRevalidadosEscalao inscritosRevalidadosEscalao = new InscritosRevalidadosEscalao();
+            inscritosRevalidadosEscalao.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_inscritosERevalidadosPorGraduação_Click(object sender, EventArgs e)
+        {
+            InscritosRevalidadosGraduacao inscritosRevalidadosGraduacao = new InscritosRevalidadosGraduacao();
+            inscritosRevalidadosGraduacao.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_examesMédicosCaducados_Click(object sender, EventArgs e)
+        {
+            ExamesMedicosCaducados examesMedicosCaducados = new ExamesMedicosCaducados();
+            examesMedicosCaducados.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_classificaçõesPorDataDeProva_Click(object sender, EventArgs e)
+        {
+            ClassificacaoDatasProva classificacaoDatasProva = new ClassificacaoDatasProva();
+            classificacaoDatasProva.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_classificaçõesPorTipoDeProva_Click(object sender, EventArgs e)
+        {
+            ClassificacaoTipoProva classificacaoTipoProva = new ClassificacaoTipoProva();
+            classificacaoTipoProva.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_pontosPorLicença_Click(object sender, EventArgs e)
+        {
+            PontosPorLicenca pontosPorLicenca = new PontosPorLicenca();
+            pontosPorLicenca.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_totaisPorGraduação_Click(object sender, EventArgs e)
+        {
+            TotaisPorGraduacao totaisPorGraduacao = new TotaisPorGraduacao();
+            totaisPorGraduacao.Show();
+            this.Hide();
+        }
+
+        private void ts_consultas_totaisDeGraduaçõesPorClube_Click(object sender, EventArgs e)
+        {
+            TotaisGraduacaoPorClube totaisGraduacaoPorClube = new TotaisGraduacaoPorClube();
+            totaisGraduacaoPorClube.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_atletasNãoRevalidados_Click(object sender, EventArgs e)
+        {
+            AtletasNaoRevalidados atletasNaoRevalidados = new AtletasNaoRevalidados();
+            atletasNaoRevalidados.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_atletasPorSeguro_Click(object sender, EventArgs e)
+        {
+            AtletasPorSeguro atletasPorSeguro = new AtletasPorSeguro();
+            atletasPorSeguro.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_datasDeGraduação_Click(object sender, EventArgs e)
+        {
+            DatasGraduacao datasGraduacao = new DatasGraduacao();
+            datasGraduacao.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_geralDeAtletas_Click(object sender, EventArgs e)
+        {
+            GeralAtletas geralAtletas = new GeralAtletas();
+            geralAtletas.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_participaçõesPorLicença_Click(object sender, EventArgs e)
+        {
+            ParticipacoesPorLicenca participacoesPorLicenca = new ParticipacoesPorLicenca();
+            participacoesPorLicenca.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_recebimentos_Click(object sender, EventArgs e)
+        {
+            Recebimentos recebimentos = new Recebimentos();
+            recebimentos.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_recebimentosDeEntidades_Click(object sender, EventArgs e)
+        {
+            RecebimentoEntidades recebimentosEntidade = new RecebimentoEntidades();
+            recebimentosEntidade.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_relaçõesPorData_Click(object sender, EventArgs e)
+        {
+            RelacoesPorData relacoesPorData = new RelacoesPorData();
+            relacoesPorData.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_relaçãoDeAniversários_Click(object sender, EventArgs e)
+        {
+            RelacoesAniversario relacoesAniversario = new RelacoesAniversario();
+            relacoesAniversario.Show();
+            this.Hide();
+        }
+
+        private void ts_listagens_totaisDePontos_Click(object sender, EventArgs e)
+        {
+            TotaisPontos totaisPontos = new TotaisPontos();
+            totaisPontos.Show();
+            this.Hide();
+        }
+
+        private void ts_estatisticas_inscritosERevalidadosPorEscalão_Click(object sender, EventArgs e)
+        {
+            EstatisticasInscritosRevalidadosEscalao estatisticasInscritosRevalidadosEscalao = new EstatisticasInscritosRevalidadosEscalao();
+            estatisticasInscritosRevalidadosEscalao.Show();
+            this.Hide();
+        }
+
+        private void ts_estatisticas_inscritosERevalidadosPorClubes_Click(object sender, EventArgs e)
+        {
+            EstatisticasInscritosRevalidadosClube estatisticasInscritosRevalidadosClube = new EstatisticasInscritosRevalidadosClube();
+            estatisticasInscritosRevalidadosClube.Show();
+            this.Hide();
+        }
+
+        private void ts_utilitarios_alteraçãoACódigosDeSituação_Click(object sender, EventArgs e)
+        {
+            AlteracaoCodigoSituacao alteracaoCodigoSituacao = new AlteracaoCodigoSituacao();
+            alteracaoCodigoSituacao.Show();
+            this.Hide();
+        }
+
+        private void ts_informações_Click(object sender, EventArgs e)
+        {
+            Informacoes informacoes = new Informacoes();
+            informacoes.Show();
+            this.Hide();
+        }
+
+        private void ts_sair_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja Sair?", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == DialogResult.OK)
+                Application.Exit();
+            
         }
     }
 }

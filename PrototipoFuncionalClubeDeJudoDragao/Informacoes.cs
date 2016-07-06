@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
+namespace PrototipoFuncionalClubeDeJudoDragao
 {
-    public partial class AtletasNaoRevalidados : Form
+    public partial class Informacoes : Form
     {
-        public AtletasNaoRevalidados()
+        public Informacoes()
         {
             InitializeComponent();
         }
-
     }
 }

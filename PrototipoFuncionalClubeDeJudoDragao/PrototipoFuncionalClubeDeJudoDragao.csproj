@@ -120,6 +120,24 @@
     <Compile Include="Consultas\TotaisPorGraduacao.Designer.cs">
       <DependentUpon>TotaisPorGraduacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.Designer.cs">
+      <DependentUpon>EstatisticasInscritosRevalidadosClube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.Designer.cs">
+      <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacoes.Designer.cs">
+      <DependentUpon>Informacoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listagens\AtletasNaoRevalidados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +227,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilitarios\AlteracaoCodigoSituacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\AlteracaoCodigoSituacao.Designer.cs">
+      <DependentUpon>AlteracaoCodigoSituacao.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Actualizações\ListagemAtletas.resx">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +262,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\TotaisPorGraduacao.resx">
       <DependentUpon>TotaisPorGraduacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosClube.resx">
+      <DependentUpon>EstatisticasInscritosRevalidadosClube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.resx">
+      <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacoes.resx">
+      <DependentUpon>Informacoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listagens\AtletasNaoRevalidados.resx">
       <DependentUpon>AtletasNaoRevalidados.cs</DependentUpon>
@@ -284,6 +317,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Utilitarios\AlteracaoCodigoSituacao.resx">
+      <DependentUpon>AlteracaoCodigoSituacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="ModelDiagramaBD.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelDiagramaBD.Designer.cs</LastGenOutput>
