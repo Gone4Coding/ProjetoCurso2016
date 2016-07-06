@@ -16,5 +16,12 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
         {
             InitializeComponent();
         }
+
+        private void bt_retroceder_Click(object sender, EventArgs e)
+        {
+            InscritosRevalidadosEscalao inscritosRevalidadosEscalao = new InscritosRevalidadosEscalao();
+            inscritosRevalidadosEscalao.Show();
+            this.Hide();
+        }
     }
 }

@@ -16,5 +16,12 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
         {
             InitializeComponent();
         }
+
+        private void bt_retroceder_Click(object sender, EventArgs e)
+        {
+            TotaisPorGraduacao totaisPorGraduacao = new TotaisPorGraduacao();
+            totaisPorGraduacao.Show();
+            this.Hide();
+        }
     }
 }

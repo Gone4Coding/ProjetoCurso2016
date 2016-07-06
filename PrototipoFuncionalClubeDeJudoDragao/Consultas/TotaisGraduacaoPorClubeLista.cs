@@ -17,9 +17,12 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
             InitializeComponent();
         }
 
-        private void lv_provas_SelectedIndexChanged(object sender, EventArgs e)
+        private void bt_retroceder_Click(object sender, EventArgs e)
         {
-
+            TotaisGraduacaoPorClube totaisGraduacaoPorClube = new TotaisGraduacaoPorClube();
+            totaisGraduacaoPorClube.Show();
+            this.Hide();
         }
+        
     }
 }

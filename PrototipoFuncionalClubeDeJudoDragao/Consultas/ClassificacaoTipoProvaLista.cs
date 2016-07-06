@@ -19,8 +19,8 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
 
         private void bt_retroceder_Click(object sender, EventArgs e)
         {
-            Main main = new Main();
-            main.Show();
+            ClassificacaoTipoProva classificacaoTipoProvaL = new ClassificacaoTipoProva();
+            classificacaoTipoProvaL.Show();
             this.Hide();
         }
     }

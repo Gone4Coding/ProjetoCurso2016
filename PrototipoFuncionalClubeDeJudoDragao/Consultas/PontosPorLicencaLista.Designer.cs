@@ -30,64 +30,61 @@
         {
             this.bt_retroceder = new System.Windows.Forms.Button();
             this.lv_provas = new System.Windows.Forms.ListView();
-            this.licFederativa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.classificacao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.categoriaPeso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tipoProva = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataProva = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.prova = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.localProva = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pontos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // bt_retroceder
             // 
-            this.bt_retroceder.Location = new System.Drawing.Point(403, 43);
+            this.bt_retroceder.Location = new System.Drawing.Point(326, 12);
             this.bt_retroceder.Name = "bt_retroceder";
             this.bt_retroceder.Size = new System.Drawing.Size(75, 23);
             this.bt_retroceder.TabIndex = 3;
             this.bt_retroceder.Text = "Retroceder";
             this.bt_retroceder.UseVisualStyleBackColor = true;
+            this.bt_retroceder.Click += new System.EventHandler(this.bt_retroceder_Click);
             // 
             // lv_provas
             // 
             this.lv_provas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.licFederativa,
-            this.nome,
-            this.classificacao,
-            this.categoriaPeso,
-            this.tipoProva});
-            this.lv_provas.Location = new System.Drawing.Point(9, 72);
+            this.dataProva,
+            this.prova,
+            this.localProva,
+            this.pontos});
+            this.lv_provas.Location = new System.Drawing.Point(9, 41);
             this.lv_provas.Name = "lv_provas";
-            this.lv_provas.Size = new System.Drawing.Size(470, 204);
+            this.lv_provas.Size = new System.Drawing.Size(392, 204);
             this.lv_provas.TabIndex = 2;
             this.lv_provas.UseCompatibleStateImageBehavior = false;
             this.lv_provas.View = System.Windows.Forms.View.Details;
             // 
-            // licFederativa
+            // dataProva
             // 
-            this.licFederativa.Text = "Lic. Federativa";
+            this.dataProva.Text = "Data de Prova";
+            this.dataProva.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dataProva.Width = 86;
             // 
-            // nome
+            // prova
             // 
-            this.nome.Text = "Nome";
-            this.nome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nome.Width = 123;
+            this.prova.Text = "Prova";
+            this.prova.Width = 125;
             // 
-            // classificacao
+            // localProva
             // 
-            this.classificacao.Text = "Classificação";
+            this.localProva.Text = "Local Da Prova";
+            this.localProva.Width = 116;
             // 
-            // categoriaPeso
+            // pontos
             // 
-            this.categoriaPeso.Text = "Categoria de Peso";
-            // 
-            // tipoProva
-            // 
-            this.tipoProva.Text = "Tipo de Prova";
+            this.pontos.Text = "Pontos";
             // 
             // PontosPorLicencaLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 319);
+            this.ClientSize = new System.Drawing.Size(410, 262);
             this.Controls.Add(this.bt_retroceder);
             this.Controls.Add(this.lv_provas);
             this.Name = "PontosPorLicencaLista";
@@ -100,10 +97,9 @@
 
         private System.Windows.Forms.Button bt_retroceder;
         private System.Windows.Forms.ListView lv_provas;
-        private System.Windows.Forms.ColumnHeader licFederativa;
-        private System.Windows.Forms.ColumnHeader nome;
-        private System.Windows.Forms.ColumnHeader classificacao;
-        private System.Windows.Forms.ColumnHeader categoriaPeso;
-        private System.Windows.Forms.ColumnHeader tipoProva;
+        private System.Windows.Forms.ColumnHeader dataProva;
+        private System.Windows.Forms.ColumnHeader prova;
+        private System.Windows.Forms.ColumnHeader localProva;
+        private System.Windows.Forms.ColumnHeader pontos;
     }
 }

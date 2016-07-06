@@ -32,38 +32,42 @@
             this.lv_provas = new System.Windows.Forms.ListView();
             this.licFederativa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.classificacao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.categoriaPeso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tipoProva = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.descricao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataInscricao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataRevalidacao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataRevAnterior = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // bt_retroceder
             // 
-            this.bt_retroceder.Location = new System.Drawing.Point(432, 48);
+            this.bt_retroceder.Location = new System.Drawing.Point(552, 12);
             this.bt_retroceder.Name = "bt_retroceder";
             this.bt_retroceder.Size = new System.Drawing.Size(75, 23);
-            this.bt_retroceder.TabIndex = 3;
+            this.bt_retroceder.TabIndex = 5;
             this.bt_retroceder.Text = "Retroceder";
             this.bt_retroceder.UseVisualStyleBackColor = true;
+            this.bt_retroceder.Click += new System.EventHandler(this.bt_retroceder_Click);
             // 
             // lv_provas
             // 
             this.lv_provas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.licFederativa,
             this.nome,
-            this.classificacao,
-            this.categoriaPeso,
-            this.tipoProva});
-            this.lv_provas.Location = new System.Drawing.Point(38, 77);
+            this.descricao,
+            this.dataInscricao,
+            this.dataRevalidacao,
+            this.dataRevAnterior});
+            this.lv_provas.Location = new System.Drawing.Point(12, 41);
             this.lv_provas.Name = "lv_provas";
-            this.lv_provas.Size = new System.Drawing.Size(470, 204);
-            this.lv_provas.TabIndex = 2;
+            this.lv_provas.Size = new System.Drawing.Size(615, 204);
+            this.lv_provas.TabIndex = 4;
             this.lv_provas.UseCompatibleStateImageBehavior = false;
             this.lv_provas.View = System.Windows.Forms.View.Details;
             // 
             // licFederativa
             // 
             this.licFederativa.Text = "Lic. Federativa";
+            this.licFederativa.Width = 91;
             // 
             // nome
             // 
@@ -71,23 +75,30 @@
             this.nome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nome.Width = 123;
             // 
-            // classificacao
+            // descricao
             // 
-            this.classificacao.Text = "Classificação";
+            this.descricao.Text = "Descrição";
             // 
-            // categoriaPeso
+            // dataInscricao
             // 
-            this.categoriaPeso.Text = "Categoria de Peso";
+            this.dataInscricao.Text = "Data de Inscrição";
+            this.dataInscricao.Width = 99;
             // 
-            // tipoProva
+            // dataRevalidacao
             // 
-            this.tipoProva.Text = "Tipo de Prova";
+            this.dataRevalidacao.Text = "Data de Revalidação";
+            this.dataRevalidacao.Width = 117;
+            // 
+            // dataRevAnterior
+            // 
+            this.dataRevAnterior.Text = "Data de Rev. Anterior";
+            this.dataRevAnterior.Width = 119;
             // 
             // InscritosRevalidadosGraduacaoLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 328);
+            this.ClientSize = new System.Drawing.Size(638, 261);
             this.Controls.Add(this.bt_retroceder);
             this.Controls.Add(this.lv_provas);
             this.Name = "InscritosRevalidadosGraduacaoLista";
@@ -102,8 +113,9 @@
         private System.Windows.Forms.ListView lv_provas;
         private System.Windows.Forms.ColumnHeader licFederativa;
         private System.Windows.Forms.ColumnHeader nome;
-        private System.Windows.Forms.ColumnHeader classificacao;
-        private System.Windows.Forms.ColumnHeader categoriaPeso;
-        private System.Windows.Forms.ColumnHeader tipoProva;
+        private System.Windows.Forms.ColumnHeader descricao;
+        private System.Windows.Forms.ColumnHeader dataInscricao;
+        private System.Windows.Forms.ColumnHeader dataRevalidacao;
+        private System.Windows.Forms.ColumnHeader dataRevAnterior;
     }
 }
