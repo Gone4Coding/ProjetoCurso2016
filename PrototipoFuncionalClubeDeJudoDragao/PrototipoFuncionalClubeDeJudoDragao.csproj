@@ -78,11 +78,23 @@
     <Compile Include="Consultas\ClassificacaoDatasProva.Designer.cs">
       <DependentUpon>ClassificacaoDatasProva.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\ClassificacaoDatasProvaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ClassificacaoDatasProvaLista.Designer.cs">
+      <DependentUpon>ClassificacaoDatasProvaLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ClassificacaoTipoProva.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ClassificacaoTipoProva.Designer.cs">
       <DependentUpon>ClassificacaoTipoProva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ClassificacaoTipoProvaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ClassificacaoTipoProvaLista.Designer.cs">
+      <DependentUpon>ClassificacaoTipoProvaLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ExamesMedicosCaducados.cs">
       <SubType>Form</SubType>
@@ -284,8 +296,14 @@
     <EmbeddedResource Include="Consultas\ClassificacaoDatasProva.resx">
       <DependentUpon>ClassificacaoDatasProva.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ClassificacaoDatasProvaLista.resx">
+      <DependentUpon>ClassificacaoDatasProvaLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ClassificacaoTipoProva.resx">
       <DependentUpon>ClassificacaoTipoProva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ClassificacaoTipoProvaLista.resx">
+      <DependentUpon>ClassificacaoTipoProvaLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ExamesMedicosCaducados.resx">
       <DependentUpon>ExamesMedicosCaducados.cs</DependentUpon>

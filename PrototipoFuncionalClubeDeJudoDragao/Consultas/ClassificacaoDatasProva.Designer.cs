@@ -88,12 +88,13 @@
             // 
             // bt_cancelarG
             // 
-            this.bt_cancelarG.Location = new System.Drawing.Point(197, 56);
+            this.bt_cancelarG.Location = new System.Drawing.Point(197, 52);
             this.bt_cancelarG.Name = "bt_cancelarG";
             this.bt_cancelarG.Size = new System.Drawing.Size(75, 23);
             this.bt_cancelarG.TabIndex = 29;
             this.bt_cancelarG.Text = "Cancelar";
             this.bt_cancelarG.UseVisualStyleBackColor = true;
+            this.bt_cancelarG.Click += new System.EventHandler(this.bt_cancelarG_Click);
             // 
             // bt_ok
             // 
@@ -103,6 +104,7 @@
             this.bt_ok.TabIndex = 30;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // ClassificacaoDatasProva
             // 

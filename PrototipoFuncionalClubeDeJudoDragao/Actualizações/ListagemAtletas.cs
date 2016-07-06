@@ -33,5 +33,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
             main.Show();
             this.Hide();
         }
+
     }
 }
