@@ -32,7 +32,7 @@
             this.dataInicio = new System.Windows.Forms.Label();
             this.dataFim = new System.Windows.Forms.Label();
             this.dtp_Inicio = new System.Windows.Forms.DateTimePicker();
-            this.dtp_InicioFim = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Fim = new System.Windows.Forms.DateTimePicker();
             this.groupBoxNivel = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -56,7 +56,7 @@
             this.gb_Datas.Controls.Add(this.dataInicio);
             this.gb_Datas.Controls.Add(this.dataFim);
             this.gb_Datas.Controls.Add(this.dtp_Inicio);
-            this.gb_Datas.Controls.Add(this.dtp_InicioFim);
+            this.gb_Datas.Controls.Add(this.dtp_Fim);
             this.gb_Datas.Location = new System.Drawing.Point(12, 12);
             this.gb_Datas.Name = "gb_Datas";
             this.gb_Datas.Size = new System.Drawing.Size(160, 81);
@@ -90,13 +90,13 @@
             this.dtp_Inicio.Size = new System.Drawing.Size(98, 20);
             this.dtp_Inicio.TabIndex = 6;
             // 
-            // dtp_InicioFim
+            // dtp_Fim
             // 
-            this.dtp_InicioFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_InicioFim.Location = new System.Drawing.Point(46, 45);
-            this.dtp_InicioFim.Name = "dtp_InicioFim";
-            this.dtp_InicioFim.Size = new System.Drawing.Size(98, 20);
-            this.dtp_InicioFim.TabIndex = 7;
+            this.dtp_Fim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_Fim.Location = new System.Drawing.Point(46, 45);
+            this.dtp_Fim.Name = "dtp_Fim";
+            this.dtp_Fim.Size = new System.Drawing.Size(98, 20);
+            this.dtp_Fim.TabIndex = 7;
             // 
             // groupBoxNivel
             // 
@@ -163,6 +163,7 @@
             this.bt_cancelar.TabIndex = 17;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -172,6 +173,7 @@
             this.bt_ok.TabIndex = 16;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // gb_Nivel
             // 
@@ -270,7 +272,7 @@
         private System.Windows.Forms.Label dataInicio;
         private System.Windows.Forms.Label dataFim;
         private System.Windows.Forms.DateTimePicker dtp_Inicio;
-        private System.Windows.Forms.DateTimePicker dtp_InicioFim;
+        private System.Windows.Forms.DateTimePicker dtp_Fim;
         private System.Windows.Forms.GroupBox groupBoxNivel;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button bt_cancelar;
