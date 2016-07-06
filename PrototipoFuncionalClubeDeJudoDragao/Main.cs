@@ -3,6 +3,7 @@ using PrototipoFuncionalClubeDeJudoDragao.Consultas;
 using PrototipoFuncionalClubeDeJudoDragao.Listagens;
 using PrototipoFuncionalClubeDeJudoDragao.Estatisticas;
 using PrototipoFuncionalClubeDeJudoDragao.Utilitarios;
+using PrototipoFuncionalClubeDeJudoDragao.Tabelas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -262,6 +263,55 @@ namespace PrototipoFuncionalClubeDeJudoDragao
             if (MessageBox.Show("Deseja Sair?", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == DialogResult.OK)
                 Application.Exit();
             
+        }
+
+        private void ts_tabelas_códigosDeÁrbitros_Click(object sender, EventArgs e)
+        {
+            CodigoArbitros codigoArbitros = new CodigoArbitros();
+            codigoArbitros.Show();
+            this.Hide();
+        }
+
+        private void ts_tabelas_códigosDeEntidades_Click(object sender, EventArgs e)
+        {
+            CodigoEntidades codigoEntidades = new CodigoEntidades();
+            codigoEntidades.Show();
+            this.Hide();
+        }
+
+        private void ts_tabelas_códigosDeEscalões_Click(object sender, EventArgs e)
+        {
+            CodigoEscaloes codigoEscaloes = new CodigoEscaloes();
+            codigoEscaloes.Show();
+            this.Hide();
+        }
+
+        private void ts_tabelas_códigosDeGraduações_Click(object sender, EventArgs e)
+        {
+            CodigoGraduacoes codigoGraduacoes = new CodigoGraduacoes();
+            codigoGraduacoes.Show();
+            this.Hide();
+        }
+
+        private void ts_tabelas_códigosDeSeguros_Click(object sender, EventArgs e)
+        {
+            CodigoSeguros codigoSeguros = new CodigoSeguros();
+            codigoSeguros.Show();
+            this.Hide();
+        }
+
+        private void ts_tabelas_códigosDeSituações_Click(object sender, EventArgs e)
+        {
+            CodigoSituacoes codigoSituacoes = new CodigoSituacoes();
+            codigoSituacoes.Show();
+            this.Hide();
+        }
+
+        private void ts_tabelas_códigosDeTreinadores_Click(object sender, EventArgs e)
+        {
+            CodigoTreinadores codigoTreinadores = new CodigoTreinadores();
+            codigoTreinadores.Show();
+            this.Hide();
         }
     }
 }
