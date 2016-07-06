@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
 {
-    public partial class ClassificacaoTipoProvaLista : Form
+    public partial class InscritosRevalidadosEscalaoLista : Form
     {
-        public ClassificacaoTipoProvaLista()
+        public InscritosRevalidadosEscalaoLista()
         {
             InitializeComponent();
-        }
-
-        private void bt_retroceder_Click(object sender, EventArgs e)
-        {
-            Main main = new Main();
-            main.Show();
-            this.Hide();
         }
     }
 }

@@ -38,6 +38,10 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
                     }
                 }
 
+                ClassificacaoTipoProvaLista classificacaoTipoProvaLista = new ClassificacaoTipoProvaLista();
+                classificacaoTipoProvaLista.Show();
+                this.Hide();
+
             }
             catch (Exception msg)
             {

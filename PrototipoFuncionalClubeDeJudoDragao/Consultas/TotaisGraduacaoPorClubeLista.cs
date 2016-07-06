@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
 {
-    public partial class ClassificacaoTipoProvaLista : Form
+    public partial class TotaisGraduacaoPorClubeLista : Form
     {
-        public ClassificacaoTipoProvaLista()
+        public TotaisGraduacaoPorClubeLista()
         {
             InitializeComponent();
         }
 
-        private void bt_retroceder_Click(object sender, EventArgs e)
+        private void lv_provas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Main main = new Main();
-            main.Show();
-            this.Hide();
+
         }
     }
 }

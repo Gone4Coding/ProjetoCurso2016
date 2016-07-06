@@ -105,6 +105,7 @@
             this.rb_cancelar.TabIndex = 27;
             this.rb_cancelar.Text = "Cancelar";
             this.rb_cancelar.UseVisualStyleBackColor = true;
+            this.rb_cancelar.Click += new System.EventHandler(this.rb_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -114,6 +115,7 @@
             this.bt_ok.TabIndex = 28;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // gb_Tipo
             // 

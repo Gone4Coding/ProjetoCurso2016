@@ -58,5 +58,77 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Properties {
                 this["RadioSelecionado"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DataExame {
+            get {
+                return ((string)(this["DataExame"]));
+            }
+            set {
+                this["DataExame"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CodigoClube {
+            get {
+                return ((int)(this["CodigoClube"]));
+            }
+            set {
+                this["CodigoClube"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int LicencaFederativa {
+            get {
+                return ((int)(this["LicencaFederativa"]));
+            }
+            set {
+                this["LicencaFederativa"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int EscalaoInicio {
+            get {
+                return ((int)(this["EscalaoInicio"]));
+            }
+            set {
+                this["EscalaoInicio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int EscalaoFim {
+            get {
+                return ((int)(this["EscalaoFim"]));
+            }
+            set {
+                this["EscalaoFim"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Setting {
+            get {
+                return ((int)(this["Setting"]));
+            }
+            set {
+                this["Setting"] = value;
+            }
+        }
     }
 }
