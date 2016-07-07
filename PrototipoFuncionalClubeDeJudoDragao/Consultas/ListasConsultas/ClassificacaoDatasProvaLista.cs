@@ -40,5 +40,10 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
             classificacaoDatasProva.Show();
             this.Hide();
         }
+
+        private void ClassificacaoDatasProvaLista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

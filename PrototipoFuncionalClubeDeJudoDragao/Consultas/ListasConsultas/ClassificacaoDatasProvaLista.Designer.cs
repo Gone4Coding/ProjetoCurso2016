@@ -97,6 +97,7 @@
             this.Controls.Add(this.lv_provas);
             this.Name = "ClassificacaoDatasProvaLista";
             this.Text = "Listagem de Classificações Por Prova";
+            this.Load += new System.EventHandler(this.ClassificacaoDatasProvaLista_Load);
             this.ResumeLayout(false);
 
         }

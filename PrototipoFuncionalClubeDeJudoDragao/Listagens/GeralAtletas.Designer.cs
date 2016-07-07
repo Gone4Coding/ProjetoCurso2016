@@ -31,14 +31,14 @@
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.bt_ok = new System.Windows.Forms.Button();
             this.gb_codigoAtleta = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_codigoAtletaInicio = new System.Windows.Forms.TextBox();
             this.tb_codigoAtletaFim = new System.Windows.Forms.TextBox();
+            this.tb_codigoAtletaInicio = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.gb_tipoSituacao = new System.Windows.Forms.GroupBox();
-            this.rb_inscritosRevalidados = new System.Windows.Forms.RadioButton();
-            this.rb_naoRevalidados = new System.Windows.Forms.RadioButton();
             this.rb_todos = new System.Windows.Forms.RadioButton();
+            this.rb_naoRevalidados = new System.Windows.Forms.RadioButton();
+            this.rb_inscritosRevalidados = new System.Windows.Forms.RadioButton();
             this.gb_codigoAtleta.SuspendLayout();
             this.gb_tipoSituacao.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +51,7 @@
             this.bt_cancelar.TabIndex = 22;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -74,14 +75,19 @@
             this.gb_codigoAtleta.TabStop = false;
             this.gb_codigoAtleta.Text = "Código de Atletas";
             // 
-            // label1
+            // tb_codigoAtletaFim
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Início";
+            this.tb_codigoAtletaFim.Location = new System.Drawing.Point(57, 53);
+            this.tb_codigoAtletaFim.Name = "tb_codigoAtletaFim";
+            this.tb_codigoAtletaFim.Size = new System.Drawing.Size(62, 20);
+            this.tb_codigoAtletaFim.TabIndex = 24;
+            // 
+            // tb_codigoAtletaInicio
+            // 
+            this.tb_codigoAtletaInicio.Location = new System.Drawing.Point(57, 17);
+            this.tb_codigoAtletaInicio.Name = "tb_codigoAtletaInicio";
+            this.tb_codigoAtletaInicio.Size = new System.Drawing.Size(62, 20);
+            this.tb_codigoAtletaInicio.TabIndex = 24;
             // 
             // label2
             // 
@@ -92,19 +98,14 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Fim";
             // 
-            // tb_codigoAtletaInicio
+            // label1
             // 
-            this.tb_codigoAtletaInicio.Location = new System.Drawing.Point(57, 17);
-            this.tb_codigoAtletaInicio.Name = "tb_codigoAtletaInicio";
-            this.tb_codigoAtletaInicio.Size = new System.Drawing.Size(62, 20);
-            this.tb_codigoAtletaInicio.TabIndex = 24;
-            // 
-            // tb_codigoAtletaFim
-            // 
-            this.tb_codigoAtletaFim.Location = new System.Drawing.Point(57, 53);
-            this.tb_codigoAtletaFim.Name = "tb_codigoAtletaFim";
-            this.tb_codigoAtletaFim.Size = new System.Drawing.Size(62, 20);
-            this.tb_codigoAtletaFim.TabIndex = 24;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Início";
             // 
             // gb_tipoSituacao
             // 
@@ -118,16 +119,16 @@
             this.gb_tipoSituacao.TabStop = false;
             this.gb_tipoSituacao.Text = "Por Tipo de Situação";
             // 
-            // rb_inscritosRevalidados
+            // rb_todos
             // 
-            this.rb_inscritosRevalidados.AutoSize = true;
-            this.rb_inscritosRevalidados.Location = new System.Drawing.Point(20, 19);
-            this.rb_inscritosRevalidados.Name = "rb_inscritosRevalidados";
-            this.rb_inscritosRevalidados.Size = new System.Drawing.Size(134, 17);
-            this.rb_inscritosRevalidados.TabIndex = 25;
-            this.rb_inscritosRevalidados.TabStop = true;
-            this.rb_inscritosRevalidados.Text = "Inscritos / Revalidados";
-            this.rb_inscritosRevalidados.UseVisualStyleBackColor = true;
+            this.rb_todos.AutoSize = true;
+            this.rb_todos.Location = new System.Drawing.Point(20, 65);
+            this.rb_todos.Name = "rb_todos";
+            this.rb_todos.Size = new System.Drawing.Size(55, 17);
+            this.rb_todos.TabIndex = 25;
+            this.rb_todos.TabStop = true;
+            this.rb_todos.Text = "Todos";
+            this.rb_todos.UseVisualStyleBackColor = true;
             // 
             // rb_naoRevalidados
             // 
@@ -140,16 +141,16 @@
             this.rb_naoRevalidados.Text = "Não Revalidados";
             this.rb_naoRevalidados.UseVisualStyleBackColor = true;
             // 
-            // rb_todos
+            // rb_inscritosRevalidados
             // 
-            this.rb_todos.AutoSize = true;
-            this.rb_todos.Location = new System.Drawing.Point(20, 65);
-            this.rb_todos.Name = "rb_todos";
-            this.rb_todos.Size = new System.Drawing.Size(55, 17);
-            this.rb_todos.TabIndex = 25;
-            this.rb_todos.TabStop = true;
-            this.rb_todos.Text = "Todos";
-            this.rb_todos.UseVisualStyleBackColor = true;
+            this.rb_inscritosRevalidados.AutoSize = true;
+            this.rb_inscritosRevalidados.Location = new System.Drawing.Point(20, 19);
+            this.rb_inscritosRevalidados.Name = "rb_inscritosRevalidados";
+            this.rb_inscritosRevalidados.Size = new System.Drawing.Size(134, 17);
+            this.rb_inscritosRevalidados.TabIndex = 25;
+            this.rb_inscritosRevalidados.TabStop = true;
+            this.rb_inscritosRevalidados.Text = "Inscritos / Revalidados";
+            this.rb_inscritosRevalidados.UseVisualStyleBackColor = true;
             // 
             // GeralAtletas
             // 
