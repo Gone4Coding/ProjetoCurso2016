@@ -34,12 +34,12 @@
             this.dataInicio = new System.Windows.Forms.Label();
             this.dataFim = new System.Windows.Forms.Label();
             this.dtp_Inicio = new System.Windows.Forms.DateTimePicker();
-            this.dtp_InicioFim = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Fim = new System.Windows.Forms.DateTimePicker();
             this.gb_clubes = new System.Windows.Forms.GroupBox();
+            this.tb_clubesFim = new System.Windows.Forms.TextBox();
+            this.tb_clubesInicio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tb_clubesInicio = new System.Windows.Forms.TextBox();
-            this.tb_clubesFim = new System.Windows.Forms.TextBox();
             this.gb_Datas.SuspendLayout();
             this.gb_clubes.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,7 @@
             this.bt_cancelar.TabIndex = 27;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -61,13 +62,14 @@
             this.bt_ok.TabIndex = 26;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // gb_Datas
             // 
             this.gb_Datas.Controls.Add(this.dataInicio);
             this.gb_Datas.Controls.Add(this.dataFim);
             this.gb_Datas.Controls.Add(this.dtp_Inicio);
-            this.gb_Datas.Controls.Add(this.dtp_InicioFim);
+            this.gb_Datas.Controls.Add(this.dtp_Fim);
             this.gb_Datas.Location = new System.Drawing.Point(12, 12);
             this.gb_Datas.Name = "gb_Datas";
             this.gb_Datas.Size = new System.Drawing.Size(160, 81);
@@ -101,13 +103,13 @@
             this.dtp_Inicio.Size = new System.Drawing.Size(98, 20);
             this.dtp_Inicio.TabIndex = 6;
             // 
-            // dtp_InicioFim
+            // dtp_Fim
             // 
-            this.dtp_InicioFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_InicioFim.Location = new System.Drawing.Point(46, 45);
-            this.dtp_InicioFim.Name = "dtp_InicioFim";
-            this.dtp_InicioFim.Size = new System.Drawing.Size(98, 20);
-            this.dtp_InicioFim.TabIndex = 7;
+            this.dtp_Fim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_Fim.Location = new System.Drawing.Point(46, 45);
+            this.dtp_Fim.Name = "dtp_Fim";
+            this.dtp_Fim.Size = new System.Drawing.Size(98, 20);
+            this.dtp_Fim.TabIndex = 7;
             // 
             // gb_clubes
             // 
@@ -121,6 +123,20 @@
             this.gb_clubes.TabIndex = 28;
             this.gb_clubes.TabStop = false;
             this.gb_clubes.Text = "Clubes";
+            // 
+            // tb_clubesFim
+            // 
+            this.tb_clubesFim.Location = new System.Drawing.Point(46, 42);
+            this.tb_clubesFim.Name = "tb_clubesFim";
+            this.tb_clubesFim.Size = new System.Drawing.Size(62, 20);
+            this.tb_clubesFim.TabIndex = 10;
+            // 
+            // tb_clubesInicio
+            // 
+            this.tb_clubesInicio.Location = new System.Drawing.Point(46, 16);
+            this.tb_clubesInicio.Name = "tb_clubesInicio";
+            this.tb_clubesInicio.Size = new System.Drawing.Size(62, 20);
+            this.tb_clubesInicio.TabIndex = 10;
             // 
             // label1
             // 
@@ -139,20 +155,6 @@
             this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Fim";
-            // 
-            // tb_clubesInicio
-            // 
-            this.tb_clubesInicio.Location = new System.Drawing.Point(46, 16);
-            this.tb_clubesInicio.Name = "tb_clubesInicio";
-            this.tb_clubesInicio.Size = new System.Drawing.Size(62, 20);
-            this.tb_clubesInicio.TabIndex = 10;
-            // 
-            // tb_clubesFim
-            // 
-            this.tb_clubesFim.Location = new System.Drawing.Point(46, 42);
-            this.tb_clubesFim.Name = "tb_clubesFim";
-            this.tb_clubesFim.Size = new System.Drawing.Size(62, 20);
-            this.tb_clubesFim.TabIndex = 10;
             // 
             // EstatisticasInscritosRevalidadosClube
             // 
@@ -181,7 +183,7 @@
         private System.Windows.Forms.Label dataInicio;
         private System.Windows.Forms.Label dataFim;
         private System.Windows.Forms.DateTimePicker dtp_Inicio;
-        private System.Windows.Forms.DateTimePicker dtp_InicioFim;
+        private System.Windows.Forms.DateTimePicker dtp_Fim;
         private System.Windows.Forms.GroupBox gb_clubes;
         private System.Windows.Forms.TextBox tb_clubesFim;
         private System.Windows.Forms.TextBox tb_clubesInicio;
