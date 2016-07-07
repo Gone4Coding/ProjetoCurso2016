@@ -16,5 +16,10 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizacoes
         {
             InitializeComponent();
         }
+
+        private void bt_novo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

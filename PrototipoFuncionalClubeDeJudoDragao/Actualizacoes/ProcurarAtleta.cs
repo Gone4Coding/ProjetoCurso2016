@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrototipoFuncionalClubeDeJudoDragao.Actualizacoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,7 +42,12 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
                         throw new Exception("Escolha um tipo de pesquisa");
                     }
                 }
-            }catch(Exception msg)
+
+                FichaAtleta fichaAtleta = new FichaAtleta();
+                fichaAtleta.Show();
+                this.Hide();
+            }
+            catch(Exception msg)
             {
                 MessageBox.Show(msg.ToString());
             }

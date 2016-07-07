@@ -836,6 +836,7 @@
             this.bt_novo.TabIndex = 21;
             this.bt_novo.Text = "Novo";
             this.bt_novo.UseVisualStyleBackColor = true;
+            this.bt_novo.Click += new System.EventHandler(this.bt_novo_Click);
             // 
             // bt_alterar
             // 
