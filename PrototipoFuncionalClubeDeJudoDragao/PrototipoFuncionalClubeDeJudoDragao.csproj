@@ -78,10 +78,10 @@
     <Compile Include="Consultas\ClassificacaoDatasProva.Designer.cs">
       <DependentUpon>ClassificacaoDatasProva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ClassificacaoDatasProvaLista.cs">
+    <Compile Include="Consultas\ListasConsultas\ClassificacaoDatasProvaLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\ClassificacaoDatasProvaLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\ClassificacaoDatasProvaLista.Designer.cs">
       <DependentUpon>ClassificacaoDatasProvaLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ClassificacaoTipoProva.cs">
@@ -90,10 +90,10 @@
     <Compile Include="Consultas\ClassificacaoTipoProva.Designer.cs">
       <DependentUpon>ClassificacaoTipoProva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ClassificacaoTipoProvaLista.cs">
+    <Compile Include="Consultas\ListasConsultas\ClassificacaoTipoProvaLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\ClassificacaoTipoProvaLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\ClassificacaoTipoProvaLista.Designer.cs">
       <DependentUpon>ClassificacaoTipoProvaLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ExamesMedicosCaducados.cs">
@@ -102,10 +102,10 @@
     <Compile Include="Consultas\ExamesMedicosCaducados.Designer.cs">
       <DependentUpon>ExamesMedicosCaducados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ExamesMedicosCaducadosLista.cs">
+    <Compile Include="Consultas\ListasConsultas\ExamesMedicosCaducadosLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\ExamesMedicosCaducadosLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\ExamesMedicosCaducadosLista.Designer.cs">
       <DependentUpon>ExamesMedicosCaducadosLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\InscritosRevalidadosEscalao.cs">
@@ -114,10 +114,10 @@
     <Compile Include="Consultas\InscritosRevalidadosEscalao.Designer.cs">
       <DependentUpon>InscritosRevalidadosEscalao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\InscritosRevalidadosEscalaoLista.cs">
+    <Compile Include="Consultas\ListasConsultas\InscritosRevalidadosEscalaoLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\InscritosRevalidadosEscalaoLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\InscritosRevalidadosEscalaoLista.Designer.cs">
       <DependentUpon>InscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\InscritosRevalidadosGraduacao.cs">
@@ -126,10 +126,10 @@
     <Compile Include="Consultas\InscritosRevalidadosGraduacao.Designer.cs">
       <DependentUpon>InscritosRevalidadosGraduacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\InscritosRevalidadosGraduacaoLista.cs">
+    <Compile Include="Consultas\ListasConsultas\InscritosRevalidadosGraduacaoLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\InscritosRevalidadosGraduacaoLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\InscritosRevalidadosGraduacaoLista.Designer.cs">
       <DependentUpon>InscritosRevalidadosGraduacaoLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\PontosPorLicenca.cs">
@@ -138,10 +138,10 @@
     <Compile Include="Consultas\PontosPorLicenca.Designer.cs">
       <DependentUpon>PontosPorLicenca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\PontosPorLicencaLista.cs">
+    <Compile Include="Consultas\ListasConsultas\PontosPorLicencaLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\PontosPorLicencaLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\PontosPorLicencaLista.Designer.cs">
       <DependentUpon>PontosPorLicencaLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\TotaisGraduacaoPorClube.cs">
@@ -150,10 +150,10 @@
     <Compile Include="Consultas\TotaisGraduacaoPorClube.Designer.cs">
       <DependentUpon>TotaisGraduacaoPorClube.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\TotaisGraduacaoPorClubeLista.cs">
+    <Compile Include="Consultas\ListasConsultas\TotaisGraduacaoPorClubeLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\TotaisGraduacaoPorClubeLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\TotaisGraduacaoPorClubeLista.Designer.cs">
       <DependentUpon>TotaisGraduacaoPorClubeLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\TotaisPorGraduacao.cs">
@@ -162,10 +162,10 @@
     <Compile Include="Consultas\TotaisPorGraduacao.Designer.cs">
       <DependentUpon>TotaisPorGraduacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\TotaisPorGraduacaoLista.cs">
+    <Compile Include="Consultas\ListasConsultas\TotaisPorGraduacaoLista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\TotaisPorGraduacaoLista.Designer.cs">
+    <Compile Include="Consultas\ListasConsultas\TotaisPorGraduacaoLista.Designer.cs">
       <DependentUpon>TotaisPorGraduacaoLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.cs">
@@ -174,11 +174,23 @@
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.Designer.cs">
       <DependentUpon>EstatisticasInscritosRevalidadosClube.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosClubeLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosClubeLista.Designer.cs">
+      <DependentUpon>EstatisticasInscritosRevalidadosClubeLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.Designer.cs">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosEscalaoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosEscalaoLista.Designer.cs">
+      <DependentUpon>EstatisticasInscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Informacoes.cs">
       <SubType>Form</SubType>
@@ -332,56 +344,62 @@
     <EmbeddedResource Include="Consultas\ClassificacaoDatasProva.resx">
       <DependentUpon>ClassificacaoDatasProva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ClassificacaoDatasProvaLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\ClassificacaoDatasProvaLista.resx">
       <DependentUpon>ClassificacaoDatasProvaLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ClassificacaoTipoProva.resx">
       <DependentUpon>ClassificacaoTipoProva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ClassificacaoTipoProvaLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\ClassificacaoTipoProvaLista.resx">
       <DependentUpon>ClassificacaoTipoProvaLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ExamesMedicosCaducados.resx">
       <DependentUpon>ExamesMedicosCaducados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ExamesMedicosCaducadosLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\ExamesMedicosCaducadosLista.resx">
       <DependentUpon>ExamesMedicosCaducadosLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\InscritosRevalidadosEscalao.resx">
       <DependentUpon>InscritosRevalidadosEscalao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\InscritosRevalidadosEscalaoLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\InscritosRevalidadosEscalaoLista.resx">
       <DependentUpon>InscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\InscritosRevalidadosGraduacao.resx">
       <DependentUpon>InscritosRevalidadosGraduacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\InscritosRevalidadosGraduacaoLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\InscritosRevalidadosGraduacaoLista.resx">
       <DependentUpon>InscritosRevalidadosGraduacaoLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\PontosPorLicenca.resx">
       <DependentUpon>PontosPorLicenca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\PontosPorLicencaLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\PontosPorLicencaLista.resx">
       <DependentUpon>PontosPorLicencaLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\TotaisGraduacaoPorClube.resx">
       <DependentUpon>TotaisGraduacaoPorClube.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\TotaisGraduacaoPorClubeLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\TotaisGraduacaoPorClubeLista.resx">
       <DependentUpon>TotaisGraduacaoPorClubeLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\TotaisPorGraduacao.resx">
       <DependentUpon>TotaisPorGraduacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\TotaisPorGraduacaoLista.resx">
+    <EmbeddedResource Include="Consultas\ListasConsultas\TotaisPorGraduacaoLista.resx">
       <DependentUpon>TotaisPorGraduacaoLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosClube.resx">
       <DependentUpon>EstatisticasInscritosRevalidadosClube.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosClubeLista.resx">
+      <DependentUpon>EstatisticasInscritosRevalidadosClubeLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.resx">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosEscalaoLista.resx">
+      <DependentUpon>EstatisticasInscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informacoes.resx">
       <DependentUpon>Informacoes.cs</DependentUpon>
