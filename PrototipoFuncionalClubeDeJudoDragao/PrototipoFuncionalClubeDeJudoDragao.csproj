@@ -234,6 +234,54 @@
     <Compile Include="Listagens\Listas\AtletasPorSeguroLista.Designer.cs">
       <DependentUpon>AtletasPorSeguroLista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listagens\Listas\DatasGraduacaoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\DatasGraduacaoLista.Designer.cs">
+      <DependentUpon>DatasGraduacaoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\GeralAtletasLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\GeralAtletasLista.Designer.cs">
+      <DependentUpon>GeralAtletasLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\ParticipacoesPorLicencaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\ParticipacoesPorLicencaLista.Designer.cs">
+      <DependentUpon>ParticipacoesPorLicencaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\RecebimentoEntidadesLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\RecebimentoEntidadesLista.Designer.cs">
+      <DependentUpon>RecebimentoEntidadesLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\RecebimentosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\RecebimentosLista.Designer.cs">
+      <DependentUpon>RecebimentosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\RelacoesAniversarioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\RelacoesAniversarioLista.Designer.cs">
+      <DependentUpon>RelacoesAniversarioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\RelacoesPorDataLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\RelacoesPorDataLista.Designer.cs">
+      <DependentUpon>RelacoesPorDataLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\TotaisPontosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\TotaisPontosLista.Designer.cs">
+      <DependentUpon>TotaisPontosLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listagens\ParticipacoesPorLicenca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -433,6 +481,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Listagens\Listas\AtletasPorSeguroLista.resx">
       <DependentUpon>AtletasPorSeguroLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\DatasGraduacaoLista.resx">
+      <DependentUpon>DatasGraduacaoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\GeralAtletasLista.resx">
+      <DependentUpon>GeralAtletasLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\ParticipacoesPorLicencaLista.resx">
+      <DependentUpon>ParticipacoesPorLicencaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\RecebimentoEntidadesLista.resx">
+      <DependentUpon>RecebimentoEntidadesLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\RecebimentosLista.resx">
+      <DependentUpon>RecebimentosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\RelacoesAniversarioLista.resx">
+      <DependentUpon>RelacoesAniversarioLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\RelacoesPorDataLista.resx">
+      <DependentUpon>RelacoesPorDataLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\TotaisPontosLista.resx">
+      <DependentUpon>TotaisPontosLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listagens\ParticipacoesPorLicenca.resx">
       <DependentUpon>ParticipacoesPorLicenca.cs</DependentUpon>
