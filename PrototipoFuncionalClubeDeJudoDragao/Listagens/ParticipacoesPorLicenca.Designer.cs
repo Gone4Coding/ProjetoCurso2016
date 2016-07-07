@@ -35,6 +35,9 @@
             this.rb_lZonal = new System.Windows.Forms.RadioButton();
             this.rb_Distrital = new System.Windows.Forms.RadioButton();
             this.gb_Licencas = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_licencaFim = new System.Windows.Forms.TextBox();
             this.tb_licencaInicio = new System.Windows.Forms.TextBox();
             this.gb_Datas = new System.Windows.Forms.GroupBox();
             this.dataInicio = new System.Windows.Forms.Label();
@@ -43,14 +46,11 @@
             this.dtp_InicioFim = new System.Windows.Forms.DateTimePicker();
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.bt_ok = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_licencaFim = new System.Windows.Forms.TextBox();
             this.gb_tipo = new System.Windows.Forms.GroupBox();
-            this.rb_arbitragem = new System.Windows.Forms.RadioButton();
-            this.rb_competicao = new System.Windows.Forms.RadioButton();
-            this.rb_tecnico = new System.Windows.Forms.RadioButton();
             this.rb_tipoTudo = new System.Windows.Forms.RadioButton();
+            this.rb_tecnico = new System.Windows.Forms.RadioButton();
+            this.rb_competicao = new System.Windows.Forms.RadioButton();
+            this.rb_arbitragem = new System.Windows.Forms.RadioButton();
             this.gb_Nivel.SuspendLayout();
             this.gb_Licencas.SuspendLayout();
             this.gb_Datas.SuspendLayout();
@@ -139,6 +139,31 @@
             this.gb_Licencas.TabStop = false;
             this.gb_Licencas.Text = "Licenças";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Início";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Fim";
+            // 
+            // tb_licencaFim
+            // 
+            this.tb_licencaFim.Location = new System.Drawing.Point(57, 48);
+            this.tb_licencaFim.Name = "tb_licencaFim";
+            this.tb_licencaFim.Size = new System.Drawing.Size(66, 20);
+            this.tb_licencaFim.TabIndex = 0;
+            // 
             // tb_licencaInicio
             // 
             this.tb_licencaInicio.Location = new System.Drawing.Point(57, 19);
@@ -201,6 +226,7 @@
             this.bt_cancelar.TabIndex = 23;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -210,31 +236,6 @@
             this.bt_ok.TabIndex = 22;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Início";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Fim";
-            // 
-            // tb_licencaFim
-            // 
-            this.tb_licencaFim.Location = new System.Drawing.Point(57, 48);
-            this.tb_licencaFim.Name = "tb_licencaFim";
-            this.tb_licencaFim.Size = new System.Drawing.Size(66, 20);
-            this.tb_licencaFim.TabIndex = 0;
             // 
             // gb_tipo
             // 
@@ -250,27 +251,17 @@
             this.gb_tipo.Text = "Tipo";
             this.gb_tipo.Enter += new System.EventHandler(this.gb_tipo_Enter);
             // 
-            // rb_arbitragem
+            // rb_tipoTudo
             // 
-            this.rb_arbitragem.AutoSize = true;
-            this.rb_arbitragem.Location = new System.Drawing.Point(6, 19);
-            this.rb_arbitragem.Name = "rb_arbitragem";
-            this.rb_arbitragem.Size = new System.Drawing.Size(75, 17);
-            this.rb_arbitragem.TabIndex = 0;
-            this.rb_arbitragem.TabStop = true;
-            this.rb_arbitragem.Text = "Arbitragem";
-            this.rb_arbitragem.UseVisualStyleBackColor = true;
-            // 
-            // rb_competicao
-            // 
-            this.rb_competicao.AutoSize = true;
-            this.rb_competicao.Location = new System.Drawing.Point(6, 42);
-            this.rb_competicao.Name = "rb_competicao";
-            this.rb_competicao.Size = new System.Drawing.Size(81, 17);
-            this.rb_competicao.TabIndex = 0;
-            this.rb_competicao.TabStop = true;
-            this.rb_competicao.Text = "Competição";
-            this.rb_competicao.UseVisualStyleBackColor = true;
+            this.rb_tipoTudo.AutoSize = true;
+            this.rb_tipoTudo.Location = new System.Drawing.Point(6, 88);
+            this.rb_tipoTudo.Name = "rb_tipoTudo";
+            this.rb_tipoTudo.Size = new System.Drawing.Size(50, 17);
+            this.rb_tipoTudo.TabIndex = 0;
+            this.rb_tipoTudo.TabStop = true;
+            this.rb_tipoTudo.Text = "Tudo";
+            this.rb_tipoTudo.UseVisualStyleBackColor = true;
+            this.rb_tipoTudo.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // rb_tecnico
             // 
@@ -283,17 +274,27 @@
             this.rb_tecnico.Text = "Técnico";
             this.rb_tecnico.UseVisualStyleBackColor = true;
             // 
-            // rb_tipoTudo
+            // rb_competicao
             // 
-            this.rb_tipoTudo.AutoSize = true;
-            this.rb_tipoTudo.Location = new System.Drawing.Point(6, 88);
-            this.rb_tipoTudo.Name = "rb_tipoTudo";
-            this.rb_tipoTudo.Size = new System.Drawing.Size(50, 17);
-            this.rb_tipoTudo.TabIndex = 0;
-            this.rb_tipoTudo.TabStop = true;
-            this.rb_tipoTudo.Text = "Tudo";
-            this.rb_tipoTudo.UseVisualStyleBackColor = true;
-            this.rb_tipoTudo.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.rb_competicao.AutoSize = true;
+            this.rb_competicao.Location = new System.Drawing.Point(6, 42);
+            this.rb_competicao.Name = "rb_competicao";
+            this.rb_competicao.Size = new System.Drawing.Size(81, 17);
+            this.rb_competicao.TabIndex = 0;
+            this.rb_competicao.TabStop = true;
+            this.rb_competicao.Text = "Competição";
+            this.rb_competicao.UseVisualStyleBackColor = true;
+            // 
+            // rb_arbitragem
+            // 
+            this.rb_arbitragem.AutoSize = true;
+            this.rb_arbitragem.Location = new System.Drawing.Point(6, 19);
+            this.rb_arbitragem.Name = "rb_arbitragem";
+            this.rb_arbitragem.Size = new System.Drawing.Size(75, 17);
+            this.rb_arbitragem.TabIndex = 0;
+            this.rb_arbitragem.TabStop = true;
+            this.rb_arbitragem.Text = "Arbitragem";
+            this.rb_arbitragem.UseVisualStyleBackColor = true;
             // 
             // ParticipacoesPorLicenca
             // 

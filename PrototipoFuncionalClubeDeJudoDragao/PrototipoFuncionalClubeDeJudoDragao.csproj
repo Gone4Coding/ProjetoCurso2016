@@ -222,6 +222,18 @@
     <Compile Include="Listagens\GeralAtletas.Designer.cs">
       <DependentUpon>GeralAtletas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listagens\Listas\AtletasNaoRevalidadosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\AtletasNaoRevalidadosLista.Designer.cs">
+      <DependentUpon>AtletasNaoRevalidadosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagens\Listas\AtletasPorSeguroLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagens\Listas\AtletasPorSeguroLista.Designer.cs">
+      <DependentUpon>AtletasPorSeguroLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listagens\ParticipacoesPorLicenca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -416,6 +428,12 @@
     <EmbeddedResource Include="Listagens\GeralAtletas.resx">
       <DependentUpon>GeralAtletas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\AtletasNaoRevalidadosLista.resx">
+      <DependentUpon>AtletasNaoRevalidadosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagens\Listas\AtletasPorSeguroLista.resx">
+      <DependentUpon>AtletasPorSeguroLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Listagens\ParticipacoesPorLicenca.resx">
       <DependentUpon>ParticipacoesPorLicenca.cs</DependentUpon>
     </EmbeddedResource>
@@ -510,6 +528,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

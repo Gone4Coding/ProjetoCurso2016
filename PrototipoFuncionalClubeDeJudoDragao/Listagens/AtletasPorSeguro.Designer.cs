@@ -36,15 +36,15 @@
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.bt_ok = new System.Windows.Forms.Button();
             this.gb_Clubes = new System.Windows.Forms.GroupBox();
-            this.tb_codigoClubeInicio = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tb_codigoClubeFim = new System.Windows.Forms.TextBox();
+            this.tb_codigoClubeInicio = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.gb_seguros = new System.Windows.Forms.GroupBox();
             this.tb_segurosFim = new System.Windows.Forms.TextBox();
             this.tb_segurosInicio = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.gb_Datas.SuspendLayout();
             this.gb_Clubes.SuspendLayout();
             this.gb_seguros.SuspendLayout();
@@ -105,6 +105,7 @@
             this.bt_cancelar.TabIndex = 19;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_ok
             // 
@@ -128,21 +129,19 @@
             this.gb_Clubes.TabStop = false;
             this.gb_Clubes.Text = "Clubes";
             // 
+            // tb_codigoClubeFim
+            // 
+            this.tb_codigoClubeFim.Location = new System.Drawing.Point(53, 47);
+            this.tb_codigoClubeFim.Name = "tb_codigoClubeFim";
+            this.tb_codigoClubeFim.Size = new System.Drawing.Size(43, 20);
+            this.tb_codigoClubeFim.TabIndex = 22;
+            // 
             // tb_codigoClubeInicio
             // 
             this.tb_codigoClubeInicio.Location = new System.Drawing.Point(53, 19);
             this.tb_codigoClubeInicio.Name = "tb_codigoClubeInicio";
             this.tb_codigoClubeInicio.Size = new System.Drawing.Size(43, 20);
             this.tb_codigoClubeInicio.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Início";
             // 
             // label2
             // 
@@ -153,12 +152,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Fim";
             // 
-            // tb_codigoClubeFim
+            // label1
             // 
-            this.tb_codigoClubeFim.Location = new System.Drawing.Point(53, 47);
-            this.tb_codigoClubeFim.Name = "tb_codigoClubeFim";
-            this.tb_codigoClubeFim.Size = new System.Drawing.Size(43, 20);
-            this.tb_codigoClubeFim.TabIndex = 22;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Início";
             // 
             // gb_seguros
             // 
@@ -187,15 +188,6 @@
             this.tb_segurosInicio.Size = new System.Drawing.Size(43, 20);
             this.tb_segurosInicio.TabIndex = 31;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 54);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 13);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Fim";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -204,6 +196,15 @@
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 29;
             this.label6.Text = "Início";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Fim";
             // 
             // AtletasPorSeguro
             // 

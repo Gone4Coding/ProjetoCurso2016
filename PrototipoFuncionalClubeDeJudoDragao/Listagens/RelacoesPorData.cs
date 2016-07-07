@@ -19,7 +19,9 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
 
         private void bt_cancelar_Click(object sender, EventArgs e)
         {
-
+            Main main = new Main();
+            main.Show();
+            this.Hide();
         }
     }
 }
