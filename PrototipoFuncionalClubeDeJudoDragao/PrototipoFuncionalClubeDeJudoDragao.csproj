@@ -174,11 +174,23 @@
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.Designer.cs">
       <DependentUpon>EstatisticasInscritosRevalidadosClube.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClubeLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClubeLista.Designer.cs">
+      <DependentUpon>EstatisticasInscritosRevalidadosClubeLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.Designer.cs">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalaoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosEscalaoLista.Designer.cs">
+      <DependentUpon>EstatisticasInscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Informacoes.cs">
       <SubType>Form</SubType>
@@ -380,8 +392,14 @@
     <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosClube.resx">
       <DependentUpon>EstatisticasInscritosRevalidadosClube.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosClubeLista.resx">
+      <DependentUpon>EstatisticasInscritosRevalidadosClubeLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosEscalao.resx">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\EstatisticasInscritosRevalidadosEscalaoLista.resx">
+      <DependentUpon>EstatisticasInscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informacoes.resx">
       <DependentUpon>Informacoes.cs</DependentUpon>
