@@ -130,5 +130,17 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Properties {
                 this["Setting"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OpcaoPesquisa {
+            get {
+                return ((string)(this["OpcaoPesquisa"]));
+            }
+            set {
+                this["OpcaoPesquisa"] = value;
+            }
+        }
     }
 }

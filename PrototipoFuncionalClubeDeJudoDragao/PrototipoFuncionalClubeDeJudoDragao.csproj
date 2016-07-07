@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizacoes\FichaAtleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\FichaAtleta.Designer.cs">
+      <DependentUpon>FichaAtleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Actualizacoes\ListagemAtletas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +401,9 @@
     <Compile Include="Utilitarios\AlteracaoCodigoSituacao.Designer.cs">
       <DependentUpon>AlteracaoCodigoSituacao.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Actualizacoes\FichaAtleta.resx">
+      <DependentUpon>FichaAtleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Actualizacoes\ListagemAtletas.resx">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>
     </EmbeddedResource>
