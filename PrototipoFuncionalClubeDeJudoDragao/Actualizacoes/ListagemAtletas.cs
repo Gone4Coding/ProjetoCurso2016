@@ -18,21 +18,41 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
         {
             InitializeComponent();
 
+            if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa != "")
+            {
+                if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa.Equals("rb_porNome"))
+                {
+                    //getAtletas por nome
+                }
+                else if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa.Equals("rb_porNumero"))
+                {
+                    //getAtletas por numero
+                }
+                else if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa.Equals("rb_porLicFederativa"))
+                {
+                    //getAtletas por licenca federativa
+                }
+            }
+            else
+            {
+                //getAllAtletas
+            }
+
+
             List<Atleta> allAtletas = context.AtletaSet.ToList();
 
-            foreach(Atleta item in allAtletas)
+            foreach (Atleta item in allAtletas)
             {
                 ListViewItem linha = new ListViewItem(item.Id.ToString());
                 linha.SubItems.Add(item.Name);
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void bt_retroceder_Click(object sender, EventArgs e)
         {
             Main main = new Main();
             main.Show();
             this.Hide();
         }
-
     }
 }
