@@ -57,11 +57,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actualizacoes\FichaAtleta.cs">
+    <Compile Include="Actualizacoes\Fichas\FichaAtleta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Actualizacoes\FichaAtleta.Designer.cs">
+    <Compile Include="Actualizacoes\Fichas\FichaAtleta.Designer.cs">
       <DependentUpon>FichaAtleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaGraduacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaGraduacao.Designer.cs">
+      <DependentUpon>FichaGraduacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaPontos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaPontos.Designer.cs">
+      <DependentUpon>FichaPontos.cs</DependentUpon>
     </Compile>
     <Compile Include="Actualizacoes\ListagemAtletas.cs">
       <SubType>Form</SubType>
@@ -401,8 +413,14 @@
     <Compile Include="Utilitarios\AlteracaoCodigoSituacao.Designer.cs">
       <DependentUpon>AlteracaoCodigoSituacao.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Actualizacoes\FichaAtleta.resx">
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaAtleta.resx">
       <DependentUpon>FichaAtleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaGraduacao.resx">
+      <DependentUpon>FichaGraduacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaPontos.resx">
+      <DependentUpon>FichaPontos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Actualizacoes\ListagemAtletas.resx">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>

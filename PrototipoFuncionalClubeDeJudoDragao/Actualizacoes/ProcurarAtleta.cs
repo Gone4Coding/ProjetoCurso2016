@@ -42,10 +42,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
                         throw new Exception("Escolha um tipo de pesquisa");
                     }
                 }
-
-                FichaAtleta fichaAtleta = new FichaAtleta();
-                fichaAtleta.Show();
-                this.Hide();
             }
             catch(Exception msg)
             {
