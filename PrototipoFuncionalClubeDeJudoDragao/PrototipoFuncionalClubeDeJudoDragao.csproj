@@ -57,6 +57,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizacoes\Fichas\FichaAtleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaAtleta.Designer.cs">
+      <DependentUpon>FichaAtleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaGraduacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaGraduacao.Designer.cs">
+      <DependentUpon>FichaGraduacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaParticipacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaParticipacoes.Designer.cs">
+      <DependentUpon>FichaParticipacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaPontos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaPontos.Designer.cs">
+      <DependentUpon>FichaPontos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Actualizacoes\ListagemAtletas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +419,18 @@
     <Compile Include="Utilitarios\AlteracaoCodigoSituacao.Designer.cs">
       <DependentUpon>AlteracaoCodigoSituacao.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaAtleta.resx">
+      <DependentUpon>FichaAtleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaGraduacao.resx">
+      <DependentUpon>FichaGraduacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaParticipacoes.resx">
+      <DependentUpon>FichaParticipacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaPontos.resx">
+      <DependentUpon>FichaPontos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Actualizacoes\ListagemAtletas.resx">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>
     </EmbeddedResource>
