@@ -27,26 +27,19 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
 
         private void bt_ok_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var radioButtons = gb_opcoes.Controls.OfType<RadioButton>();
+            var radioButtons = gb_opcoes.Controls.OfType<RadioButton>();
 
-                foreach (RadioButton rb in radioButtons)
+            foreach (RadioButton rb in radioButtons)
+            {
+                if (rb.Checked)
                 {
-                    if (rb.Checked)
-                    {
-                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa = rb.Text;
-                    }
-                    else
-                    {
-                        throw new Exception("Escolha um tipo de pesquisa");
-                    }
+                    PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa = rb.Name;
                 }
             }
-            catch(Exception msg)
-            {
-                MessageBox.Show(msg.ToString());
-            }
+
+            ListagemAtletas listagemAtletas = new ListagemAtletas();
+            listagemAtletas.Show();
+            this.Hide();
         }
     }
 }

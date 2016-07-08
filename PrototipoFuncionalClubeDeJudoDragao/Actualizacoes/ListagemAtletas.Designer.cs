@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.numeroAtleta = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.escalao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.graduacao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -40,7 +42,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.bt_retroceder = new System.Windows.Forms.Button();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.bt_pesquisar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -49,24 +51,36 @@
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID,
-            this.nome});
-            this.listView1.Location = new System.Drawing.Point(12, 96);
+            this.numeroAtleta,
+            this.nome,
+            this.escalao,
+            this.graduacao});
+            this.listView1.Location = new System.Drawing.Point(12, 41);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1316, 587);
+            this.listView1.Size = new System.Drawing.Size(502, 294);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // ID
+            // numeroAtleta
             // 
-            this.ID.Text = "Id";
-            this.ID.Width = 231;
+            this.numeroAtleta.Text = "Nº Atleta";
+            this.numeroAtleta.Width = 86;
             // 
             // nome
             // 
             this.nome.Text = "Nome";
-            this.nome.Width = 317;
+            this.nome.Width = 212;
+            // 
+            // escalao
+            // 
+            this.escalao.Text = "Escalão";
+            this.escalao.Width = 97;
+            // 
+            // graduacao
+            // 
+            this.graduacao.Text = "Graduaçao";
+            this.graduacao.Width = 100;
             // 
             // button1
             // 
@@ -87,16 +101,16 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(12, 690);
+            this.panel1.Location = new System.Drawing.Point(12, 341);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1316, 48);
+            this.panel1.Size = new System.Drawing.Size(502, 48);
             this.panel1.TabIndex = 2;
             // 
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(428, 12);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(54, 23);
+            this.button8.Size = new System.Drawing.Size(66, 23);
             this.button8.TabIndex = 8;
             this.button8.Text = "cancelar";
             this.button8.UseVisualStyleBackColor = true;
@@ -155,40 +169,40 @@
             this.button2.Text = "anterior";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // bt_retroceder
             // 
-            this.button9.Location = new System.Drawing.Point(12, 12);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(54, 23);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "back";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.bt_retroceder.Location = new System.Drawing.Point(424, 9);
+            this.bt_retroceder.Name = "bt_retroceder";
+            this.bt_retroceder.Size = new System.Drawing.Size(89, 23);
+            this.bt_retroceder.TabIndex = 9;
+            this.bt_retroceder.Text = "Retroceder";
+            this.bt_retroceder.UseVisualStyleBackColor = true;
+            this.bt_retroceder.Click += new System.EventHandler(this.bt_retroceder_Click);
             // 
             // tb_pesquisar
             // 
-            this.tb_pesquisar.Location = new System.Drawing.Point(925, 15);
+            this.tb_pesquisar.Location = new System.Drawing.Point(107, 12);
             this.tb_pesquisar.Name = "tb_pesquisar";
-            this.tb_pesquisar.Size = new System.Drawing.Size(279, 20);
+            this.tb_pesquisar.Size = new System.Drawing.Size(229, 20);
             this.tb_pesquisar.TabIndex = 10;
             // 
             // bt_pesquisar
             // 
-            this.bt_pesquisar.Location = new System.Drawing.Point(1210, 12);
+            this.bt_pesquisar.Location = new System.Drawing.Point(12, 12);
             this.bt_pesquisar.Name = "bt_pesquisar";
-            this.bt_pesquisar.Size = new System.Drawing.Size(118, 23);
+            this.bt_pesquisar.Size = new System.Drawing.Size(89, 23);
             this.bt_pesquisar.TabIndex = 9;
-            this.bt_pesquisar.Text = "pesquisar";
+            this.bt_pesquisar.Text = "Pesquisar";
             this.bt_pesquisar.UseVisualStyleBackColor = true;
             // 
             // ListagemAtletas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1340, 733);
+            this.ClientSize = new System.Drawing.Size(525, 403);
             this.Controls.Add(this.bt_pesquisar);
             this.Controls.Add(this.tb_pesquisar);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.bt_retroceder);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listView1);
             this.Name = "ListagemAtletas";
@@ -202,7 +216,7 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader ID;
+        private System.Windows.Forms.ColumnHeader numeroAtleta;
         private System.Windows.Forms.ColumnHeader nome;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
@@ -213,8 +227,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button bt_retroceder;
         private System.Windows.Forms.TextBox tb_pesquisar;
         private System.Windows.Forms.Button bt_pesquisar;
+        private System.Windows.Forms.ColumnHeader escalao;
+        private System.Windows.Forms.ColumnHeader graduacao;
     }
 }
