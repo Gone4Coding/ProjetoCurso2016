@@ -63,6 +63,18 @@
     <Compile Include="Actualizacoes\Fichas\FichaAtleta.Designer.cs">
       <DependentUpon>FichaAtleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaClassificacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaClassificacoes.Designer.cs">
+      <DependentUpon>FichaClassificacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaEntidades.Designer.cs">
+      <DependentUpon>FichaEntidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Actualizacoes\Fichas\FichaGraduacao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     </Compile>
     <Compile Include="Actualizacoes\Fichas\FichaPontos.Designer.cs">
       <DependentUpon>FichaPontos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaRecebimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacoes\Fichas\FichaRecebimentos.Designer.cs">
+      <DependentUpon>FichaRecebimentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Actualizacoes\ListagemAtletas.cs">
       <SubType>Form</SubType>
@@ -422,6 +440,12 @@
     <EmbeddedResource Include="Actualizacoes\Fichas\FichaAtleta.resx">
       <DependentUpon>FichaAtleta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaClassificacoes.resx">
+      <DependentUpon>FichaClassificacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaEntidades.resx">
+      <DependentUpon>FichaEntidades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Actualizacoes\Fichas\FichaGraduacao.resx">
       <DependentUpon>FichaGraduacao.cs</DependentUpon>
     </EmbeddedResource>
@@ -430,6 +454,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Actualizacoes\Fichas\FichaPontos.resx">
       <DependentUpon>FichaPontos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacoes\Fichas\FichaRecebimentos.resx">
+      <DependentUpon>FichaRecebimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Actualizacoes\ListagemAtletas.resx">
       <DependentUpon>ListagemAtletas.cs</DependentUpon>
