@@ -22,29 +22,26 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
             {
                 if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa.Equals("rb_porNome"))
                 {
-                    //getAtletas por nome
+                    //getAtletas por ordem de nome
                 }
                 else if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa.Equals("rb_porNumero"))
                 {
-                    //getAtletas por numero
+                    //getAtletas por ordem de numero
                 }
                 else if (PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa.Equals("rb_porLicFederativa"))
                 {
-                    //getAtletas por licenca federativa
+                    //getAtletas por ordem de licenca federativa
                 }
             }
             else
             {
-                //getAllAtletas
-            }
+                List<Atleta> allAtletas = context.AtletaSet.ToList();
 
-
-            List<Atleta> allAtletas = context.AtletaSet.ToList();
-
-            foreach (Atleta item in allAtletas)
-            {
-                ListViewItem linha = new ListViewItem(item.Id.ToString());
-                linha.SubItems.Add(item.Name);
+                foreach (Atleta item in allAtletas)
+                {
+                    ListViewItem linha = new ListViewItem(item.Id.ToString());
+                    linha.SubItems.Add(item.Name);
+                }
             }
         }
 
