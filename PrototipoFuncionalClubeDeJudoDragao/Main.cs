@@ -313,5 +313,35 @@ namespace PrototipoFuncionalClubeDeJudoDragao
             codigoTreinadores.Show();
             this.Hide();
         }
+
+        private void ts_atualizacoes_fichaPontos_listarTodos_Click(object sender, EventArgs e)
+        {
+            //listagemAtletas PONTOS
+        }
+
+        private void ts_atualizacoes_fichaGraduacoes_listarTodos_Click(object sender, EventArgs e)
+        {
+            //listagemAtletas GRADUACOES
+        }
+
+        private void ts_atualizacoes_fichaParticipacoes_listarTodos_Click(object sender, EventArgs e)
+        {
+            //listagemAtletas PARTICIPACOES
+        }
+
+        private void ts_atualiacoes_fichaClassificacoes_listarTodos_Click(object sender, EventArgs e)
+        {
+            //listagemAtletas CLASSIFICACOES
+        }
+
+        private void ts_atualiacoes_fichaRecebimenos_listarTodos_Click(object sender, EventArgs e)
+        {
+            //listagemAtletas RECEBIMENTOS
+        }
+
+        private void ts_atualiacoes_fichaRecebimentosEnvaidos_listarTodos_Click(object sender, EventArgs e)
+        {
+            //listagemAtletas RECEBIMENTOS ENVIADOS
+        }
     }
 }
