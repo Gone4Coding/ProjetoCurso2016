@@ -30,7 +30,7 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
                 {
                     if (rb.Checked)
                     {
-                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioSelecionado = rb.Name;
+                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioNivel = rb.Name;
                     }
                     else
                     {

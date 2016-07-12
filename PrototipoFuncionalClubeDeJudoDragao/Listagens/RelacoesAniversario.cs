@@ -23,5 +23,25 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
             main.Show();
             this.Hide();
         }
+
+        private void bt_ok_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.DataInicio = dtp_Inicio.Text;
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.DataFim = dtp_Fim.Text;
+
+                if (tb_mes.Text == "")
+                {
+                    throw new Exception("Escolha um mês");
+                }
+
+                PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.MesAniversario = tb_mes.Text;
+            }
+            catch (Exception msg)
+            {
+                MessageBox.Show(msg.ToString());
+            }
+        }
     }
 }

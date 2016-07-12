@@ -37,7 +37,7 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Estatisticas
                 {
                     if (rb.Checked)
                     {
-                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioSelecionado = rb.Name;
+                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioTipo = rb.Name;
                     }
                     else
                     {
