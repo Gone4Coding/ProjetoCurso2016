@@ -45,7 +45,7 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Consultas
                 {
                     if (rb.Checked)
                     {
-                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioSelecionado = rb.Text;
+                        PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.RadioSelecionado = rb.Name;
                     }
                     else
                     {

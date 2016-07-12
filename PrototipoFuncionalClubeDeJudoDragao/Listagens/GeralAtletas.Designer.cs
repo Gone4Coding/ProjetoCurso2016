@@ -61,6 +61,7 @@
             this.bt_ok.TabIndex = 21;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // gb_codigoAtleta
             // 

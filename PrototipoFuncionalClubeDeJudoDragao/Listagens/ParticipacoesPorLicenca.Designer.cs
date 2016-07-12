@@ -236,6 +236,7 @@
             this.bt_ok.TabIndex = 22;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // gb_tipo
             // 
@@ -249,7 +250,6 @@
             this.gb_tipo.TabIndex = 24;
             this.gb_tipo.TabStop = false;
             this.gb_tipo.Text = "Tipo";
-            this.gb_tipo.Enter += new System.EventHandler(this.gb_tipo_Enter);
             // 
             // rb_tipoTudo
             // 
@@ -261,7 +261,6 @@
             this.rb_tipoTudo.TabStop = true;
             this.rb_tipoTudo.Text = "Tudo";
             this.rb_tipoTudo.UseVisualStyleBackColor = true;
-            this.rb_tipoTudo.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // rb_tecnico
             // 
@@ -309,7 +308,6 @@
             this.Controls.Add(this.gb_Nivel);
             this.Name = "ParticipacoesPorLicenca";
             this.Text = "Opção de Participação Por Licença";
-            this.Load += new System.EventHandler(this.ParticipacoesPorLicenca_Load);
             this.gb_Nivel.ResumeLayout(false);
             this.gb_Nivel.PerformLayout();
             this.gb_Licencas.ResumeLayout(false);

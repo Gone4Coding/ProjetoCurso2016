@@ -23,5 +23,10 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
             main.Show();
             this.Hide();
         }
+
+        private void bt_ok_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

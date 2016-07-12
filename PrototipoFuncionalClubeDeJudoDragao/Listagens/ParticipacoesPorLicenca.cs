@@ -17,26 +17,16 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
             InitializeComponent();
         }
 
-        private void ParticipacoesPorLicenca_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gb_tipo_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void bt_cancelar_Click(object sender, EventArgs e)
         {
             Main main = new Main();
             main.Show();
             this.Hide();
+        }
+
+        private void bt_ok_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

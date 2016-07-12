@@ -34,6 +34,7 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
                 if (rb.Checked)
                 {
                     PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.OpcaoPesquisa = rb.Name;
+                    Console.WriteLine(rb.Name);
                 }
             }
 
