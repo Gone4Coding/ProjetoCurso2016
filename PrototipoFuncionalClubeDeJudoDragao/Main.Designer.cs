@@ -172,6 +172,7 @@
             this.ts_atualizacoes_fichaPontos_procurarAtleta.Name = "ts_atualizacoes_fichaPontos_procurarAtleta";
             this.ts_atualizacoes_fichaPontos_procurarAtleta.Size = new System.Drawing.Size(153, 22);
             this.ts_atualizacoes_fichaPontos_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_atualizacoes_fichaPontos_procurarAtleta.Click += new System.EventHandler(this.ts_atualizacoes_fichaPontos_procurarAtleta_Click);
             // 
             // ts_actualizacoes_fichaDeGraduacoes
             // 
@@ -194,6 +195,7 @@
             this.ts_atualizacoes_fichaGraduacoes_procurarAtleta.Name = "ts_atualizacoes_fichaGraduacoes_procurarAtleta";
             this.ts_atualizacoes_fichaGraduacoes_procurarAtleta.Size = new System.Drawing.Size(153, 22);
             this.ts_atualizacoes_fichaGraduacoes_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_atualizacoes_fichaGraduacoes_procurarAtleta.Click += new System.EventHandler(this.ts_atualizacoes_fichaGraduacoes_procurarAtleta_Click);
             // 
             // ts_actualizacoes_fichaDeParticipacoes
             // 
@@ -216,6 +218,7 @@
             this.ts_atualizacoes_fichaParticipacoes_procurarAtleta.Name = "ts_atualizacoes_fichaParticipacoes_procurarAtleta";
             this.ts_atualizacoes_fichaParticipacoes_procurarAtleta.Size = new System.Drawing.Size(153, 22);
             this.ts_atualizacoes_fichaParticipacoes_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_atualizacoes_fichaParticipacoes_procurarAtleta.Click += new System.EventHandler(this.ts_atualizacoes_fichaParticipacoes_procurarAtleta_Click);
             // 
             // ts_actualizacoes_fichaDeClassificacoes
             // 
@@ -238,6 +241,7 @@
             this.ts_atualiacoes_fichaClassificacoes_procurarAtleta.Name = "ts_atualiacoes_fichaClassificacoes_procurarAtleta";
             this.ts_atualiacoes_fichaClassificacoes_procurarAtleta.Size = new System.Drawing.Size(153, 22);
             this.ts_atualiacoes_fichaClassificacoes_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_atualiacoes_fichaClassificacoes_procurarAtleta.Click += new System.EventHandler(this.ts_atualiacoes_fichaClassificacoes_procurarAtleta_Click);
             // 
             // ts_actualizacoes_fichasDeRecebimentos
             // 
@@ -260,6 +264,7 @@
             this.ts_atualiacoes_fichaRecebimentos_procurarAtleta.Name = "ts_atualiacoes_fichaRecebimentos_procurarAtleta";
             this.ts_atualiacoes_fichaRecebimentos_procurarAtleta.Size = new System.Drawing.Size(153, 22);
             this.ts_atualiacoes_fichaRecebimentos_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_atualiacoes_fichaRecebimentos_procurarAtleta.Click += new System.EventHandler(this.ts_atualiacoes_fichaRecebimentos_procurarAtleta_Click);
             // 
             // ts_actualizacoes_fichaDeRecebimentosEnviados
             // 
@@ -282,6 +287,7 @@
             this.ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta.Name = "ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta";
             this.ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta.Size = new System.Drawing.Size(153, 22);
             this.ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta.Text = "Procurar Atleta";
+            this.ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta.Click += new System.EventHandler(this.ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta_Click);
             // 
             // ts_consultas
             // 

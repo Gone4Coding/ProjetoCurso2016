@@ -343,5 +343,47 @@ namespace PrototipoFuncionalClubeDeJudoDragao
         {
             //listagemAtletas RECEBIMENTOS ENVIADOS
         }
+
+        private void ts_atualizacoes_fichaPontos_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualizacoes_fichaGraduacoes_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualizacoes_fichaParticipacoes_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualiacoes_fichaClassificacoes_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualiacoes_fichaRecebimentos_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
     }
 }
