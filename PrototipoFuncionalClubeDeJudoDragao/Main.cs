@@ -24,20 +24,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao
             InitializeComponent();
         }
 
-        private void ts_actualizacoes_fichaAtletas_listarTodos_Click(object sender, EventArgs e)
-        {
-            ListagemAtletas listagemAtletas = new ListagemAtletas();
-            listagemAtletas.Show();
-            this.Hide();
-        }
-
-        private void ts_actualizacoes_fichaAtletas_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
-
         private void injecao_Click(object sender, EventArgs e)
         {
             Atleta atleta = new Atleta();
@@ -104,6 +90,106 @@ namespace PrototipoFuncionalClubeDeJudoDragao
             MessageBox.Show("Atletas criados com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
+        private void ts_actualizacoes_fichaAtletas_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "atletas";
+            ListagemAtletas listagemAtletas = new ListagemAtletas();
+            listagemAtletas.Show();
+            this.Hide();
+        }
+
+        private void ts_actualizacoes_fichaAtletas_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "atletas";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+        
+        private void ts_atualizacoes_fichaPontos_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "pontos";
+            //listagemAtletas PONTOS
+        }
+
+        private void ts_atualizacoes_fichaPontos_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "pontos";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualizacoes_fichaGraduacoes_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "graduacoes";
+            //listagemAtletas GRADUACOES
+        }
+
+        private void ts_atualizacoes_fichaGraduacoes_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "graduacoes";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualizacoes_fichaParticipacoes_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "participacoes";
+            //listagemAtletas PARTICIPACOES
+        }
+
+        private void ts_atualizacoes_fichaParticipacoes_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "participacoes";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+        
+        private void ts_atualiacoes_fichaClassificacoes_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "classificacoes";
+            //listagemAtletas CLASSIFICACOES
+        }
+
+        private void ts_atualiacoes_fichaClassificacoes_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "classificacoes";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+
+        private void ts_atualiacoes_fichaRecebimenos_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "recebimentos";
+            //listagemAtletas RECEBIMENTOS
+        }
+        
+        private void ts_atualiacoes_fichaRecebimentos_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "recebimentos";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+        
+        private void ts_atualiacoes_fichaRecebimentosEnvaidos_listarTodos_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "recebimentosEnviados";
+            //listagemAtletas RECEBIMENTOS ENVIADOS
+        }
+
+        private void ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta_Click(object sender, EventArgs e)
+        {
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.TokenFichas = "recebimentosEnviados";
+            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
+            procurarAtleta.Show();
+            this.Hide();
+        }
+        
         private void ts_consultas_inscritosERevalidadosPorEscalao_Click(object sender, EventArgs e)
         {
             InscritosRevalidadosEscalao inscritosRevalidadosEscalao = new InscritosRevalidadosEscalao();
@@ -262,7 +348,7 @@ namespace PrototipoFuncionalClubeDeJudoDragao
         {
             if (MessageBox.Show("Deseja Sair?", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == DialogResult.OK)
                 Application.Exit();
-            
+
         }
 
         private void ts_tabelas_codigosDeArbitros_Click(object sender, EventArgs e)
@@ -314,76 +400,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao
             this.Hide();
         }
 
-        private void ts_atualizacoes_fichaPontos_listarTodos_Click(object sender, EventArgs e)
-        {
-            //listagemAtletas PONTOS
-        }
 
-        private void ts_atualizacoes_fichaGraduacoes_listarTodos_Click(object sender, EventArgs e)
-        {
-            //listagemAtletas GRADUACOES
-        }
-
-        private void ts_atualizacoes_fichaParticipacoes_listarTodos_Click(object sender, EventArgs e)
-        {
-            //listagemAtletas PARTICIPACOES
-        }
-
-        private void ts_atualiacoes_fichaClassificacoes_listarTodos_Click(object sender, EventArgs e)
-        {
-            //listagemAtletas CLASSIFICACOES
-        }
-
-        private void ts_atualiacoes_fichaRecebimenos_listarTodos_Click(object sender, EventArgs e)
-        {
-            //listagemAtletas RECEBIMENTOS
-        }
-
-        private void ts_atualiacoes_fichaRecebimentosEnvaidos_listarTodos_Click(object sender, EventArgs e)
-        {
-            //listagemAtletas RECEBIMENTOS ENVIADOS
-        }
-
-        private void ts_atualizacoes_fichaPontos_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
-
-        private void ts_atualizacoes_fichaGraduacoes_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
-
-        private void ts_atualizacoes_fichaParticipacoes_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
-
-        private void ts_atualiacoes_fichaClassificacoes_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
-
-        private void ts_atualiacoes_fichaRecebimentos_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
-
-        private void ts_atualiacoes_fichaRecebimentosEnviados_procurarAtleta_Click(object sender, EventArgs e)
-        {
-            ProcurarAtleta procurarAtleta = new ProcurarAtleta();
-            procurarAtleta.Show();
-            this.Hide();
-        }
     }
 }

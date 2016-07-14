@@ -226,5 +226,17 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Properties {
                 this["MesAniversario"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TokenFichas {
+            get {
+                return ((string)(this["TokenFichas"]));
+            }
+            set {
+                this["TokenFichas"] = value;
+            }
+        }
     }
 }
