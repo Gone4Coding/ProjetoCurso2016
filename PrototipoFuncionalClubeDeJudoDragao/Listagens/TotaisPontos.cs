@@ -26,7 +26,8 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Listagens
 
         private void bt_ok_Click(object sender, EventArgs e)
         {
-
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.DataInicio = dtp_Inicio.Text;
+            PrototipoFuncionalClubeDeJudoDragao.Properties.Settings.Default.DataFim = dtp_Fim.Text;
         }
     }
 }

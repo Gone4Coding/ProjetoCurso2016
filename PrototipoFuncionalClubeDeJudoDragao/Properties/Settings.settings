@@ -8,7 +8,7 @@
     <Setting Name="DataFim" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="RadioSelecionado" Type="System.String" Scope="User">
+    <Setting Name="RadioTipo" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="DataExame" Type="System.String" Scope="User">
@@ -26,10 +26,31 @@
     <Setting Name="EscalaoFim" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Setting" Type="System.Int32" Scope="User">
+    <Setting Name="OpcaoPesquisa" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CodigoAtletaInicio" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="OpcaoPesquisa" Type="System.String" Scope="User">
+    <Setting Name="CodigoAtletaFim" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LicencaInicio" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LicencaFim" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RadioNivel" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RadioGraduacao" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RadioTipoSituacao" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MesAniversario" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

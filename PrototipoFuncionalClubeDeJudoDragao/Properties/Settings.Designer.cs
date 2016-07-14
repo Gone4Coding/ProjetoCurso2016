@@ -50,12 +50,12 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string RadioSelecionado {
+        public string RadioTipo {
             get {
-                return ((string)(this["RadioSelecionado"]));
+                return ((string)(this["RadioTipo"]));
             }
             set {
-                this["RadioSelecionado"] = value;
+                this["RadioTipo"] = value;
             }
         }
         
@@ -121,18 +121,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Setting {
-            get {
-                return ((int)(this["Setting"]));
-            }
-            set {
-                this["Setting"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string OpcaoPesquisa {
             get {
@@ -140,6 +128,102 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Properties {
             }
             set {
                 this["OpcaoPesquisa"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CodigoAtletaInicio {
+            get {
+                return ((int)(this["CodigoAtletaInicio"]));
+            }
+            set {
+                this["CodigoAtletaInicio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CodigoAtletaFim {
+            get {
+                return ((int)(this["CodigoAtletaFim"]));
+            }
+            set {
+                this["CodigoAtletaFim"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LicencaInicio {
+            get {
+                return ((string)(this["LicencaInicio"]));
+            }
+            set {
+                this["LicencaInicio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LicencaFim {
+            get {
+                return ((string)(this["LicencaFim"]));
+            }
+            set {
+                this["LicencaFim"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string RadioNivel {
+            get {
+                return ((string)(this["RadioNivel"]));
+            }
+            set {
+                this["RadioNivel"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string RadioGraduacao {
+            get {
+                return ((string)(this["RadioGraduacao"]));
+            }
+            set {
+                this["RadioGraduacao"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string RadioTipoSituacao {
+            get {
+                return ((string)(this["RadioTipoSituacao"]));
+            }
+            set {
+                this["RadioTipoSituacao"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MesAniversario {
+            get {
+                return ((string)(this["MesAniversario"]));
+            }
+            set {
+                this["MesAniversario"] = value;
             }
         }
     }
