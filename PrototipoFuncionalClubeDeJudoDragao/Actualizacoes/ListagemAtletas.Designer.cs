@@ -194,6 +194,7 @@
             this.bt_pesquisar.TabIndex = 9;
             this.bt_pesquisar.Text = "Pesquisar";
             this.bt_pesquisar.UseVisualStyleBackColor = true;
+            this.bt_pesquisar.Click += new System.EventHandler(this.bt_pesquisar_Click);
             // 
             // ListagemAtletas
             // 
