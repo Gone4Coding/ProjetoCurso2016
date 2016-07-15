@@ -155,8 +155,6 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
                     throw new Exception("Não insira caracteres especiais (incluido o 'ç' ou 'Ç')");
                 }
 
-
-
             }
             catch (Exception msg)
             {
