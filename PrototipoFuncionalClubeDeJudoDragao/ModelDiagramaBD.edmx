@@ -6,40 +6,163 @@
     <edmx:StorageModels>
     <Schema Namespace="ModelDiagramaBD.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="ModelDiagramaBDStoreContainer">
-    <EntitySet Name="AtletaSet" EntityType="ModelDiagramaBD.Store.AtletaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sociosSet" EntityType="ModelDiagramaBD.Store.sociosSet" store:Type="Tables" Schema="dbo" />
   </EntityContainer>
-  <EntityType Name="AtletaSet">
+  <EntityType Name="sociosSet">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelDiagramaBD" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="ModelDiagramaBDContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="AtletaSet" EntityType="ModelDiagramaBD.Atleta" />
+          <EntitySet Name="sociosSet" EntityType="ModelDiagramaBD.socios" />
+          <EntitySet Name="inscricoesSet" EntityType="ModelDiagramaBD.inscricoes" />
+          <EntitySet Name="socios_quotasSet" EntityType="ModelDiagramaBD.socios_quotas" />
+          <EntitySet Name="entidades_quotasSet" EntityType="ModelDiagramaBD.entidades_quotas" />
+          <EntitySet Name="quotasSet" EntityType="ModelDiagramaBD.quotas" />
+          <EntitySet Name="tipo_pagamentoSet" EntityType="ModelDiagramaBD.tipo_pagamento" />
+          <EntitySet Name="entidadesSet" EntityType="ModelDiagramaBD.entidades" />
+          <EntitySet Name="entidades_telefonesSet" EntityType="ModelDiagramaBD.entidades_telefones" />
+          <EntitySet Name="socios_telefoneSet" EntityType="ModelDiagramaBD.socios_telefone" />
+          <EntitySet Name="telefonesSet" EntityType="ModelDiagramaBD.telefones" />
+          <AssociationSet Name="quotastipo_pagamento" Association="ModelDiagramaBD.quotastipo_pagamento">
+            <End Role="quotas" EntitySet="quotasSet" />
+            <End Role="tipo_pagamento" EntitySet="tipo_pagamentoSet" />
+          </AssociationSet>
+          <AssociationSet Name="entidades_quotasquotas" Association="ModelDiagramaBD.entidades_quotasquotas">
+            <End Role="entidades_quotas" EntitySet="entidades_quotasSet" />
+            <End Role="quotas" EntitySet="quotasSet" />
+          </AssociationSet>
+          <AssociationSet Name="entidades_quotasentidades" Association="ModelDiagramaBD.entidades_quotasentidades">
+            <End Role="entidades_quotas" EntitySet="entidades_quotasSet" />
+            <End Role="entidades" EntitySet="entidadesSet" />
+          </AssociationSet>
         </EntityContainer>
-        <EntityType Name="Atleta">
+        <EntityType Name="socios">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="numero_socio" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="numero_socio" Type="String" Nullable="false" />
+          <Property Name="nome" Type="String" Nullable="false" />
+          <Property Name="morada" Type="String" Nullable="false" />
+          <Property Name="codigo_postal" Type="String" Nullable="false" />
+          <Property Name="localidade" Type="String" Nullable="false" />
+          <Property Name="data_nascimento" Type="String" Nullable="false" />
+          <Property Name="nif" Type="String" Nullable="false" />
+          <Property Name="numero_cc" Type="String" Nullable="false" />
+          <Property Name="data_emissao_cc" Type="String" Nullable="false" />
+          <Property Name="nacionalidade" Type="String" Nullable="false" />
+          <Property Name="profissao" Type="String" Nullable="false" />
+          <Property Name="freguesia" Type="String" Nullable="false" />
+          <Property Name="concelho" Type="String" Nullable="false" />
+          <Property Name="sexo" Type="String" Nullable="false" />
+          <Property Name="estado_civil" Type="String" Nullable="false" />
+          </EntityType>
+        <EntityType Name="inscricoes">
+          <Key>
+            <PropertyRef Name="id_inscricao" />
+          </Key>
+          <Property Name="id_inscricao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numero_socio" Type="String" Nullable="false" />
+          <Property Name="data_inscricao" Type="String" Nullable="false" />
+          <Property Name="data_revalidacao" Type="String" Nullable="false" />
+          <Property Name="data_exame_medico" Type="String" Nullable="false" />
+          <Property Name="estado" Type="String" Nullable="false" />
         </EntityType>
+        <EntityType Name="socios_quotas">
+          <Key>
+            <PropertyRef Name="id_quota" />
+          </Key>
+          <Property Name="id_quota" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_socio" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="entidades_quotas">
+          <Key>
+            <PropertyRef Name="id_quota" />
+          </Key>
+          <Property Name="id_quota" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_entidade" Type="String" Nullable="false" />
+          <NavigationProperty Name="quotas" Relationship="ModelDiagramaBD.entidades_quotasquotas" FromRole="entidades_quotas" ToRole="quotas" />
+          <NavigationProperty Name="entidades" Relationship="ModelDiagramaBD.entidades_quotasentidades" FromRole="entidades_quotas" ToRole="entidades" />
+        </EntityType>
+        <EntityType Name="quotas">
+          <Key>
+            <PropertyRef Name="numero_quota" />
+          </Key>
+          <Property Name="numero_quota" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="String" Nullable="false" />
+          <Property Name="valor" Type="String" Nullable="false" />
+          <Property Name="data" Type="String" Nullable="false" />
+          <Property Name="tipo_pagamento" Type="String" Nullable="false" />
+          <NavigationProperty Name="tipo_pagamento1" Relationship="ModelDiagramaBD.quotastipo_pagamento" FromRole="quotas" ToRole="tipo_pagamento" />
+          <NavigationProperty Name="entidades_quotas" Relationship="ModelDiagramaBD.entidades_quotasquotas" FromRole="quotas" ToRole="entidades_quotas" />
+        </EntityType>
+        <EntityType Name="tipo_pagamento">
+          <Key>
+            <PropertyRef Name="id_tipo_pagamento" />
+          </Key>
+          <Property Name="id_tipo_pagamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="quotas" Relationship="ModelDiagramaBD.quotastipo_pagamento" FromRole="tipo_pagamento" ToRole="quotas" />
+        </EntityType>
+        <EntityType Name="entidades">
+          <Key>
+            <PropertyRef Name="numero_entidade" />
+          </Key>
+          <Property Name="numero_entidade" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nome" Type="String" Nullable="false" />
+          <Property Name="localidade" Type="String" Nullable="false" />
+          <Property Name="codigo_postal" Type="String" Nullable="false" />
+          <Property Name="contato" Type="String" Nullable="false" />
+          <Property Name="tipo_entidade" Type="String" Nullable="false" />
+          <NavigationProperty Name="entidades_quotas" Relationship="ModelDiagramaBD.entidades_quotasentidades" FromRole="entidades" ToRole="entidades_quotas" />
+        </EntityType>
+        <EntityType Name="entidades_telefones">
+          <Key>
+            <PropertyRef Name="id_telefone" />
+          </Key>
+          <Property Name="id_telefone" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numero_entidade" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="socios_telefone">
+          <Key>
+            <PropertyRef Name="id_telefone" />
+          </Key>
+          <Property Name="id_telefone" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numero_socio" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="telefones">
+          <Key>
+            <PropertyRef Name="id_telefone" />
+          </Key>
+          <Property Name="id_telefone" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="telefone" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="quotastipo_pagamento">
+          <End Type="ModelDiagramaBD.quotas" Role="quotas" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.tipo_pagamento" Role="tipo_pagamento" Multiplicity="0..1" />
+        </Association>
+        <Association Name="entidades_quotasquotas">
+          <End Type="ModelDiagramaBD.entidades_quotas" Role="entidades_quotas" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.quotas" Role="quotas" Multiplicity="*" />
+        </Association>
+        <Association Name="entidades_quotasentidades">
+          <End Type="ModelDiagramaBD.entidades_quotas" Role="entidades_quotas" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.entidades" Role="entidades" Multiplicity="*" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="ModelDiagramaBDStoreContainer" CdmEntityContainer="ModelDiagramaBDContainer">
-    <EntitySetMapping Name="AtletaSet">
-      <EntityTypeMapping TypeName="IsTypeOf(ModelDiagramaBD.Atleta)">
-        <MappingFragment StoreEntitySet="AtletaSet">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
+    <EntitySetMapping Name="sociosSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDiagramaBD.socios)">
+        <MappingFragment StoreEntitySet="sociosSet">
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -111,9 +111,6 @@
     <Compile Include="Actualizacoes\ProcurarAtleta.Designer.cs">
       <DependentUpon>ProcurarAtleta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Atleta.cs">
-      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
-    </Compile>
     <Compile Include="Consultas\ClassificacaoDatasProva.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +207,15 @@
     <Compile Include="Consultas\ListasConsultas\TotaisPorGraduacaoLista.Designer.cs">
       <DependentUpon>TotaisPorGraduacaoLista.cs</DependentUpon>
     </Compile>
+    <Compile Include="entidades.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="entidades_quotas.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="entidades_telefones.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </Compile>
     <Compile Include="Informacoes.Designer.cs">
       <DependentUpon>Informacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inscricoes.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Listagens\AtletasNaoRevalidados.cs">
       <SubType>Form</SubType>
@@ -389,6 +398,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quotas.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="socios.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="socios_quotas.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="socios_telefone.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Tabelas\CodigoArbitros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -430,6 +451,12 @@
     </Compile>
     <Compile Include="Tabelas\CodigoTreinadores.Designer.cs">
       <DependentUpon>CodigoTreinadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telefones.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_pagamento.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Utilitarios\AlteracaoCodigoSituacao.cs">
       <SubType>Form</SubType>
