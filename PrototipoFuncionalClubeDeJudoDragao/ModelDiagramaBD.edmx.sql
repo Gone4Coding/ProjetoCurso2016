@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 07/28/2016 12:00:02
+-- Date Created: 07/28/2016 14:05:52
 -- Generated from EDMX file: C:\Git\ProjetoCurso2016\PrototipoFuncionalClubeDeJudoDragao\ModelDiagramaBD.edmx
 -- --------------------------------------------------
 
@@ -167,7 +167,8 @@ CREATE TABLE [dbo].[SociosSet] (
     [Mae] nvarchar(max)  NULL,
     [Telefone1] nvarchar(max)  NULL,
     [Telefone2] nvarchar(max)  NULL,
-    [Nome] nvarchar(max)  NOT NULL
+    [Nome] nvarchar(max)  NOT NULL,
+    [Email] nvarchar(max)  NOT NULL
 );
 GO
 
