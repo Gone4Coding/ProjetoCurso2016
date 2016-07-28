@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 07/28/2016 11:52:25
+-- Date Created: 07/28/2016 12:00:02
 -- Generated from EDMX file: C:\Git\ProjetoCurso2016\PrototipoFuncionalClubeDeJudoDragao\ModelDiagramaBD.edmx
 -- --------------------------------------------------
 
@@ -17,11 +17,131 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_InscricaoSocios]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoSet] DROP CONSTRAINT [FK_InscricaoSocios];
+GO
+IF OBJECT_ID(N'[dbo].[FK_SociosQuotas]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[QuotasSet] DROP CONSTRAINT [FK_SociosQuotas];
+GO
+IF OBJECT_ID(N'[dbo].[FK_QuotasTipoPagamento]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[QuotasSet] DROP CONSTRAINT [FK_QuotasTipoPagamento];
+GO
+IF OBJECT_ID(N'[dbo].[FK_EntidadesQuotas]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[QuotasSet] DROP CONSTRAINT [FK_EntidadesQuotas];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ParticipacaoNivel]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ParticipacaoSet] DROP CONSTRAINT [FK_ParticipacaoNivel];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ExameInscricao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoSet] DROP CONSTRAINT [FK_ExameInscricao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ArbitroInscricao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ArbitroSet] DROP CONSTRAINT [FK_ArbitroInscricao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TreinadoresInscricao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TreinadoresSet] DROP CONSTRAINT [FK_TreinadoresInscricao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoParticipacao_Inscricao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoParticipacao] DROP CONSTRAINT [FK_InscricaoParticipacao_Inscricao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoParticipacao_Participacao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoParticipacao] DROP CONSTRAINT [FK_InscricaoParticipacao_Participacao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoResultadoCompeticao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoSet] DROP CONSTRAINT [FK_InscricaoResultadoCompeticao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ResultadoCompeticaoCompeticao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ResultadoCompeticaoSet] DROP CONSTRAINT [FK_ResultadoCompeticaoCompeticao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_NivelCompeticao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CompeticaoSet] DROP CONSTRAINT [FK_NivelCompeticao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoInscricaoJudo]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoJudoSet] DROP CONSTRAINT [FK_InscricaoInscricaoJudo];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoInscricaoJiujitsu]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoJiujitsuSet] DROP CONSTRAINT [FK_InscricaoInscricaoJiujitsu];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoInscricaoAikido]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoAikidoSet] DROP CONSTRAINT [FK_InscricaoInscricaoAikido];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoJudoEscalaoJudo]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoJudoSet] DROP CONSTRAINT [FK_InscricaoJudoEscalaoJudo];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoJiujitsuEscalaoJiujitsu]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoJiujitsuSet] DROP CONSTRAINT [FK_InscricaoJiujitsuEscalaoJiujitsu];
+GO
+IF OBJECT_ID(N'[dbo].[FK_InscricaoAikidoEscalaoAikido]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoAikidoSet] DROP CONSTRAINT [FK_InscricaoAikidoEscalaoAikido];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ExameGraduacao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ExameSet] DROP CONSTRAINT [FK_ExameGraduacao];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[SociosSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[SociosSet];
+GO
+IF OBJECT_ID(N'[dbo].[InscricaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[InscricaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[EntidadesSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EntidadesSet];
+GO
+IF OBJECT_ID(N'[dbo].[QuotasSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[QuotasSet];
+GO
+IF OBJECT_ID(N'[dbo].[TipoPagamentoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TipoPagamentoSet];
+GO
+IF OBJECT_ID(N'[dbo].[InscricaoJudoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[InscricaoJudoSet];
+GO
+IF OBJECT_ID(N'[dbo].[InscricaoJiujitsuSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[InscricaoJiujitsuSet];
+GO
+IF OBJECT_ID(N'[dbo].[InscricaoAikidoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[InscricaoAikidoSet];
+GO
+IF OBJECT_ID(N'[dbo].[EscalaoJudoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EscalaoJudoSet];
+GO
+IF OBJECT_ID(N'[dbo].[EscalaoJiujitsuSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EscalaoJiujitsuSet];
+GO
+IF OBJECT_ID(N'[dbo].[EscalaoAikidoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EscalaoAikidoSet];
+GO
+IF OBJECT_ID(N'[dbo].[TreinadoresSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TreinadoresSet];
+GO
+IF OBJECT_ID(N'[dbo].[ArbitroSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ArbitroSet];
+GO
+IF OBJECT_ID(N'[dbo].[ExameSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ExameSet];
+GO
+IF OBJECT_ID(N'[dbo].[GraduacaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[GraduacaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[ParticipacaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ParticipacaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[NivelSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[NivelSet];
+GO
+IF OBJECT_ID(N'[dbo].[CompeticaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CompeticaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[ResultadoCompeticaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ResultadoCompeticaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[InscricaoParticipacao]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[InscricaoParticipacao];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
@@ -46,7 +166,8 @@ CREATE TABLE [dbo].[SociosSet] (
     [Pai] nvarchar(max)  NULL,
     [Mae] nvarchar(max)  NULL,
     [Telefone1] nvarchar(max)  NULL,
-    [Telefone2] nvarchar(max)  NULL
+    [Telefone2] nvarchar(max)  NULL,
+    [Nome] nvarchar(max)  NOT NULL
 );
 GO
 

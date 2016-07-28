@@ -26,12 +26,16 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 
         private void injecao_Click(object sender, EventArgs e)
         {
-            Atleta atleta = new Atleta();
+            Socios socioHugo = new Socios();
+            //socioHugo.   
+
+
+            /*Atleta atleta = new Atleta();
 
             atleta.Name = "Hugo";
 
             context.AtletaSet.Add(atleta);
-
+            */
             //Atleta atleta1 = new Atleta();
 
             //atleta.Name = "Gonçalo";

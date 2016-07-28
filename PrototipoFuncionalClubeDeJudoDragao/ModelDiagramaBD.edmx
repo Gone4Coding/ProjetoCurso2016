@@ -129,6 +129,7 @@
     <Property Name="Mae" Type="nvarchar(max)" Nullable="true" />
     <Property Name="Telefone1" Type="nvarchar(max)" Nullable="true" />
     <Property Name="Telefone2" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="InscricaoSet">
     <Key>
@@ -670,6 +671,7 @@
           <Property Name="Mae" Type="String" Nullable="true" />
           <Property Name="Telefone1" Type="String" Nullable="true" />
           <Property Name="Telefone2" Type="String" Nullable="true" />
+          <Property Name="Nome" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Inscricao">
           <Key>
@@ -959,6 +961,7 @@
           <ScalarProperty Name="Mae" ColumnName="Mae" />
           <ScalarProperty Name="Telefone1" ColumnName="Telefone1" />
           <ScalarProperty Name="Telefone2" ColumnName="Telefone2" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

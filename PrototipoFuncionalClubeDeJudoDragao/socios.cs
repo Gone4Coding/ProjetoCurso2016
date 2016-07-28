@@ -65,6 +65,8 @@ public partial class Socios
 
     public string Telefone2 { get; set; }
 
+    public string Nome { get; set; }
+
 
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
