@@ -702,6 +702,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB_Socios.txt" />
     <Content Include="ModelDiagramaBD.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelDiagramaBD.Context.cs</LastGenOutput>
