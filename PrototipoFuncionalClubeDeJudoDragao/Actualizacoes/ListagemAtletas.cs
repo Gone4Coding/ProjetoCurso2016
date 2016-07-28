@@ -134,14 +134,14 @@ namespace PrototipoFuncionalClubeDeJudoDragao.Actualizações
             this.Hide();
         }
 
-        private void preencherListView(List<Atleta> listaResultados)
+      /*  private void preencherListView(List<Atleta> listaResultados)
         {
             foreach (Atleta item in listaResultados)
             {
                 ListViewItem linha = new ListViewItem(item.Id.ToString());
                 linha.SubItems.Add(item.Name);
             }
-        }
+        }*/
 
         private void bt_pesquisar_Click(object sender, EventArgs e)
         {

@@ -27,11 +27,19 @@ namespace PrototipoFuncionalClubeDeJudoDragao
         private void injecao_Click(object sender, EventArgs e)
         {
 
+            //List<String> socios = new List<string>();
+            string[] socios = System.IO.File.ReadAllLines("\\DB_Socios.txt");
 
-          
+            for (int i = 0; i < 50; i++)
+            {
+                Console.WriteLine(socios[i]);
+                
+            }
+            
 
-            context.SaveChanges();
-            MessageBox.Show("Atletas criados com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            //context.SaveChanges();
+            //MessageBox.Show("Atletas criados com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         private void ts_actualizacoes_fichaAtletas_listarTodos_Click(object sender, EventArgs e)
