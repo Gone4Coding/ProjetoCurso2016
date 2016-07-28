@@ -15,18 +15,12 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 using System;
     using System.Collections.Generic;
     
-public partial class Quotas
+public partial class TipoPagamento
 {
 
-    public int NumeroQuota { get; set; }
+    public int IdTipoPagamento { get; set; }
 
     public string Descricao { get; set; }
-
-    public string Valor { get; set; }
-
-    public string Data { get; set; }
-
-    public string TipoPagamento { get; set; }
 
 }
 

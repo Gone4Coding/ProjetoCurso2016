@@ -15,27 +15,22 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 using System;
     using System.Collections.Generic;
     
-public partial class tipo_pagamento
+public partial class Inscricao
 {
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public tipo_pagamento()
-    {
+    public int IdInscricao { get; set; }
 
-        this.quotas = new HashSet<quotas>();
+    public string NumeroSocio { get; set; }
 
-    }
+    public string DataInscricao { get; set; }
 
+    public string DataRevalidacao { get; set; }
 
-    public int id_tipo_pagamento { get; set; }
+    public string DataRevalidacaoAnterior { get; set; }
 
-    public string descricao { get; set; }
+    public string DataExameMedico { get; set; }
 
-
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-
-    public virtual ICollection<quotas> quotas { get; set; }
+    public string Estado { get; set; }
 
 }
 

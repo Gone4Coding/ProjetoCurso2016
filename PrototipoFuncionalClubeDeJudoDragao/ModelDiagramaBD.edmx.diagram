@@ -4,21 +4,27 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="93dccc7edd5049f4b26b46b25ffde9fe" Name="Diagram1" >
-        <EntityTypeShape EntityType="ModelDiagramaBD.socios" Width="1.5" PointX="7.75" PointY="3" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.inscricoes" Width="1.625" PointX="5.375" PointY="5.25" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.socios_quotas" Width="1.5" PointX="5.25" PointY="3.25" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.entidades_quotas" Width="1.75" PointX="7.625" PointY="0.625" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.quotas" Width="1.5" PointX="5.25" PointY="0.625" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.tipo_pagamento" Width="1.625" PointX="2.875" PointY="0.625" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.entidades" Width="1.5" PointX="9.875" PointY="0.5" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.entidades_telefones" Width="1.75" PointX="12.375" PointY="0.5" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.socios_telefone" Width="1.5" PointX="12.5" PointY="4.875" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.telefones" Width="1.5" PointX="12.5" PointY="2.875" />
-        <AssociationConnector Association="ModelDiagramaBD.quotastipo_pagamento" />
-        <AssociationConnector Association="ModelDiagramaBD.entidades_quotasquotas" />
-        <AssociationConnector Association="ModelDiagramaBD.entidades_quotasentidades" />
-      </Diagram>
+      <Diagram DiagramId="93dccc7edd5049f4b26b46b25ffde9fe" Name="Diagram1" ZoomLevel="74" >
+        <EntityTypeShape EntityType="ModelDiagramaBD.Socios" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Inscricao" Width="1.875" PointX="4.25" PointY="2.25" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Entidades" Width="1.5" PointX="9.75" PointY="1.25" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Quotas" Width="1.5" PointX="11.625" PointY="1.25" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.TipoPagamento" Width="1.5" PointX="14.25" PointY="1.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoJudo" Width="1.5" PointX="2.25" PointY="5.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoJiujitsu" Width="1.5" PointX="4.25" PointY="5.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoAikido" Width="1.5" PointX="6.125" PointY="5.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoJudo" Width="1.5" PointX="2.25" PointY="7.875" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoJiujitsu" Width="1.5" PointX="4.25" PointY="7.875" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoAikido" Width="1.5" PointX="6.125" PointY="7.875" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Treinadores" Width="1.5" PointX="8.875" PointY="4" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Arbitro" Width="1.5" PointX="11.375" PointY="4" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Exame" Width="1.5" PointX="14.5" PointY="4.875" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Graduacao" Width="1.5" PointX="14.125" PointY="3.25" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Participacao" Width="1.5" PointX="10" PointY="6.125" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Nivel" Width="1.5" PointX="12" PointY="6.125" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Competicao" Width="1.5" PointX="15" PointY="7.625" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.ResultadoCompeticao" Width="1.5" PointX="8.5" PointY="7.375" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

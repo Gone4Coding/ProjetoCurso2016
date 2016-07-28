@@ -32,25 +32,43 @@ public partial class ModelDiagramaBDContainer : DbContext
     }
 
 
-    public virtual DbSet<socios> sociosSet { get; set; }
+    public virtual DbSet<Socios> SociosSet { get; set; }
 
-    public virtual DbSet<inscricoes> inscricoesSet { get; set; }
+    public virtual DbSet<Inscricao> InscricaoSet { get; set; }
 
-    public virtual DbSet<socios_quotas> socios_quotasSet { get; set; }
+    public virtual DbSet<Entidades> EntidadesSet { get; set; }
 
-    public virtual DbSet<entidades_quotas> entidades_quotasSet { get; set; }
+    public virtual DbSet<Quotas> QuotasSet { get; set; }
 
-    public virtual DbSet<quotas> quotasSet { get; set; }
+    public virtual DbSet<TipoPagamento> TipoPagamentoSet { get; set; }
 
-    public virtual DbSet<tipo_pagamento> tipo_pagamentoSet { get; set; }
+    public virtual DbSet<InscricaoJudo> InscricaoJudoSet { get; set; }
 
-    public virtual DbSet<entidades> entidadesSet { get; set; }
+    public virtual DbSet<InscricaoJiujitsu> InscricaoJiujitsuSet { get; set; }
 
-    public virtual DbSet<entidades_telefones> entidades_telefonesSet { get; set; }
+    public virtual DbSet<InscricaoAikido> InscricaoAikidoSet { get; set; }
 
-    public virtual DbSet<socios_telefone> socios_telefoneSet { get; set; }
+    public virtual DbSet<EscalaoJudo> EscalaoJudoSet { get; set; }
 
-    public virtual DbSet<telefones> telefonesSet { get; set; }
+    public virtual DbSet<EscalaoJiujitsu> EscalaoJiujitsuSet { get; set; }
+
+    public virtual DbSet<EscalaoAikido> EscalaoAikidoSet { get; set; }
+
+    public virtual DbSet<Treinadores> TreinadoresSet { get; set; }
+
+    public virtual DbSet<Arbitro> ArbitroSet { get; set; }
+
+    public virtual DbSet<Exame> ExameSet { get; set; }
+
+    public virtual DbSet<Graduacao> GraduacaoSet { get; set; }
+
+    public virtual DbSet<Participacao> ParticipacaoSet { get; set; }
+
+    public virtual DbSet<Nivel> NivelSet { get; set; }
+
+    public virtual DbSet<Competicao> CompeticaoSet { get; set; }
+
+    public virtual DbSet<ResultadoCompeticao> ResultadoCompeticaoSet { get; set; }
 
 }
 

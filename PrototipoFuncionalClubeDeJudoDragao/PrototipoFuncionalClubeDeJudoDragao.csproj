@@ -111,6 +111,12 @@
     <Compile Include="Actualizacoes\ProcurarAtleta.Designer.cs">
       <DependentUpon>ProcurarAtleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Arbitro.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Competicao.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ClassificacaoDatasProva.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,13 +213,16 @@
     <Compile Include="Consultas\ListasConsultas\TotaisPorGraduacaoLista.Designer.cs">
       <DependentUpon>TotaisPorGraduacaoLista.cs</DependentUpon>
     </Compile>
-    <Compile Include="entidades.cs">
+    <Compile Include="Entidades.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="entidades_quotas.cs">
+    <Compile Include="EscalaoAikido.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="entidades_telefones.cs">
+    <Compile Include="EscalaoJiujitsu.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EscalaoJudo.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Estatisticas\EstatisticasInscritosRevalidadosClube.cs">
@@ -240,13 +249,28 @@
     <Compile Include="Estatisticas\ListasEstatisticas\EstatisticasInscritosRevalidadosEscalaoLista.Designer.cs">
       <DependentUpon>EstatisticasInscritosRevalidadosEscalaoLista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Exame.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Graduacao.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Informacoes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Informacoes.Designer.cs">
       <DependentUpon>Informacoes.cs</DependentUpon>
     </Compile>
-    <Compile Include="inscricoes.cs">
+    <Compile Include="Inscricao.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InscricaoAikido.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InscricaoJiujitsu.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InscricaoJudo.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Listagens\AtletasNaoRevalidados.cs">
@@ -396,18 +420,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelDiagramaBD.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Nivel.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Participacao.cs">
+      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="quotas.cs">
+    <Compile Include="Quotas.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="socios.cs">
+    <Compile Include="ResultadoCompeticao.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="socios_quotas.cs">
-      <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="socios_telefone.cs">
+    <Compile Include="Socios.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Tabelas\CodigoArbitros.cs">
@@ -452,10 +479,10 @@
     <Compile Include="Tabelas\CodigoTreinadores.Designer.cs">
       <DependentUpon>CodigoTreinadores.cs</DependentUpon>
     </Compile>
-    <Compile Include="telefones.cs">
+    <Compile Include="TipoPagamento.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="tipo_pagamento.cs">
+    <Compile Include="Treinadores.cs">
       <DependentUpon>ModelDiagramaBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Utilitarios\AlteracaoCodigoSituacao.cs">

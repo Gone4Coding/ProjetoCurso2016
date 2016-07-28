@@ -15,36 +15,18 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 using System;
     using System.Collections.Generic;
     
-public partial class Socios
+public partial class Competicao
 {
 
-    public int NumeroSocio { get; set; }
-
-    public string Morada { get; set; }
-
-    public string CodigoPostal { get; set; }
+    public int IdCompeticao { get; set; }
 
     public string Localidade { get; set; }
 
-    public string DataNascimento { get; set; }
+    public string Descricao { get; set; }
 
-    public string Nif { get; set; }
+    public string Data { get; set; }
 
-    public string NumeroCC { get; set; }
-
-    public string DataEmissaoCC { get; set; }
-
-    public string Nacionalidade { get; set; }
-
-    public string Profissao { get; set; }
-
-    public string Freguesia { get; set; }
-
-    public string Concelho { get; set; }
-
-    public string Sexo { get; set; }
-
-    public string EstadoCivil { get; set; }
+    public string Categoria { get; set; }
 
 }
 

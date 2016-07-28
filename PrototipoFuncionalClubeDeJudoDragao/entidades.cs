@@ -15,24 +15,20 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 using System;
     using System.Collections.Generic;
     
-public partial class entidades
+public partial class Entidades
 {
 
-    public int numero_entidade { get; set; }
+    public int NumeroEntidade { get; set; }
 
-    public string nome { get; set; }
+    public string Nome { get; set; }
 
-    public string localidade { get; set; }
+    public string Localidade { get; set; }
 
-    public string codigo_postal { get; set; }
+    public string CodigoPostal { get; set; }
 
-    public string contato { get; set; }
+    public string Contato { get; set; }
 
-    public string tipo_entidade { get; set; }
-
-
-
-    public virtual entidades_quotas entidades_quotas { get; set; }
+    public string TipoEntidade { get; set; }
 
 }
 

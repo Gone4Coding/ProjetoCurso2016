@@ -15,12 +15,16 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 using System;
     using System.Collections.Generic;
     
-public partial class entidades_telefones
+public partial class InscricaoAikido
 {
 
-    public int id_telefone { get; set; }
+    public int IdInscricaoAikido { get; set; }
 
-    public string numero_entidade { get; set; }
+    public string IdInscricao { get; set; }
+
+    public string LicencaFederativa { get; set; }
+
+    public string Escalao { get; set; }
 
 }
 

@@ -15,12 +15,16 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 using System;
     using System.Collections.Generic;
     
-public partial class socios_quotas
+public partial class InscricaoJiujitsu
 {
 
-    public int id_quota { get; set; }
+    public int IdInscricaoJiujitsu { get; set; }
 
-    public string id_socio { get; set; }
+    public string IdInscricao { get; set; }
+
+    public string LicencaFederativa { get; set; }
+
+    public string Escalao { get; set; }
 
 }
 
