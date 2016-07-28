@@ -18,6 +18,17 @@ using System;
 public partial class Socios
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Socios()
+    {
+
+        this.Inscricao = new HashSet<Inscricao>();
+
+        this.Quotas = new HashSet<Quotas>();
+
+    }
+
+
     public int NumeroSocio { get; set; }
 
     public string Morada { get; set; }
@@ -45,6 +56,16 @@ public partial class Socios
     public string Sexo { get; set; }
 
     public string EstadoCivil { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Inscricao> Inscricao { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Quotas> Quotas { get; set; }
 
 }
 

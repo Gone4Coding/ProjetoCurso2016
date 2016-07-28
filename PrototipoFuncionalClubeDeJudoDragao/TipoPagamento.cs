@@ -18,9 +18,24 @@ using System;
 public partial class TipoPagamento
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public TipoPagamento()
+    {
+
+        this.Quotas = new HashSet<Quotas>();
+
+    }
+
+
     public int IdTipoPagamento { get; set; }
 
     public string Descricao { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Quotas> Quotas { get; set; }
 
 }
 

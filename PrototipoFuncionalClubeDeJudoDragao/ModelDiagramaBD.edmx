@@ -31,6 +31,82 @@
           <EntitySet Name="NivelSet" EntityType="ModelDiagramaBD.Nivel" />
           <EntitySet Name="CompeticaoSet" EntityType="ModelDiagramaBD.Competicao" />
           <EntitySet Name="ResultadoCompeticaoSet" EntityType="ModelDiagramaBD.ResultadoCompeticao" />
+          <AssociationSet Name="InscricaoSocios" Association="ModelDiagramaBD.InscricaoSocios">
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+            <End Role="Socios" EntitySet="SociosSet" />
+          </AssociationSet>
+          <AssociationSet Name="SociosQuotas" Association="ModelDiagramaBD.SociosQuotas">
+            <End Role="Socios" EntitySet="SociosSet" />
+            <End Role="Quotas" EntitySet="QuotasSet" />
+          </AssociationSet>
+          <AssociationSet Name="QuotasTipoPagamento" Association="ModelDiagramaBD.QuotasTipoPagamento">
+            <End Role="Quotas" EntitySet="QuotasSet" />
+            <End Role="TipoPagamento" EntitySet="TipoPagamentoSet" />
+          </AssociationSet>
+          <AssociationSet Name="EntidadesQuotas" Association="ModelDiagramaBD.EntidadesQuotas">
+            <End Role="Entidades" EntitySet="EntidadesSet" />
+            <End Role="Quotas" EntitySet="QuotasSet" />
+          </AssociationSet>
+          <AssociationSet Name="ParticipacaoNivel" Association="ModelDiagramaBD.ParticipacaoNivel">
+            <End Role="Participacao" EntitySet="ParticipacaoSet" />
+            <End Role="Nivel" EntitySet="NivelSet" />
+          </AssociationSet>
+          <AssociationSet Name="ExameInscricao" Association="ModelDiagramaBD.ExameInscricao">
+            <End Role="Exame" EntitySet="ExameSet" />
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="ArbitroInscricao" Association="ModelDiagramaBD.ArbitroInscricao">
+            <End Role="Arbitro" EntitySet="ArbitroSet" />
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="TreinadoresInscricao" Association="ModelDiagramaBD.TreinadoresInscricao">
+            <End Role="Treinadores" EntitySet="TreinadoresSet" />
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoParticipacao" Association="ModelDiagramaBD.InscricaoParticipacao">
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+            <End Role="Participacao" EntitySet="ParticipacaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoResultadoCompeticao" Association="ModelDiagramaBD.InscricaoResultadoCompeticao">
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+            <End Role="ResultadoCompeticao" EntitySet="ResultadoCompeticaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="ResultadoCompeticaoCompeticao" Association="ModelDiagramaBD.ResultadoCompeticaoCompeticao">
+            <End Role="ResultadoCompeticao" EntitySet="ResultadoCompeticaoSet" />
+            <End Role="Competicao" EntitySet="CompeticaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="NivelCompeticao" Association="ModelDiagramaBD.NivelCompeticao">
+            <End Role="Nivel" EntitySet="NivelSet" />
+            <End Role="Competicao" EntitySet="CompeticaoSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoInscricaoJudo" Association="ModelDiagramaBD.InscricaoInscricaoJudo">
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+            <End Role="InscricaoJudo" EntitySet="InscricaoJudoSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoInscricaoJiujitsu" Association="ModelDiagramaBD.InscricaoInscricaoJiujitsu">
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+            <End Role="InscricaoJiujitsu" EntitySet="InscricaoJiujitsuSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoInscricaoAikido" Association="ModelDiagramaBD.InscricaoInscricaoAikido">
+            <End Role="Inscricao" EntitySet="InscricaoSet" />
+            <End Role="InscricaoAikido" EntitySet="InscricaoAikidoSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoJudoEscalaoJudo" Association="ModelDiagramaBD.InscricaoJudoEscalaoJudo">
+            <End Role="InscricaoJudo" EntitySet="InscricaoJudoSet" />
+            <End Role="EscalaoJudo" EntitySet="EscalaoJudoSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoJiujitsuEscalaoJiujitsu" Association="ModelDiagramaBD.InscricaoJiujitsuEscalaoJiujitsu">
+            <End Role="InscricaoJiujitsu" EntitySet="InscricaoJiujitsuSet" />
+            <End Role="EscalaoJiujitsu" EntitySet="EscalaoJiujitsuSet" />
+          </AssociationSet>
+          <AssociationSet Name="InscricaoAikidoEscalaoAikido" Association="ModelDiagramaBD.InscricaoAikidoEscalaoAikido">
+            <End Role="InscricaoAikido" EntitySet="InscricaoAikidoSet" />
+            <End Role="EscalaoAikido" EntitySet="EscalaoAikidoSet" />
+          </AssociationSet>
+          <AssociationSet Name="ExameGraduacao" Association="ModelDiagramaBD.ExameGraduacao">
+            <End Role="Exame" EntitySet="ExameSet" />
+            <End Role="Graduacao" EntitySet="GraduacaoSet" />
+          </AssociationSet>
           </EntityContainer>
         <EntityType Name="Socios">
           <Key>
@@ -50,6 +126,8 @@
           <Property Name="Concelho" Type="String" Nullable="false" />
           <Property Name="Sexo" Type="String" Nullable="false" />
           <Property Name="EstadoCivil" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.InscricaoSocios" FromRole="Socios" ToRole="Inscricao" />
+          <NavigationProperty Name="Quotas" Relationship="ModelDiagramaBD.SociosQuotas" FromRole="Socios" ToRole="Quotas" />
         </EntityType>
         <EntityType Name="Inscricao">
           <Key>
@@ -62,6 +140,15 @@
           <Property Name="DataRevalidacaoAnterior" Type="String" Nullable="false" />
           <Property Name="DataExameMedico" Type="String" Nullable="false" />
           <Property Name="Estado" Type="String" Nullable="false" />
+          <NavigationProperty Name="Socios" Relationship="ModelDiagramaBD.InscricaoSocios" FromRole="Inscricao" ToRole="Socios" />
+          <NavigationProperty Name="Exame" Relationship="ModelDiagramaBD.ExameInscricao" FromRole="Inscricao" ToRole="Exame" />
+          <NavigationProperty Name="Arbitro" Relationship="ModelDiagramaBD.ArbitroInscricao" FromRole="Inscricao" ToRole="Arbitro" />
+          <NavigationProperty Name="Treinadores" Relationship="ModelDiagramaBD.TreinadoresInscricao" FromRole="Inscricao" ToRole="Treinadores" />
+          <NavigationProperty Name="Participacao" Relationship="ModelDiagramaBD.InscricaoParticipacao" FromRole="Inscricao" ToRole="Participacao" />
+          <NavigationProperty Name="ResultadoCompeticao" Relationship="ModelDiagramaBD.InscricaoResultadoCompeticao" FromRole="Inscricao" ToRole="ResultadoCompeticao" />
+          <NavigationProperty Name="InscricaoJudo" Relationship="ModelDiagramaBD.InscricaoInscricaoJudo" FromRole="Inscricao" ToRole="InscricaoJudo" />
+          <NavigationProperty Name="InscricaoJiujitsu" Relationship="ModelDiagramaBD.InscricaoInscricaoJiujitsu" FromRole="Inscricao" ToRole="InscricaoJiujitsu" />
+          <NavigationProperty Name="InscricaoAikido" Relationship="ModelDiagramaBD.InscricaoInscricaoAikido" FromRole="Inscricao" ToRole="InscricaoAikido" />
         </EntityType>
         <EntityType Name="Entidades">
           <Key>
@@ -73,6 +160,7 @@
           <Property Name="CodigoPostal" Type="String" Nullable="false" />
           <Property Name="Contato" Type="String" Nullable="false" />
           <Property Name="TipoEntidade" Type="String" Nullable="false" />
+          <NavigationProperty Name="Quotas" Relationship="ModelDiagramaBD.EntidadesQuotas" FromRole="Entidades" ToRole="Quotas" />
         </EntityType>
         <EntityType Name="Quotas">
           <Key>
@@ -82,7 +170,9 @@
           <Property Name="Descricao" Type="String" Nullable="false" />
           <Property Name="Valor" Type="String" Nullable="false" />
           <Property Name="Data" Type="String" Nullable="false" />
-          <Property Name="TipoPagamento" Type="String" Nullable="false" />
+          <NavigationProperty Name="Socios" Relationship="ModelDiagramaBD.SociosQuotas" FromRole="Quotas" ToRole="Socios" />
+          <NavigationProperty Name="TipoPagamento" Relationship="ModelDiagramaBD.QuotasTipoPagamento" FromRole="Quotas" ToRole="TipoPagamento" />
+          <NavigationProperty Name="Entidades" Relationship="ModelDiagramaBD.EntidadesQuotas" FromRole="Quotas" ToRole="Entidades" />
         </EntityType>
         <EntityType Name="TipoPagamento">
           <Key>
@@ -90,6 +180,7 @@
           </Key>
           <Property Name="IdTipoPagamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Quotas" Relationship="ModelDiagramaBD.QuotasTipoPagamento" FromRole="TipoPagamento" ToRole="Quotas" />
         </EntityType>
         <EntityType Name="InscricaoJudo">
           <Key>
@@ -99,6 +190,8 @@
           <Property Name="IdInscricao" Type="String" Nullable="false" />
           <Property Name="LicencaFederativa" Type="String" Nullable="false" />
           <Property Name="Escalao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.InscricaoInscricaoJudo" FromRole="InscricaoJudo" ToRole="Inscricao" />
+          <NavigationProperty Name="EscalaoJudo" Relationship="ModelDiagramaBD.InscricaoJudoEscalaoJudo" FromRole="InscricaoJudo" ToRole="EscalaoJudo" />
         </EntityType>
         <EntityType Name="InscricaoJiujitsu">
           <Key>
@@ -108,6 +201,8 @@
           <Property Name="IdInscricao" Type="String" Nullable="false" />
           <Property Name="LicencaFederativa" Type="String" Nullable="false" />
           <Property Name="Escalao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.InscricaoInscricaoJiujitsu" FromRole="InscricaoJiujitsu" ToRole="Inscricao" />
+          <NavigationProperty Name="EscalaoJiujitsu" Relationship="ModelDiagramaBD.InscricaoJiujitsuEscalaoJiujitsu" FromRole="InscricaoJiujitsu" ToRole="EscalaoJiujitsu" />
         </EntityType>
         <EntityType Name="InscricaoAikido">
           <Key>
@@ -117,6 +212,8 @@
           <Property Name="IdInscricao" Type="String" Nullable="false" />
           <Property Name="LicencaFederativa" Type="String" Nullable="false" />
           <Property Name="Escalao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.InscricaoInscricaoAikido" FromRole="InscricaoAikido" ToRole="Inscricao" />
+          <NavigationProperty Name="EscalaoAikido" Relationship="ModelDiagramaBD.InscricaoAikidoEscalaoAikido" FromRole="InscricaoAikido" ToRole="EscalaoAikido" />
         </EntityType>
         <EntityType Name="EscalaoJudo">
           <Key>
@@ -124,6 +221,7 @@
           </Key>
           <Property Name="IdEscalaoJudo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="InscricaoJudo" Relationship="ModelDiagramaBD.InscricaoJudoEscalaoJudo" FromRole="EscalaoJudo" ToRole="InscricaoJudo" />
         </EntityType>
         <EntityType Name="EscalaoJiujitsu">
           <Key>
@@ -131,6 +229,7 @@
           </Key>
           <Property Name="IdEscalaoJiujitsu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="InscricaoJiujitsu" Relationship="ModelDiagramaBD.InscricaoJiujitsuEscalaoJiujitsu" FromRole="EscalaoJiujitsu" ToRole="InscricaoJiujitsu" />
         </EntityType>
         <EntityType Name="EscalaoAikido">
           <Key>
@@ -138,6 +237,7 @@
           </Key>
           <Property Name="IdEscalaoAikido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="InscricaoAikido" Relationship="ModelDiagramaBD.InscricaoAikidoEscalaoAikido" FromRole="EscalaoAikido" ToRole="InscricaoAikido" />
         </EntityType>
         <EntityType Name="Treinadores">
           <Key>
@@ -146,6 +246,7 @@
           <Property Name="IdTreinador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdInscricao" Type="String" Nullable="false" />
           <Property Name="Grau" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.TreinadoresInscricao" FromRole="Treinadores" ToRole="Inscricao" />
         </EntityType>
         <EntityType Name="Arbitro">
           <Key>
@@ -154,6 +255,7 @@
           <Property Name="IdArbitro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdInscricao" Type="String" Nullable="false" />
           <Property Name="Grau" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.ArbitroInscricao" FromRole="Arbitro" ToRole="Inscricao" />
         </EntityType>
         <EntityType Name="Exame">
           <Key>
@@ -161,7 +263,8 @@
           </Key>
           <Property Name="IdExame" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Data" Type="String" Nullable="false" />
-          <Property Name="Graduacao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.ExameInscricao" FromRole="Exame" ToRole="Inscricao" />
+          <NavigationProperty Name="Graduacao" Relationship="ModelDiagramaBD.ExameGraduacao" FromRole="Exame" ToRole="Graduacao" />
         </EntityType>
         <EntityType Name="Graduacao">
           <Key>
@@ -169,6 +272,7 @@
           </Key>
           <Property Name="IdGraduacao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Exame" Relationship="ModelDiagramaBD.ExameGraduacao" FromRole="Graduacao" ToRole="Exame" />
         </EntityType>
         <EntityType Name="Participacao">
           <Key>
@@ -178,7 +282,8 @@
           <Property Name="Localidade" Type="String" Nullable="false" />
           <Property Name="Descricao" Type="String" Nullable="false" />
           <Property Name="Data" Type="String" Nullable="false" />
-          <Property Name="Nivel" Type="String" Nullable="false" />
+          <NavigationProperty Name="Nivel" Relationship="ModelDiagramaBD.ParticipacaoNivel" FromRole="Participacao" ToRole="Nivel" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.InscricaoParticipacao" FromRole="Participacao" ToRole="Inscricao" />
         </EntityType>
         <EntityType Name="Nivel">
           <Key>
@@ -186,6 +291,8 @@
           </Key>
           <Property Name="IdNivel" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Descricao" Type="String" Nullable="false" />
+          <NavigationProperty Name="Participacao" Relationship="ModelDiagramaBD.ParticipacaoNivel" FromRole="Nivel" ToRole="Participacao" />
+          <NavigationProperty Name="Competicao" Relationship="ModelDiagramaBD.NivelCompeticao" FromRole="Nivel" ToRole="Competicao" />
         </EntityType>
         <EntityType Name="Competicao">
           <Key>
@@ -196,6 +303,8 @@
           <Property Name="Descricao" Type="String" Nullable="false" />
           <Property Name="Data" Type="String" Nullable="false" />
           <Property Name="Categoria" Type="String" Nullable="false" />
+          <NavigationProperty Name="ResultadoCompeticao" Relationship="ModelDiagramaBD.ResultadoCompeticaoCompeticao" FromRole="Competicao" ToRole="ResultadoCompeticao" />
+          <NavigationProperty Name="Nivel" Relationship="ModelDiagramaBD.NivelCompeticao" FromRole="Competicao" ToRole="Nivel" />
         </EntityType>
         <EntityType Name="ResultadoCompeticao">
           <Key>
@@ -205,7 +314,85 @@
           <Property Name="IdInscricao" Type="String" Nullable="false" />
           <Property Name="Classificacao" Type="String" Nullable="false" />
           <Property Name="Pontos" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inscricao" Relationship="ModelDiagramaBD.InscricaoResultadoCompeticao" FromRole="ResultadoCompeticao" ToRole="Inscricao" />
+          <NavigationProperty Name="Competicao" Relationship="ModelDiagramaBD.ResultadoCompeticaoCompeticao" FromRole="ResultadoCompeticao" ToRole="Competicao" />
         </EntityType>
+        <Association Name="InscricaoSocios">
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.Socios" Role="Socios" Multiplicity="1" />
+        </Association>
+        <Association Name="SociosQuotas">
+          <End Type="ModelDiagramaBD.Socios" Role="Socios" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.Quotas" Role="Quotas" Multiplicity="*" />
+        </Association>
+        <Association Name="QuotasTipoPagamento">
+          <End Type="ModelDiagramaBD.Quotas" Role="Quotas" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.TipoPagamento" Role="TipoPagamento" Multiplicity="0..1" />
+        </Association>
+        <Association Name="EntidadesQuotas">
+          <End Type="ModelDiagramaBD.Entidades" Role="Entidades" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.Quotas" Role="Quotas" Multiplicity="*" />
+        </Association>
+        <Association Name="ParticipacaoNivel">
+          <End Type="ModelDiagramaBD.Participacao" Role="Participacao" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.Nivel" Role="Nivel" Multiplicity="0..1" />
+        </Association>
+        <Association Name="ExameInscricao">
+          <End Type="ModelDiagramaBD.Exame" Role="Exame" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="*" />
+        </Association>
+        <Association Name="ArbitroInscricao">
+          <End Type="ModelDiagramaBD.Arbitro" Role="Arbitro" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="1" />
+        </Association>
+        <Association Name="TreinadoresInscricao">
+          <End Type="ModelDiagramaBD.Treinadores" Role="Treinadores" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="1" />
+        </Association>
+        <Association Name="InscricaoParticipacao">
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.Participacao" Role="Participacao" Multiplicity="*" />
+        </Association>
+        <Association Name="InscricaoResultadoCompeticao">
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.ResultadoCompeticao" Role="ResultadoCompeticao" Multiplicity="1" />
+        </Association>
+        <Association Name="ResultadoCompeticaoCompeticao">
+          <End Type="ModelDiagramaBD.ResultadoCompeticao" Role="ResultadoCompeticao" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.Competicao" Role="Competicao" Multiplicity="1" />
+        </Association>
+        <Association Name="NivelCompeticao">
+          <End Type="ModelDiagramaBD.Nivel" Role="Nivel" Multiplicity="0..1" />
+          <End Type="ModelDiagramaBD.Competicao" Role="Competicao" Multiplicity="*" />
+        </Association>
+        <Association Name="InscricaoInscricaoJudo">
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.InscricaoJudo" Role="InscricaoJudo" Multiplicity="*" />
+        </Association>
+        <Association Name="InscricaoInscricaoJiujitsu">
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.InscricaoJiujitsu" Role="InscricaoJiujitsu" Multiplicity="*" />
+        </Association>
+        <Association Name="InscricaoInscricaoAikido">
+          <End Type="ModelDiagramaBD.Inscricao" Role="Inscricao" Multiplicity="1" />
+          <End Type="ModelDiagramaBD.InscricaoAikido" Role="InscricaoAikido" Multiplicity="*" />
+        </Association>
+        <Association Name="InscricaoJudoEscalaoJudo">
+          <End Type="ModelDiagramaBD.InscricaoJudo" Role="InscricaoJudo" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.EscalaoJudo" Role="EscalaoJudo" Multiplicity="0..1" />
+        </Association>
+        <Association Name="InscricaoJiujitsuEscalaoJiujitsu">
+          <End Type="ModelDiagramaBD.InscricaoJiujitsu" Role="InscricaoJiujitsu" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.EscalaoJiujitsu" Role="EscalaoJiujitsu" Multiplicity="0..1" />
+        </Association>
+        <Association Name="InscricaoAikidoEscalaoAikido">
+          <End Type="ModelDiagramaBD.InscricaoAikido" Role="InscricaoAikido" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.EscalaoAikido" Role="EscalaoAikido" Multiplicity="0..1" />
+        </Association>
+        <Association Name="ExameGraduacao">
+          <End Type="ModelDiagramaBD.Exame" Role="Exame" Multiplicity="*" />
+          <End Type="ModelDiagramaBD.Graduacao" Role="Graduacao" Multiplicity="0..1" />
+        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

@@ -18,6 +18,15 @@ using System;
 public partial class Participacao
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Participacao()
+    {
+
+        this.Inscricao = new HashSet<Inscricao>();
+
+    }
+
+
     public int IdParticipacao { get; set; }
 
     public string Localidade { get; set; }
@@ -26,7 +35,13 @@ public partial class Participacao
 
     public string Data { get; set; }
 
-    public string Nivel { get; set; }
+
+
+    public virtual Nivel Nivel { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Inscricao> Inscricao { get; set; }
 
 }
 

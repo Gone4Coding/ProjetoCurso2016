@@ -18,9 +18,30 @@ using System;
 public partial class Nivel
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Nivel()
+    {
+
+        this.Participacao = new HashSet<Participacao>();
+
+        this.Competicao = new HashSet<Competicao>();
+
+    }
+
+
     public int IdNivel { get; set; }
 
     public string Descricao { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Participacao> Participacao { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Competicao> Competicao { get; set; }
 
 }
 

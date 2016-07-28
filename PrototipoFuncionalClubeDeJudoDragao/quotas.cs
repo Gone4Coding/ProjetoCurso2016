@@ -26,7 +26,13 @@ public partial class Quotas
 
     public string Data { get; set; }
 
-    public string TipoPagamento { get; set; }
+
+
+    public virtual Socios Socios { get; set; }
+
+    public virtual TipoPagamento TipoPagamento { get; set; }
+
+    public virtual Entidades Entidades { get; set; }
 
 }
 

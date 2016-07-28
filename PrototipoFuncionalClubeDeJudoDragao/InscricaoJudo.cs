@@ -26,6 +26,12 @@ public partial class InscricaoJudo
 
     public string Escalao { get; set; }
 
+
+
+    public virtual Inscricao Inscricao { get; set; }
+
+    public virtual EscalaoJudo EscalaoJudo { get; set; }
+
 }
 
 }

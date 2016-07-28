@@ -18,6 +18,15 @@ using System;
 public partial class Entidades
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Entidades()
+    {
+
+        this.Quotas = new HashSet<Quotas>();
+
+    }
+
+
     public int NumeroEntidade { get; set; }
 
     public string Nome { get; set; }
@@ -29,6 +38,12 @@ public partial class Entidades
     public string Contato { get; set; }
 
     public string TipoEntidade { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Quotas> Quotas { get; set; }
 
 }
 

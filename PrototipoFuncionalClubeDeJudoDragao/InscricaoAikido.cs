@@ -26,6 +26,12 @@ public partial class InscricaoAikido
 
     public string Escalao { get; set; }
 
+
+
+    public virtual Inscricao Inscricao { get; set; }
+
+    public virtual EscalaoAikido EscalaoAikido { get; set; }
+
 }
 
 }

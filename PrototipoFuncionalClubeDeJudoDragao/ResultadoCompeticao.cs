@@ -26,6 +26,12 @@ public partial class ResultadoCompeticao
 
     public string Pontos { get; set; }
 
+
+
+    public virtual Inscricao Inscricao { get; set; }
+
+    public virtual Competicao Competicao { get; set; }
+
 }
 
 }

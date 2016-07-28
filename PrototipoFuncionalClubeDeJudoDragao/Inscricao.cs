@@ -18,6 +18,21 @@ using System;
 public partial class Inscricao
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Inscricao()
+    {
+
+        this.Participacao = new HashSet<Participacao>();
+
+        this.InscricaoJudo = new HashSet<InscricaoJudo>();
+
+        this.InscricaoJiujitsu = new HashSet<InscricaoJiujitsu>();
+
+        this.InscricaoAikido = new HashSet<InscricaoAikido>();
+
+    }
+
+
     public int IdInscricao { get; set; }
 
     public string NumeroSocio { get; set; }
@@ -31,6 +46,34 @@ public partial class Inscricao
     public string DataExameMedico { get; set; }
 
     public string Estado { get; set; }
+
+
+
+    public virtual Socios Socios { get; set; }
+
+    public virtual Exame Exame { get; set; }
+
+    public virtual Arbitro Arbitro { get; set; }
+
+    public virtual Treinadores Treinadores { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Participacao> Participacao { get; set; }
+
+    public virtual ResultadoCompeticao ResultadoCompeticao { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<InscricaoJudo> InscricaoJudo { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<InscricaoJiujitsu> InscricaoJiujitsu { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<InscricaoAikido> InscricaoAikido { get; set; }
 
 }
 

@@ -26,6 +26,12 @@ public partial class InscricaoJiujitsu
 
     public string Escalao { get; set; }
 
+
+
+    public virtual Inscricao Inscricao { get; set; }
+
+    public virtual EscalaoJiujitsu EscalaoJiujitsu { get; set; }
+
 }
 
 }

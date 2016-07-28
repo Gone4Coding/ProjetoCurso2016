@@ -18,6 +18,15 @@ using System;
 public partial class Competicao
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Competicao()
+    {
+
+        this.ResultadoCompeticao = new HashSet<ResultadoCompeticao>();
+
+    }
+
+
     public int IdCompeticao { get; set; }
 
     public string Localidade { get; set; }
@@ -27,6 +36,14 @@ public partial class Competicao
     public string Data { get; set; }
 
     public string Categoria { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<ResultadoCompeticao> ResultadoCompeticao { get; set; }
+
+    public virtual Nivel Nivel { get; set; }
 
 }
 

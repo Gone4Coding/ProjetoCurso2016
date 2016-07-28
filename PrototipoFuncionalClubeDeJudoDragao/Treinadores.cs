@@ -24,6 +24,10 @@ public partial class Treinadores
 
     public string Grau { get; set; }
 
+
+
+    public virtual Inscricao Inscricao { get; set; }
+
 }
 
 }

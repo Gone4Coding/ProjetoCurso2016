@@ -18,9 +18,24 @@ using System;
 public partial class Graduacao
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Graduacao()
+    {
+
+        this.Exame = new HashSet<Exame>();
+
+    }
+
+
     public int IdGraduacao { get; set; }
 
     public string Descricao { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Exame> Exame { get; set; }
 
 }
 

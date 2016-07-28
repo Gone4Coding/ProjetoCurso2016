@@ -18,9 +18,24 @@ using System;
 public partial class EscalaoJudo
 {
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public EscalaoJudo()
+    {
+
+        this.InscricaoJudo = new HashSet<InscricaoJudo>();
+
+    }
+
+
     public int IdEscalaoJudo { get; set; }
 
     public string Descricao { get; set; }
+
+
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<InscricaoJudo> InscricaoJudo { get; set; }
 
 }
 

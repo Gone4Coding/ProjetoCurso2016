@@ -4,26 +4,45 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="93dccc7edd5049f4b26b46b25ffde9fe" Name="Diagram1" ZoomLevel="74" >
-        <EntityTypeShape EntityType="ModelDiagramaBD.Socios" Width="1.5" PointX="0.5" PointY="0.5" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Inscricao" Width="1.875" PointX="4.25" PointY="2.25" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Entidades" Width="1.5" PointX="9.75" PointY="1.25" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Quotas" Width="1.5" PointX="11.625" PointY="1.25" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.TipoPagamento" Width="1.5" PointX="14.25" PointY="1.375" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoJudo" Width="1.5" PointX="2.25" PointY="5.5" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoJiujitsu" Width="1.5" PointX="4.25" PointY="5.5" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoAikido" Width="1.5" PointX="6.125" PointY="5.5" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoJudo" Width="1.5" PointX="2.25" PointY="7.875" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoJiujitsu" Width="1.5" PointX="4.25" PointY="7.875" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoAikido" Width="1.5" PointX="6.125" PointY="7.875" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Treinadores" Width="1.5" PointX="8.875" PointY="4" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Arbitro" Width="1.5" PointX="11.375" PointY="4" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Exame" Width="1.5" PointX="14.5" PointY="4.875" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Graduacao" Width="1.5" PointX="14.125" PointY="3.25" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Participacao" Width="1.5" PointX="10" PointY="6.125" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Nivel" Width="1.5" PointX="12" PointY="6.125" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.Competicao" Width="1.5" PointX="15" PointY="7.625" />
-        <EntityTypeShape EntityType="ModelDiagramaBD.ResultadoCompeticao" Width="1.5" PointX="8.5" PointY="7.375" />
+      <Diagram DiagramId="93dccc7edd5049f4b26b46b25ffde9fe" Name="Diagram1" ZoomLevel="68" >
+        <EntityTypeShape EntityType="ModelDiagramaBD.Socios" Width="1.5" PointX="14.375" PointY="3.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Inscricao" Width="1.875" PointX="5.625" PointY="4.25" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Entidades" Width="1.5" PointX="11.875" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Quotas" Width="1.5" PointX="14.375" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.TipoPagamento" Width="1.5" PointX="16.5" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoJudo" Width="1.5" PointX="3.625" PointY="9.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoJiujitsu" Width="1.5" PointX="5.625" PointY="9.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.InscricaoAikido" Width="1.5" PointX="7.5" PointY="9.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoJudo" Width="1.5" PointX="3.625" PointY="12.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoJiujitsu" Width="1.5" PointX="5.625" PointY="12.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.EscalaoAikido" Width="1.5" PointX="7.5" PointY="12.375" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Treinadores" Width="1.5" PointX="2.5" PointY="5.75" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Arbitro" Width="1.5" PointX="2.5" PointY="3.625" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Exame" Width="1.5" PointX="4.625" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Graduacao" Width="1.5" PointX="1.75" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Participacao" Width="1.5" PointX="9.125" PointY="2.625" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Nivel" Width="1.5" PointX="11.375" PointY="3.5" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.Competicao" Width="1.5" PointX="11.375" PointY="7.125" />
+        <EntityTypeShape EntityType="ModelDiagramaBD.ResultadoCompeticao" Width="1.875" PointX="8.5" PointY="6.75" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoSocios" />
+        <AssociationConnector Association="ModelDiagramaBD.SociosQuotas" />
+        <AssociationConnector Association="ModelDiagramaBD.QuotasTipoPagamento" />
+        <AssociationConnector Association="ModelDiagramaBD.EntidadesQuotas" />
+        <AssociationConnector Association="ModelDiagramaBD.ParticipacaoNivel" />
+        <AssociationConnector Association="ModelDiagramaBD.ExameInscricao" />
+        <AssociationConnector Association="ModelDiagramaBD.ArbitroInscricao" />
+        <AssociationConnector Association="ModelDiagramaBD.TreinadoresInscricao" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoParticipacao" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoResultadoCompeticao" />
+        <AssociationConnector Association="ModelDiagramaBD.ResultadoCompeticaoCompeticao" />
+        <AssociationConnector Association="ModelDiagramaBD.NivelCompeticao" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoInscricaoJudo" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoInscricaoJiujitsu" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoInscricaoAikido" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoJudoEscalaoJudo" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoJiujitsuEscalaoJiujitsu" />
+        <AssociationConnector Association="ModelDiagramaBD.InscricaoAikidoEscalaoAikido" />
+        <AssociationConnector Association="ModelDiagramaBD.ExameGraduacao" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
