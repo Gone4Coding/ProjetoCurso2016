@@ -36,7 +36,7 @@ namespace PrototipoFuncionalClubeDeJudoDragao
                 Console.WriteLine(socios[i]);
                 
             }
-            */
+            */x
 
 
             //context.SaveChanges();
