@@ -37,13 +37,13 @@ public partial class Socios
 
     public string Localidade { get; set; }
 
-    public string DataNascimento { get; set; }
+    public System.DateTime DataNascimento { get; set; }
 
-    public string Nif { get; set; }
+    public int Nif { get; set; }
 
-    public string NumeroCC { get; set; }
+    public int NumeroCC { get; set; }
 
-    public string DataEmissaoCC { get; set; }
+    public System.DateTime DataEmissaoCC { get; set; }
 
     public string Nacionalidade { get; set; }
 
@@ -56,6 +56,14 @@ public partial class Socios
     public string Sexo { get; set; }
 
     public string EstadoCivil { get; set; }
+
+    public string Pai { get; set; }
+
+    public string Mae { get; set; }
+
+    public string Telefone1 { get; set; }
+
+    public string Telefone2 { get; set; }
 
 
 

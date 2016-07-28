@@ -20,11 +20,11 @@ public partial class ResultadoCompeticao
 
     public int IdResultadoCompeticao { get; set; }
 
-    public string IdInscricao { get; set; }
+    public int IdInscricao { get; set; }
 
     public string Classificacao { get; set; }
 
-    public string Pontos { get; set; }
+    public int Pontos { get; set; }
 
 
 

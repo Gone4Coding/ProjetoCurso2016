@@ -24,8 +24,6 @@ public partial class InscricaoAikido
 
     public string LicencaFederativa { get; set; }
 
-    public string Escalao { get; set; }
-
 
 
     public virtual Inscricao Inscricao { get; set; }

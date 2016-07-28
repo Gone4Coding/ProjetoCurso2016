@@ -29,7 +29,7 @@ public partial class Exame
 
     public int IdExame { get; set; }
 
-    public string Data { get; set; }
+    public System.DateTime Data { get; set; }
 
 
 

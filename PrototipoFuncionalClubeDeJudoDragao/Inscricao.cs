@@ -35,17 +35,17 @@ public partial class Inscricao
 
     public int IdInscricao { get; set; }
 
-    public string NumeroSocio { get; set; }
+    public int NumeroSocio { get; set; }
 
-    public string DataInscricao { get; set; }
+    public System.DateTime DataInscricao { get; set; }
 
-    public string DataRevalidacao { get; set; }
+    public System.DateTime DataRevalidacao { get; set; }
 
-    public string DataRevalidacaoAnterior { get; set; }
+    public System.DateTime DataRevalidacaoAnterior { get; set; }
 
-    public string DataExameMedico { get; set; }
+    public System.DateTime DataExameMedico { get; set; }
 
-    public string Estado { get; set; }
+    public byte[] Estado { get; set; }
 
 
 

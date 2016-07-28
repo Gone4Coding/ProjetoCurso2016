@@ -22,9 +22,9 @@ public partial class Quotas
 
     public string Descricao { get; set; }
 
-    public string Valor { get; set; }
+    public int Valor { get; set; }
 
-    public string Data { get; set; }
+    public System.DateTime Data { get; set; }
 
 
 

@@ -20,7 +20,7 @@ public partial class Arbitro
 
     public int IdArbitro { get; set; }
 
-    public string IdInscricao { get; set; }
+    public int IdInscricao { get; set; }
 
     public string Grau { get; set; }
 

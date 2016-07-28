@@ -24,8 +24,6 @@ public partial class InscricaoJiujitsu
 
     public string LicencaFederativa { get; set; }
 
-    public string Escalao { get; set; }
-
 
 
     public virtual Inscricao Inscricao { get; set; }

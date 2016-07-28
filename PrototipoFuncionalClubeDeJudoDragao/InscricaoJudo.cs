@@ -20,11 +20,9 @@ public partial class InscricaoJudo
 
     public int IdInscricaoJudo { get; set; }
 
-    public string IdInscricao { get; set; }
+    public int IdInscricao { get; set; }
 
-    public string LicencaFederativa { get; set; }
-
-    public string Escalao { get; set; }
+    public int LicencaFederativa { get; set; }
 
 
 

@@ -33,7 +33,7 @@ public partial class Competicao
 
     public string Descricao { get; set; }
 
-    public string Data { get; set; }
+    public System.DateTime Data { get; set; }
 
     public string Categoria { get; set; }
 
