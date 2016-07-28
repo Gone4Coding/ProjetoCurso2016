@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\FearlessJr\Source\Repos\ProjectoCurso2016\PrototipoFuncionalClubeDeJudoDragao\PrototipoFuncionalClubeDeJudoDragao\ModelDiagramaBD.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Git\ProjetoCurso2016\PrototipoFuncionalClubeDeJudoDragao\ModelDiagramaBD.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
