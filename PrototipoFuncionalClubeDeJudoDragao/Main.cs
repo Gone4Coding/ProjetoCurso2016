@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PrototipoFuncionalClubeDeJudoDragao
 {
@@ -27,15 +28,15 @@ namespace PrototipoFuncionalClubeDeJudoDragao
         private void injecao_Click(object sender, EventArgs e)
         {
 
-            //List<String> socios = new List<string>();
-            string[] socios = System.IO.File.ReadAllLines("\\DB_Socios.txt");
-
+            //FileStream 
+            //string[] socios = System.IO.File.ReadAllLines("\\DB_Socios.txt");
+            /*
             for (int i = 0; i < 50; i++)
             {
                 Console.WriteLine(socios[i]);
                 
             }
-            
+            */
 
 
             //context.SaveChanges();
