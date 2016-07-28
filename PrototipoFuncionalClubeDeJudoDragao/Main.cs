@@ -27,18 +27,23 @@ namespace PrototipoFuncionalClubeDeJudoDragao
 
         private void injecao_Click(object sender, EventArgs e)
         {
+            
+            string[] socios = System.IO.File.ReadAllLines("C:\\Git\\ProjetoCurso2016\\PrototipoFuncionalClubeDeJudoDragao\\bin\\Debug\\DB_Socios.txt");
 
-            //FileStream 
-            //string[] socios = System.IO.File.ReadAllLines("\\DB_Socios.txt");
-            /*
-            for (int i = 0; i < 50; i++)
+            string[] sociosSplit = socios[0].Split(';');
+
+            foreach (string socio in socios)
             {
-                Console.WriteLine(socios[i]);
-                
+                string[] splits = socio.Split(';');
+
+                for (int i = 0; i < splits.Length; i++)
+                {
+
+                    //NumeroSocio = splits[0]
+                    //Nome = splits[1];
+                }
             }
-            */
-
-
+            
             //context.SaveChanges();
             //MessageBox.Show("Atletas criados com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
